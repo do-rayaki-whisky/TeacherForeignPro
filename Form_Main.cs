@@ -15,6 +15,8 @@ namespace TeacherForeignPro
         public Form_Main()
         {
             InitializeComponent();
+            /* Tab 1 */
+            T1_INPUT_Th_Title.SelectedIndex = 0;
         }
     }
 }
