@@ -223,9 +223,12 @@
             this.label119 = new System.Windows.Forms.Label();
             this.textBox70 = new System.Windows.Forms.TextBox();
             this.label120 = new System.Windows.Forms.Label();
+            this.comboBox32 = new System.Windows.Forms.ComboBox();
             this.textBox69 = new System.Windows.Forms.TextBox();
             this.label109 = new System.Windows.Forms.Label();
+            this.comboBox31 = new System.Windows.Forms.ComboBox();
             this.label108 = new System.Windows.Forms.Label();
+            this.textBox62 = new System.Windows.Forms.TextBox();
             this.label123 = new System.Windows.Forms.Label();
             this.label107 = new System.Windows.Forms.Label();
             this.textBox61 = new System.Windows.Forms.TextBox();
@@ -237,22 +240,29 @@
             this.label117 = new System.Windows.Forms.Label();
             this.label116 = new System.Windows.Forms.Label();
             this.label105 = new System.Windows.Forms.Label();
+            this.comboBox30 = new System.Windows.Forms.ComboBox();
+            this.comboBox33 = new System.Windows.Forms.ComboBox();
             this.textBox66 = new System.Windows.Forms.TextBox();
             this.textBox65 = new System.Windows.Forms.TextBox();
             this.textBox64 = new System.Windows.Forms.TextBox();
             this.tableLayoutPanel9 = new System.Windows.Forms.TableLayoutPanel();
             this.label88 = new System.Windows.Forms.Label();
             this.label94 = new System.Windows.Forms.Label();
+            this.comboBox27 = new System.Windows.Forms.ComboBox();
             this.label95 = new System.Windows.Forms.Label();
             this.label93 = new System.Windows.Forms.Label();
-            this.T4_INPUT_YearIssue_En = new System.Windows.Forms.TextBox();
-            this.T4_INPUT_YearIssue = new System.Windows.Forms.TextBox();
+            this.textBox53 = new System.Windows.Forms.TextBox();
+            this.textBox55 = new System.Windows.Forms.TextBox();
             this.label92 = new System.Windows.Forms.Label();
             this.label89 = new System.Windows.Forms.Label();
+            this.textBox54 = new System.Windows.Forms.TextBox();
+            this.comboBox25 = new System.Windows.Forms.ComboBox();
             this.label90 = new System.Windows.Forms.Label();
+            this.textBox63 = new System.Windows.Forms.TextBox();
             this.label113 = new System.Windows.Forms.Label();
             this.label91 = new System.Windows.Forms.Label();
-            this.T4_INPUT_WorkpermitNo = new System.Windows.Forms.TextBox();
+            this.comboBox26 = new System.Windows.Forms.ComboBox();
+            this.textBox56 = new System.Windows.Forms.TextBox();
             this.label96 = new System.Windows.Forms.Label();
             this.label97 = new System.Windows.Forms.Label();
             this.label98 = new System.Windows.Forms.Label();
@@ -260,6 +270,9 @@
             this.label101 = new System.Windows.Forms.Label();
             this.label100 = new System.Windows.Forms.Label();
             this.label102 = new System.Windows.Forms.Label();
+            this.comboBox28 = new System.Windows.Forms.ComboBox();
+            this.comboBox29 = new System.Windows.Forms.ComboBox();
+            this.textBox57 = new System.Windows.Forms.TextBox();
             this.textBox58 = new System.Windows.Forms.TextBox();
             this.textBox59 = new System.Windows.Forms.TextBox();
             this.tabPage3 = new System.Windows.Forms.TabPage();
@@ -320,21 +333,6 @@
             this.T3_INPUT_PassportExpDate = new System.Windows.Forms.TextBox();
             this.T3_INPUT_ContractMonth_En = new System.Windows.Forms.TextBox();
             this.T3_INPUT_PassportExpMonth_En = new System.Windows.Forms.TextBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.T4_INPUT_MonthIssue = new System.Windows.Forms.ComboBox();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
-            this.comboBox4 = new System.Windows.Forms.ComboBox();
-            this.T4_INPUT_DateIssue = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.T4_INPUT_MonthIssue_En = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.T4_INPUT_PlaceIssue = new System.Windows.Forms.TextBox();
-            this.tableLayoutPanel13 = new System.Windows.Forms.TableLayoutPanel();
-            this.T4_INPUT_PeriodPermission = new System.Windows.Forms.TextBox();
-            this.label152 = new System.Windows.Forms.Label();
             this.MainTab.SuspendLayout();
             this.THisrotyTab.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -354,7 +352,6 @@
             this.tableLayoutPanel9.SuspendLayout();
             this.tabPage4.SuspendLayout();
             this.tableLayoutPanel12.SuspendLayout();
-            this.tableLayoutPanel13.SuspendLayout();
             this.SuspendLayout();
             // 
             // MainTab
@@ -2503,10 +2500,6 @@
             this.tableLayoutPanel10.ColumnCount = 2;
             this.tableLayoutPanel10.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 30F));
             this.tableLayoutPanel10.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 70F));
-            this.tableLayoutPanel10.Controls.Add(this.textBox6, 1, 3);
-            this.tableLayoutPanel10.Controls.Add(this.textBox4, 1, 7);
-            this.tableLayoutPanel10.Controls.Add(this.textBox2, 1, 1);
-            this.tableLayoutPanel10.Controls.Add(this.comboBox3, 1, 2);
             this.tableLayoutPanel10.Controls.Add(this.label103, 1, 0);
             this.tableLayoutPanel10.Controls.Add(this.label110, 0, 1);
             this.tableLayoutPanel10.Controls.Add(this.textBox68, 1, 15);
@@ -2514,9 +2507,12 @@
             this.tableLayoutPanel10.Controls.Add(this.label119, 0, 14);
             this.tableLayoutPanel10.Controls.Add(this.textBox70, 1, 14);
             this.tableLayoutPanel10.Controls.Add(this.label120, 0, 13);
+            this.tableLayoutPanel10.Controls.Add(this.comboBox32, 1, 1);
             this.tableLayoutPanel10.Controls.Add(this.textBox69, 1, 13);
             this.tableLayoutPanel10.Controls.Add(this.label109, 0, 2);
+            this.tableLayoutPanel10.Controls.Add(this.comboBox31, 1, 2);
             this.tableLayoutPanel10.Controls.Add(this.label108, 0, 3);
+            this.tableLayoutPanel10.Controls.Add(this.textBox62, 1, 3);
             this.tableLayoutPanel10.Controls.Add(this.label123, 1, 12);
             this.tableLayoutPanel10.Controls.Add(this.label107, 0, 4);
             this.tableLayoutPanel10.Controls.Add(this.textBox61, 1, 4);
@@ -2528,10 +2524,11 @@
             this.tableLayoutPanel10.Controls.Add(this.label117, 0, 9);
             this.tableLayoutPanel10.Controls.Add(this.label116, 0, 10);
             this.tableLayoutPanel10.Controls.Add(this.label105, 0, 11);
+            this.tableLayoutPanel10.Controls.Add(this.comboBox30, 1, 7);
+            this.tableLayoutPanel10.Controls.Add(this.comboBox33, 1, 8);
             this.tableLayoutPanel10.Controls.Add(this.textBox66, 1, 9);
             this.tableLayoutPanel10.Controls.Add(this.textBox65, 1, 10);
             this.tableLayoutPanel10.Controls.Add(this.textBox64, 1, 11);
-            this.tableLayoutPanel10.Controls.Add(this.comboBox4, 1, 8);
             this.tableLayoutPanel10.Location = new System.Drawing.Point(427, 10);
             this.tableLayoutPanel10.Name = "tableLayoutPanel10";
             this.tableLayoutPanel10.RowCount = 17;
@@ -2621,6 +2618,16 @@
             this.label120.TabIndex = 1;
             this.label120.Text = "ตำแหน่งงาน";
             // 
+            // comboBox32
+            // 
+            this.comboBox32.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.comboBox32.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox32.FormattingEnabled = true;
+            this.comboBox32.Location = new System.Drawing.Point(119, 49);
+            this.comboBox32.Name = "comboBox32";
+            this.comboBox32.Size = new System.Drawing.Size(150, 24);
+            this.comboBox32.TabIndex = 45;
+            // 
             // textBox69
             // 
             this.textBox69.Anchor = System.Windows.Forms.AnchorStyles.Left;
@@ -2639,6 +2646,16 @@
             this.label109.TabIndex = 2;
             this.label109.Text = "เดือนที่ TH";
             // 
+            // comboBox31
+            // 
+            this.comboBox31.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.comboBox31.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox31.FormattingEnabled = true;
+            this.comboBox31.Location = new System.Drawing.Point(119, 89);
+            this.comboBox31.Name = "comboBox31";
+            this.comboBox31.Size = new System.Drawing.Size(150, 24);
+            this.comboBox31.TabIndex = 31;
+            // 
             // label108
             // 
             this.label108.Anchor = System.Windows.Forms.AnchorStyles.Right;
@@ -2648,6 +2665,14 @@
             this.label108.Size = new System.Drawing.Size(64, 16);
             this.label108.TabIndex = 3;
             this.label108.Text = "เดือนที่ EN";
+            // 
+            // textBox62
+            // 
+            this.textBox62.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.textBox62.Location = new System.Drawing.Point(119, 128);
+            this.textBox62.Name = "textBox62";
+            this.textBox62.Size = new System.Drawing.Size(260, 23);
+            this.textBox62.TabIndex = 43;
             // 
             // label123
             // 
@@ -2755,6 +2780,26 @@
             this.label105.TabIndex = 66;
             this.label105.Text = "ปีที่ ค.ศ.";
             // 
+            // comboBox30
+            // 
+            this.comboBox30.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.comboBox30.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox30.FormattingEnabled = true;
+            this.comboBox30.Location = new System.Drawing.Point(119, 289);
+            this.comboBox30.Name = "comboBox30";
+            this.comboBox30.Size = new System.Drawing.Size(150, 24);
+            this.comboBox30.TabIndex = 49;
+            // 
+            // comboBox33
+            // 
+            this.comboBox33.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.comboBox33.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox33.FormattingEnabled = true;
+            this.comboBox33.Location = new System.Drawing.Point(119, 329);
+            this.comboBox33.Name = "comboBox33";
+            this.comboBox33.Size = new System.Drawing.Size(150, 24);
+            this.comboBox33.TabIndex = 57;
+            // 
             // textBox66
             // 
             this.textBox66.Anchor = System.Windows.Forms.AnchorStyles.Left;
@@ -2784,20 +2829,23 @@
             this.tableLayoutPanel9.ColumnCount = 2;
             this.tableLayoutPanel9.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 30F));
             this.tableLayoutPanel9.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 70F));
-            this.tableLayoutPanel9.Controls.Add(this.textBox3, 1, 10);
-            this.tableLayoutPanel9.Controls.Add(this.T4_INPUT_DateIssue, 1, 3);
             this.tableLayoutPanel9.Controls.Add(this.label88, 1, 0);
             this.tableLayoutPanel9.Controls.Add(this.label94, 0, 1);
+            this.tableLayoutPanel9.Controls.Add(this.comboBox27, 1, 8);
             this.tableLayoutPanel9.Controls.Add(this.label95, 0, 8);
             this.tableLayoutPanel9.Controls.Add(this.label93, 0, 7);
-            this.tableLayoutPanel9.Controls.Add(this.T4_INPUT_YearIssue_En, 1, 7);
-            this.tableLayoutPanel9.Controls.Add(this.T4_INPUT_YearIssue, 1, 6);
+            this.tableLayoutPanel9.Controls.Add(this.textBox53, 1, 7);
+            this.tableLayoutPanel9.Controls.Add(this.textBox55, 1, 6);
             this.tableLayoutPanel9.Controls.Add(this.label92, 0, 6);
             this.tableLayoutPanel9.Controls.Add(this.label89, 0, 5);
+            this.tableLayoutPanel9.Controls.Add(this.textBox54, 1, 5);
+            this.tableLayoutPanel9.Controls.Add(this.comboBox25, 1, 4);
             this.tableLayoutPanel9.Controls.Add(this.label90, 0, 4);
+            this.tableLayoutPanel9.Controls.Add(this.textBox63, 1, 15);
             this.tableLayoutPanel9.Controls.Add(this.label113, 0, 15);
             this.tableLayoutPanel9.Controls.Add(this.label91, 0, 3);
-            this.tableLayoutPanel9.Controls.Add(this.T4_INPUT_WorkpermitNo, 1, 1);
+            this.tableLayoutPanel9.Controls.Add(this.comboBox26, 1, 3);
+            this.tableLayoutPanel9.Controls.Add(this.textBox56, 1, 1);
             this.tableLayoutPanel9.Controls.Add(this.label96, 1, 2);
             this.tableLayoutPanel9.Controls.Add(this.label97, 1, 9);
             this.tableLayoutPanel9.Controls.Add(this.label98, 0, 10);
@@ -2805,14 +2853,11 @@
             this.tableLayoutPanel9.Controls.Add(this.label101, 0, 14);
             this.tableLayoutPanel9.Controls.Add(this.label100, 0, 13);
             this.tableLayoutPanel9.Controls.Add(this.label102, 0, 12);
+            this.tableLayoutPanel9.Controls.Add(this.comboBox28, 1, 10);
+            this.tableLayoutPanel9.Controls.Add(this.comboBox29, 1, 11);
+            this.tableLayoutPanel9.Controls.Add(this.textBox57, 1, 12);
             this.tableLayoutPanel9.Controls.Add(this.textBox58, 1, 13);
             this.tableLayoutPanel9.Controls.Add(this.textBox59, 1, 14);
-            this.tableLayoutPanel9.Controls.Add(this.comboBox1, 1, 11);
-            this.tableLayoutPanel9.Controls.Add(this.T4_INPUT_MonthIssue, 1, 4);
-            this.tableLayoutPanel9.Controls.Add(this.T4_INPUT_MonthIssue_En, 1, 5);
-            this.tableLayoutPanel9.Controls.Add(this.textBox5, 1, 12);
-            this.tableLayoutPanel9.Controls.Add(this.T4_INPUT_PlaceIssue, 1, 8);
-            this.tableLayoutPanel9.Controls.Add(this.tableLayoutPanel13, 1, 15);
             this.tableLayoutPanel9.Location = new System.Drawing.Point(10, 10);
             this.tableLayoutPanel9.Name = "tableLayoutPanel9";
             this.tableLayoutPanel9.RowCount = 17;
@@ -2856,6 +2901,16 @@
             this.label94.TabIndex = 46;
             this.label94.Text = "ใบอนุญาตเลขที่";
             // 
+            // comboBox27
+            // 
+            this.comboBox27.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.comboBox27.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox27.FormattingEnabled = true;
+            this.comboBox27.Location = new System.Drawing.Point(119, 328);
+            this.comboBox27.Name = "comboBox27";
+            this.comboBox27.Size = new System.Drawing.Size(150, 24);
+            this.comboBox27.TabIndex = 49;
+            // 
             // label95
             // 
             this.label95.Anchor = System.Windows.Forms.AnchorStyles.Right;
@@ -2876,21 +2931,21 @@
             this.label93.TabIndex = 4;
             this.label93.Text = "ปีที่ ค.ศ.";
             // 
-            // T4_INPUT_YearIssue_En
+            // textBox53
             // 
-            this.T4_INPUT_YearIssue_En.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.T4_INPUT_YearIssue_En.Location = new System.Drawing.Point(119, 288);
-            this.T4_INPUT_YearIssue_En.Name = "T4_INPUT_YearIssue_En";
-            this.T4_INPUT_YearIssue_En.Size = new System.Drawing.Size(100, 23);
-            this.T4_INPUT_YearIssue_En.TabIndex = 29;
+            this.textBox53.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.textBox53.Location = new System.Drawing.Point(119, 288);
+            this.textBox53.Name = "textBox53";
+            this.textBox53.Size = new System.Drawing.Size(100, 23);
+            this.textBox53.TabIndex = 29;
             // 
-            // T4_INPUT_YearIssue
+            // textBox55
             // 
-            this.T4_INPUT_YearIssue.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.T4_INPUT_YearIssue.Location = new System.Drawing.Point(119, 248);
-            this.T4_INPUT_YearIssue.Name = "T4_INPUT_YearIssue";
-            this.T4_INPUT_YearIssue.Size = new System.Drawing.Size(100, 23);
-            this.T4_INPUT_YearIssue.TabIndex = 44;
+            this.textBox55.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.textBox55.Location = new System.Drawing.Point(119, 248);
+            this.textBox55.Name = "textBox55";
+            this.textBox55.Size = new System.Drawing.Size(100, 23);
+            this.textBox55.TabIndex = 44;
             // 
             // label92
             // 
@@ -2912,6 +2967,24 @@
             this.label89.TabIndex = 3;
             this.label89.Text = "เดือนที่ EN";
             // 
+            // textBox54
+            // 
+            this.textBox54.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.textBox54.Location = new System.Drawing.Point(119, 208);
+            this.textBox54.Name = "textBox54";
+            this.textBox54.Size = new System.Drawing.Size(260, 23);
+            this.textBox54.TabIndex = 43;
+            // 
+            // comboBox25
+            // 
+            this.comboBox25.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.comboBox25.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox25.FormattingEnabled = true;
+            this.comboBox25.Location = new System.Drawing.Point(119, 168);
+            this.comboBox25.Name = "comboBox25";
+            this.comboBox25.Size = new System.Drawing.Size(150, 24);
+            this.comboBox25.TabIndex = 31;
+            // 
             // label90
             // 
             this.label90.Anchor = System.Windows.Forms.AnchorStyles.Right;
@@ -2921,6 +2994,14 @@
             this.label90.Size = new System.Drawing.Size(65, 16);
             this.label90.TabIndex = 2;
             this.label90.Text = "เดือนที่ TH";
+            // 
+            // textBox63
+            // 
+            this.textBox63.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.textBox63.Location = new System.Drawing.Point(119, 608);
+            this.textBox63.Name = "textBox63";
+            this.textBox63.Size = new System.Drawing.Size(260, 23);
+            this.textBox63.TabIndex = 62;
             // 
             // label113
             // 
@@ -2942,13 +3023,23 @@
             this.label91.TabIndex = 1;
             this.label91.Text = "วันที่";
             // 
-            // T4_INPUT_WorkpermitNo
+            // comboBox26
             // 
-            this.T4_INPUT_WorkpermitNo.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.T4_INPUT_WorkpermitNo.Location = new System.Drawing.Point(119, 48);
-            this.T4_INPUT_WorkpermitNo.Name = "T4_INPUT_WorkpermitNo";
-            this.T4_INPUT_WorkpermitNo.Size = new System.Drawing.Size(260, 23);
-            this.T4_INPUT_WorkpermitNo.TabIndex = 47;
+            this.comboBox26.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.comboBox26.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox26.FormattingEnabled = true;
+            this.comboBox26.Location = new System.Drawing.Point(119, 128);
+            this.comboBox26.Name = "comboBox26";
+            this.comboBox26.Size = new System.Drawing.Size(150, 24);
+            this.comboBox26.TabIndex = 45;
+            // 
+            // textBox56
+            // 
+            this.textBox56.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.textBox56.Location = new System.Drawing.Point(119, 48);
+            this.textBox56.Name = "textBox56";
+            this.textBox56.Size = new System.Drawing.Size(260, 23);
+            this.textBox56.TabIndex = 47;
             // 
             // label96
             // 
@@ -3019,6 +3110,34 @@
             this.label102.Size = new System.Drawing.Size(64, 16);
             this.label102.TabIndex = 56;
             this.label102.Text = "เดือนที่ EN";
+            // 
+            // comboBox28
+            // 
+            this.comboBox28.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.comboBox28.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox28.FormattingEnabled = true;
+            this.comboBox28.Location = new System.Drawing.Point(119, 408);
+            this.comboBox28.Name = "comboBox28";
+            this.comboBox28.Size = new System.Drawing.Size(150, 24);
+            this.comboBox28.TabIndex = 57;
+            // 
+            // comboBox29
+            // 
+            this.comboBox29.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.comboBox29.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox29.FormattingEnabled = true;
+            this.comboBox29.Location = new System.Drawing.Point(119, 448);
+            this.comboBox29.Name = "comboBox29";
+            this.comboBox29.Size = new System.Drawing.Size(150, 24);
+            this.comboBox29.TabIndex = 58;
+            // 
+            // textBox57
+            // 
+            this.textBox57.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.textBox57.Location = new System.Drawing.Point(119, 488);
+            this.textBox57.Name = "textBox57";
+            this.textBox57.Size = new System.Drawing.Size(260, 23);
+            this.textBox57.TabIndex = 59;
             // 
             // textBox58
             // 
@@ -3741,279 +3860,6 @@
             this.T3_INPUT_PassportExpMonth_En.Size = new System.Drawing.Size(100, 23);
             this.T3_INPUT_PassportExpMonth_En.TabIndex = 49;
             // 
-            // comboBox1
-            // 
-            this.comboBox1.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
-            "-",
-            "มกราคม",
-            "กุมภาพันธ์",
-            "มีนาคม",
-            "เมษายน",
-            "พฤษภาคม",
-            "มิถุนายน",
-            "กรกฎาคม",
-            "สิงหาคม",
-            "กันยายน",
-            "ตุลาคม",
-            "พฤศจิกายน",
-            "ธันวาคม"});
-            this.comboBox1.Location = new System.Drawing.Point(119, 448);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(150, 24);
-            this.comboBox1.TabIndex = 63;
-            // 
-            // T4_INPUT_MonthIssue
-            // 
-            this.T4_INPUT_MonthIssue.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.T4_INPUT_MonthIssue.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.T4_INPUT_MonthIssue.FormattingEnabled = true;
-            this.T4_INPUT_MonthIssue.Items.AddRange(new object[] {
-            "-",
-            "มกราคม",
-            "กุมภาพันธ์",
-            "มีนาคม",
-            "เมษายน",
-            "พฤษภาคม",
-            "มิถุนายน",
-            "กรกฎาคม",
-            "สิงหาคม",
-            "กันยายน",
-            "ตุลาคม",
-            "พฤศจิกายน",
-            "ธันวาคม"});
-            this.T4_INPUT_MonthIssue.Location = new System.Drawing.Point(119, 168);
-            this.T4_INPUT_MonthIssue.Name = "T4_INPUT_MonthIssue";
-            this.T4_INPUT_MonthIssue.Size = new System.Drawing.Size(150, 24);
-            this.T4_INPUT_MonthIssue.TabIndex = 64;
-            // 
-            // comboBox3
-            // 
-            this.comboBox3.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.comboBox3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Items.AddRange(new object[] {
-            "-",
-            "มกราคม",
-            "กุมภาพันธ์",
-            "มีนาคม",
-            "เมษายน",
-            "พฤษภาคม",
-            "มิถุนายน",
-            "กรกฎาคม",
-            "สิงหาคม",
-            "กันยายน",
-            "ตุลาคม",
-            "พฤศจิกายน",
-            "ธันวาคม"});
-            this.comboBox3.Location = new System.Drawing.Point(119, 88);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(150, 24);
-            this.comboBox3.TabIndex = 65;
-            // 
-            // comboBox4
-            // 
-            this.comboBox4.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.comboBox4.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox4.FormattingEnabled = true;
-            this.comboBox4.Items.AddRange(new object[] {
-            "-",
-            "มกราคม",
-            "กุมภาพันธ์",
-            "มีนาคม",
-            "เมษายน",
-            "พฤษภาคม",
-            "มิถุนายน",
-            "กรกฎาคม",
-            "สิงหาคม",
-            "กันยายน",
-            "ตุลาคม",
-            "พฤศจิกายน",
-            "ธันวาคม"});
-            this.comboBox4.Location = new System.Drawing.Point(119, 328);
-            this.comboBox4.Name = "comboBox4";
-            this.comboBox4.Size = new System.Drawing.Size(150, 24);
-            this.comboBox4.TabIndex = 68;
-            // 
-            // T4_INPUT_DateIssue
-            // 
-            this.T4_INPUT_DateIssue.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.T4_INPUT_DateIssue.Location = new System.Drawing.Point(119, 128);
-            this.T4_INPUT_DateIssue.Name = "T4_INPUT_DateIssue";
-            this.T4_INPUT_DateIssue.Size = new System.Drawing.Size(100, 23);
-            this.T4_INPUT_DateIssue.TabIndex = 69;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.textBox2.Location = new System.Drawing.Point(119, 48);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 23);
-            this.textBox2.TabIndex = 70;
-            // 
-            // textBox3
-            // 
-            this.textBox3.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.textBox3.Location = new System.Drawing.Point(119, 408);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 23);
-            this.textBox3.TabIndex = 71;
-            // 
-            // textBox4
-            // 
-            this.textBox4.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.textBox4.Location = new System.Drawing.Point(119, 288);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(100, 23);
-            this.textBox4.TabIndex = 72;
-            // 
-            // T4_INPUT_MonthIssue_En
-            // 
-            this.T4_INPUT_MonthIssue_En.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.T4_INPUT_MonthIssue_En.Location = new System.Drawing.Point(119, 208);
-            this.T4_INPUT_MonthIssue_En.Name = "T4_INPUT_MonthIssue_En";
-            this.T4_INPUT_MonthIssue_En.Size = new System.Drawing.Size(100, 23);
-            this.T4_INPUT_MonthIssue_En.TabIndex = 72;
-            // 
-            // textBox5
-            // 
-            this.textBox5.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.textBox5.Location = new System.Drawing.Point(119, 488);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(100, 23);
-            this.textBox5.TabIndex = 73;
-            // 
-            // textBox6
-            // 
-            this.textBox6.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.textBox6.Location = new System.Drawing.Point(119, 128);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(100, 23);
-            this.textBox6.TabIndex = 74;
-            // 
-            // T4_INPUT_PlaceIssue
-            // 
-            this.T4_INPUT_PlaceIssue.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.T4_INPUT_PlaceIssue.AutoCompleteCustomSource.AddRange(new string[] {
-            "กระบี่",
-            "กรุงเทพมหานคร",
-            "กาญจนบุรี",
-            "กาฬสินธุ์",
-            "กำแพงเพชร",
-            "ขอนแก่น",
-            "จันทบุรี",
-            "ฉะเชิงเทรา",
-            "ชลบุรี",
-            "ชัยนาท",
-            "ชัยภูมิ",
-            "ชุมพร",
-            "เชียงราย",
-            "เชียงใหม่",
-            "ตรัง",
-            "ตราด",
-            "ตาก",
-            "นครนายก",
-            "นครปฐม",
-            "นครพนม",
-            "นครราชสีมา",
-            "นครศรีธรรมราช",
-            "นครสวรรค์",
-            "นนทบุรี",
-            "นราธิวาส",
-            "น่าน",
-            "บึงกาฬ",
-            "บุรีรัมย์",
-            "ปทุมธานี",
-            "ประจวบคีรีขันธ์",
-            "ปราจีนบุรี",
-            "ปัตตานี",
-            "พระนครศรีอยุธยา",
-            "พะเยา",
-            "พังงา",
-            "พัทลุง",
-            "พิจิตร",
-            "พิษณุโลก",
-            "เพชรบุรี",
-            "เพชรบูรณ์",
-            "แพร่",
-            "ภูเก็ต",
-            "มหาสารคาม",
-            "มุกดาหาร",
-            "แม่ฮ่องสอน",
-            "ยโสธร",
-            "ยะลา",
-            "ร้อยเอ็ด",
-            "ระนอง",
-            "ระยอง",
-            "ราชบุรี",
-            "ลพบุรี",
-            "ลำปาง",
-            "ลำพูน",
-            "เลย",
-            "ศรีสะเกษ",
-            "สกลนคร",
-            "สงขลา",
-            "สตูล",
-            "สมุทรปราการ",
-            "สมุทรสงคราม",
-            "สมุทรสาคร",
-            "สระแก้ว",
-            "สระบุรี",
-            "สิงห์บุรี",
-            "สุโขทัย",
-            "สุพรรณบุรี",
-            "สุราษฎร์ธานี",
-            "สุรินทร์",
-            "หนองคาย",
-            "หนองบัวลำภู",
-            "อ่างทอง",
-            "อำนาจเจริญ",
-            "อุดรธานี",
-            "อุตรดิตถ์",
-            "อุทัยธานี",
-            "อุบลราชธานี"});
-            this.T4_INPUT_PlaceIssue.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Append;
-            this.T4_INPUT_PlaceIssue.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
-            this.T4_INPUT_PlaceIssue.Location = new System.Drawing.Point(119, 328);
-            this.T4_INPUT_PlaceIssue.Name = "T4_INPUT_PlaceIssue";
-            this.T4_INPUT_PlaceIssue.Size = new System.Drawing.Size(260, 23);
-            this.T4_INPUT_PlaceIssue.TabIndex = 74;
-            // 
-            // tableLayoutPanel13
-            // 
-            this.tableLayoutPanel13.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.tableLayoutPanel13.ColumnCount = 2;
-            this.tableLayoutPanel13.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 45F));
-            this.tableLayoutPanel13.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 55F));
-            this.tableLayoutPanel13.Controls.Add(this.label152, 1, 0);
-            this.tableLayoutPanel13.Controls.Add(this.T4_INPUT_PeriodPermission, 0, 0);
-            this.tableLayoutPanel13.Location = new System.Drawing.Point(119, 603);
-            this.tableLayoutPanel13.Name = "tableLayoutPanel13";
-            this.tableLayoutPanel13.RowCount = 1;
-            this.tableLayoutPanel13.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
-            this.tableLayoutPanel13.Size = new System.Drawing.Size(260, 34);
-            this.tableLayoutPanel13.TabIndex = 75;
-            // 
-            // T4_INPUT_PeriodPermission
-            // 
-            this.T4_INPUT_PeriodPermission.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.T4_INPUT_PeriodPermission.Location = new System.Drawing.Point(3, 8);
-            this.T4_INPUT_PeriodPermission.Name = "T4_INPUT_PeriodPermission";
-            this.T4_INPUT_PeriodPermission.Size = new System.Drawing.Size(100, 23);
-            this.T4_INPUT_PeriodPermission.TabIndex = 76;
-            // 
-            // label152
-            // 
-            this.label152.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.label152.AutoSize = true;
-            this.label152.Location = new System.Drawing.Point(120, 12);
-            this.label152.Name = "label152";
-            this.label152.Size = new System.Drawing.Size(22, 16);
-            this.label152.TabIndex = 76;
-            this.label152.Text = "วัน";
-            // 
             // Form_Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
@@ -4056,8 +3902,6 @@
             this.tabPage4.ResumeLayout(false);
             this.tableLayoutPanel12.ResumeLayout(false);
             this.tableLayoutPanel12.PerformLayout();
-            this.tableLayoutPanel13.ResumeLayout(false);
-            this.tableLayoutPanel13.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -4220,16 +4064,20 @@
         private System.Windows.Forms.TextBox T3_INPUT_PassportExpYear;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel9;
         private System.Windows.Forms.Label label88;
-        private System.Windows.Forms.TextBox T4_INPUT_YearIssue_En;
+        private System.Windows.Forms.TextBox textBox53;
+        private System.Windows.Forms.ComboBox comboBox25;
         private System.Windows.Forms.Label label89;
         private System.Windows.Forms.Label label90;
         private System.Windows.Forms.Label label91;
         private System.Windows.Forms.Label label92;
         private System.Windows.Forms.Label label93;
-        private System.Windows.Forms.TextBox T4_INPUT_YearIssue;
+        private System.Windows.Forms.TextBox textBox54;
+        private System.Windows.Forms.TextBox textBox55;
+        private System.Windows.Forms.ComboBox comboBox26;
         private System.Windows.Forms.Label label94;
-        private System.Windows.Forms.TextBox T4_INPUT_WorkpermitNo;
+        private System.Windows.Forms.TextBox textBox56;
         private System.Windows.Forms.Label label95;
+        private System.Windows.Forms.ComboBox comboBox27;
         private System.Windows.Forms.Label label96;
         private System.Windows.Forms.Label label97;
         private System.Windows.Forms.Label label98;
@@ -4237,23 +4085,32 @@
         private System.Windows.Forms.Label label101;
         private System.Windows.Forms.Label label100;
         private System.Windows.Forms.Label label102;
+        private System.Windows.Forms.ComboBox comboBox28;
+        private System.Windows.Forms.ComboBox comboBox29;
+        private System.Windows.Forms.TextBox textBox57;
         private System.Windows.Forms.TextBox textBox58;
         private System.Windows.Forms.TextBox textBox59;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel10;
+        private System.Windows.Forms.ComboBox comboBox30;
         private System.Windows.Forms.Label label112;
         private System.Windows.Forms.Label label114;
         private System.Windows.Forms.Label label116;
         private System.Windows.Forms.Label label117;
+        private System.Windows.Forms.ComboBox comboBox33;
         private System.Windows.Forms.TextBox textBox66;
         private System.Windows.Forms.Label label106;
         private System.Windows.Forms.TextBox textBox60;
         private System.Windows.Forms.TextBox textBox61;
         private System.Windows.Forms.Label label107;
         private System.Windows.Forms.Label label108;
+        private System.Windows.Forms.TextBox textBox62;
         private System.Windows.Forms.Label label109;
+        private System.Windows.Forms.ComboBox comboBox31;
+        private System.Windows.Forms.ComboBox comboBox32;
         private System.Windows.Forms.Label label110;
         private System.Windows.Forms.Label label103;
         private System.Windows.Forms.Label label113;
+        private System.Windows.Forms.TextBox textBox63;
         private System.Windows.Forms.Label label104;
         private System.Windows.Forms.TextBox textBox65;
         private System.Windows.Forms.TextBox textBox64;
@@ -4356,20 +4213,5 @@
         private System.Windows.Forms.TextBox T3_INPUT_PassportExpMonth_En;
         private System.Windows.Forms.TextBox T3_INPUT_PassportExpDate;
         private System.Windows.Forms.ComboBox T3_INPUT_PassportExpMonth;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.ComboBox comboBox3;
-        private System.Windows.Forms.ComboBox comboBox4;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox T4_INPUT_DateIssue;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.ComboBox T4_INPUT_MonthIssue;
-        private System.Windows.Forms.TextBox T4_INPUT_MonthIssue_En;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox T4_INPUT_PlaceIssue;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel13;
-        private System.Windows.Forms.Label label152;
-        private System.Windows.Forms.TextBox T4_INPUT_PeriodPermission;
     }
 }
