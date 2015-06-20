@@ -32,6 +32,9 @@
             this.THisrotyTab = new System.Windows.Forms.TabPage();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
+            this.T1_INPUT_MonthStarted = new System.Windows.Forms.ComboBox();
+            this.T1_INPUT_MonthStarted_En = new System.Windows.Forms.TextBox();
+            this.T1_INPUT_StuffedMonth = new System.Windows.Forms.ComboBox();
             this.label23 = new System.Windows.Forms.Label();
             this.label24 = new System.Windows.Forms.Label();
             this.label25 = new System.Windows.Forms.Label();
@@ -50,6 +53,7 @@
             this.T1_INPUT_DateStarted = new System.Windows.Forms.TextBox();
             this.T1_INPUT_YearStarted = new System.Windows.Forms.TextBox();
             this.YearStarted_En = new System.Windows.Forms.TextBox();
+            this.T1_INPUT_StuffedMonth_En = new System.Windows.Forms.TextBox();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.T1_INPUT_blood_Grp = new System.Windows.Forms.ComboBox();
             this.T1_INPUT_Month_Birth = new System.Windows.Forms.ComboBox();
@@ -100,6 +104,7 @@
             this.T1_INPUT_Phone = new System.Windows.Forms.TextBox();
             this.TDocument = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
+            this.T2_INPUT_Renew_Month = new System.Windows.Forms.ComboBox();
             this.T2_INPUT_DueYear = new System.Windows.Forms.TextBox();
             this.label67 = new System.Windows.Forms.Label();
             this.label66 = new System.Windows.Forms.Label();
@@ -116,7 +121,13 @@
             this.label60 = new System.Windows.Forms.Label();
             this.T2_INPUT_Renew_Year = new System.Windows.Forms.TextBox();
             this.T2_INPUT_Renew_Year_En = new System.Windows.Forms.TextBox();
+            this.T2_INPUT_DueDate = new System.Windows.Forms.TextBox();
+            this.T2_INPUT_Renew_Date = new System.Windows.Forms.TextBox();
+            this.T2_INPUT_DueMonth = new System.Windows.Forms.ComboBox();
+            this.T2_INPUT_DueMonth_En = new System.Windows.Forms.TextBox();
+            this.T2_INPUT_Renew_Month_En = new System.Windows.Forms.TextBox();
             this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
+            this.T2_INPUT_ReachedMonth = new System.Windows.Forms.ComboBox();
             this.label59 = new System.Windows.Forms.Label();
             this.label50 = new System.Windows.Forms.Label();
             this.label37 = new System.Windows.Forms.Label();
@@ -131,15 +142,19 @@
             this.T2_INPUT_DefineDay = new System.Windows.Forms.TextBox();
             this.T2_INPUT_DefineMonth = new System.Windows.Forms.TextBox();
             this.T2_INPUT_DefineYear = new System.Windows.Forms.TextBox();
-            this.label70 = new System.Windows.Forms.Label();
             this.label69 = new System.Windows.Forms.Label();
-            this.label68 = new System.Windows.Forms.Label();
             this.label71 = new System.Windows.Forms.Label();
             this.T2_INPUT_ReachedYear = new System.Windows.Forms.TextBox();
             this.T2_INPUT_ReachedYear_En = new System.Windows.Forms.TextBox();
             this.label72 = new System.Windows.Forms.Label();
             this.T2_INPUT_Departure = new System.Windows.Forms.TextBox();
+            this.T2_INPUT_VisaYear_En = new System.Windows.Forms.TextBox();
+            this.T2_INPUT_ReachedDate = new System.Windows.Forms.TextBox();
+            this.T2_INPUT_ReachedMonth_En = new System.Windows.Forms.TextBox();
+            this.label70 = new System.Windows.Forms.Label();
+            this.label68 = new System.Windows.Forms.Label();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
+            this.T2_INPUT_PassportDate = new System.Windows.Forms.TextBox();
             this.label54 = new System.Windows.Forms.Label();
             this.label52 = new System.Windows.Forms.Label();
             this.T2_INPUT_PassportIssuedAt = new System.Windows.Forms.TextBox();
@@ -162,8 +177,14 @@
             this.T2_INPUT_KindVISA = new System.Windows.Forms.ComboBox();
             this.label57 = new System.Windows.Forms.Label();
             this.label56 = new System.Windows.Forms.Label();
+            this.T2_INPUT_PassportMonth = new System.Windows.Forms.ComboBox();
+            this.T2_INPUT_PassportMonth_En = new System.Windows.Forms.TextBox();
+            this.T2_INPUT_VisaDate = new System.Windows.Forms.TextBox();
+            this.T2_INPUT_VisaMonth = new System.Windows.Forms.ComboBox();
+            this.T2_INPUT_VisaMonth_En = new System.Windows.Forms.TextBox();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel8 = new System.Windows.Forms.TableLayoutPanel();
+            this.T3_INPUT_ContractMonth = new System.Windows.Forms.ComboBox();
             this.label61 = new System.Windows.Forms.Label();
             this.T3_INPUT_ContractYear_En = new System.Windows.Forms.TextBox();
             this.label63 = new System.Windows.Forms.Label();
@@ -172,7 +193,11 @@
             this.label86 = new System.Windows.Forms.Label();
             this.label87 = new System.Windows.Forms.Label();
             this.T3_INPUT_ContractYear = new System.Windows.Forms.TextBox();
+            this.T3_INPUT_ContractDate = new System.Windows.Forms.TextBox();
+            this.T3_INPUT_ContractMonth_En = new System.Windows.Forms.TextBox();
             this.tableLayoutPanel7 = new System.Windows.Forms.TableLayoutPanel();
+            this.T3_INPUT_PassportExpMonth_En = new System.Windows.Forms.TextBox();
+            this.T3_INPUT_PassportExpDate = new System.Windows.Forms.TextBox();
             this.label62 = new System.Windows.Forms.Label();
             this.T3_INPUT_PassportExpYear_En = new System.Windows.Forms.TextBox();
             this.label82 = new System.Windows.Forms.Label();
@@ -181,13 +206,14 @@
             this.label80 = new System.Windows.Forms.Label();
             this.label79 = new System.Windows.Forms.Label();
             this.T3_INPUT_PassportExpYear = new System.Windows.Forms.TextBox();
+            this.T3_INPUT_PassportExpMonth = new System.Windows.Forms.ComboBox();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel11 = new System.Windows.Forms.TableLayoutPanel();
-            this.textBox74 = new System.Windows.Forms.TextBox();
-            this.textBox67 = new System.Windows.Forms.TextBox();
+            this.T4_INPUT_School = new System.Windows.Forms.TextBox();
+            this.T4_INPUT_Lane = new System.Windows.Forms.TextBox();
             this.textBox73 = new System.Windows.Forms.TextBox();
-            this.textBox72 = new System.Windows.Forms.TextBox();
-            this.textBox71 = new System.Windows.Forms.TextBox();
+            this.T4_INPUT_Phone = new System.Windows.Forms.TextBox();
+            this.T4_INPUT_PostCode = new System.Windows.Forms.TextBox();
             this.label130 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.label111 = new System.Windows.Forms.Label();
@@ -205,42 +231,49 @@
             this.label133 = new System.Windows.Forms.Label();
             this.label134 = new System.Windows.Forms.Label();
             this.label135 = new System.Windows.Forms.Label();
-            this.textBox75 = new System.Windows.Forms.TextBox();
-            this.textBox76 = new System.Windows.Forms.TextBox();
-            this.textBox77 = new System.Windows.Forms.TextBox();
-            this.textBox78 = new System.Windows.Forms.TextBox();
-            this.textBox79 = new System.Windows.Forms.TextBox();
-            this.textBox80 = new System.Windows.Forms.TextBox();
-            this.textBox81 = new System.Windows.Forms.TextBox();
+            this.T4_INPUT_Bossname = new System.Windows.Forms.TextBox();
+            this.T4_INPUT_HomeNo = new System.Windows.Forms.TextBox();
+            this.T4_INPUT_Village = new System.Windows.Forms.TextBox();
+            this.T4_INPUT_Road = new System.Windows.Forms.TextBox();
+            this.T4_INPUT_Tambol = new System.Windows.Forms.TextBox();
+            this.T4_INPUT_Amphur = new System.Windows.Forms.TextBox();
+            this.T4_INPUT_Province = new System.Windows.Forms.TextBox();
             this.textBox82 = new System.Windows.Forms.TextBox();
             this.textBox83 = new System.Windows.Forms.TextBox();
             this.textBox84 = new System.Windows.Forms.TextBox();
             this.tableLayoutPanel10 = new System.Windows.Forms.TableLayoutPanel();
+            this.T4_INPUT_PerLicenseMonth_En = new System.Windows.Forms.TextBox();
+            this.T4_INPUT_ThroughDate = new System.Windows.Forms.TextBox();
+            this.T4_INPUT_PerLicenseDate = new System.Windows.Forms.TextBox();
+            this.T4_INPUT_PerLicenseMonth = new System.Windows.Forms.ComboBox();
             this.label103 = new System.Windows.Forms.Label();
             this.label110 = new System.Windows.Forms.Label();
-            this.textBox68 = new System.Windows.Forms.TextBox();
+            this.T4_INPUT_Wage = new System.Windows.Forms.TextBox();
             this.label118 = new System.Windows.Forms.Label();
             this.label119 = new System.Windows.Forms.Label();
-            this.textBox70 = new System.Windows.Forms.TextBox();
+            this.T4_INPUT_JobDescription = new System.Windows.Forms.TextBox();
             this.label120 = new System.Windows.Forms.Label();
-            this.textBox69 = new System.Windows.Forms.TextBox();
+            this.T4_INPUT_Profession = new System.Windows.Forms.TextBox();
             this.label109 = new System.Windows.Forms.Label();
             this.label108 = new System.Windows.Forms.Label();
             this.label123 = new System.Windows.Forms.Label();
             this.label107 = new System.Windows.Forms.Label();
-            this.textBox61 = new System.Windows.Forms.TextBox();
+            this.T4_INPUT_PerLicenseYear = new System.Windows.Forms.TextBox();
             this.label106 = new System.Windows.Forms.Label();
-            this.textBox60 = new System.Windows.Forms.TextBox();
+            this.T4_INPUT_PerLicenseYear_En = new System.Windows.Forms.TextBox();
             this.label112 = new System.Windows.Forms.Label();
             this.label104 = new System.Windows.Forms.Label();
             this.label114 = new System.Windows.Forms.Label();
             this.label117 = new System.Windows.Forms.Label();
             this.label116 = new System.Windows.Forms.Label();
             this.label105 = new System.Windows.Forms.Label();
-            this.textBox66 = new System.Windows.Forms.TextBox();
-            this.textBox65 = new System.Windows.Forms.TextBox();
-            this.textBox64 = new System.Windows.Forms.TextBox();
+            this.T4_INPUT_ThroughMonth_En = new System.Windows.Forms.TextBox();
+            this.T4_INPUT_ThroughYear = new System.Windows.Forms.TextBox();
+            this.T4_INPUT_ThroughYear_En = new System.Windows.Forms.TextBox();
+            this.T4_INPUT_ThroughMonth = new System.Windows.Forms.ComboBox();
             this.tableLayoutPanel9 = new System.Windows.Forms.TableLayoutPanel();
+            this.T4_INPUT_ExpireOn = new System.Windows.Forms.TextBox();
+            this.T4_INPUT_DateIssue = new System.Windows.Forms.TextBox();
             this.label88 = new System.Windows.Forms.Label();
             this.label94 = new System.Windows.Forms.Label();
             this.label95 = new System.Windows.Forms.Label();
@@ -260,8 +293,14 @@
             this.label101 = new System.Windows.Forms.Label();
             this.label100 = new System.Windows.Forms.Label();
             this.label102 = new System.Windows.Forms.Label();
-            this.textBox58 = new System.Windows.Forms.TextBox();
-            this.textBox59 = new System.Windows.Forms.TextBox();
+            this.T4_INPUT_ExpireYear = new System.Windows.Forms.TextBox();
+            this.T4_INPUT_ExpireYear_en = new System.Windows.Forms.TextBox();
+            this.T4_INPUT_ExpireMonth = new System.Windows.Forms.ComboBox();
+            this.T4_INPUT_MonthIssue = new System.Windows.Forms.ComboBox();
+            this.T4_INPUT_MonthIssue_En = new System.Windows.Forms.TextBox();
+            this.T4_INPUT_ExpireMonth_En = new System.Windows.Forms.TextBox();
+            this.T4_INPUT_PlaceIssue = new System.Windows.Forms.TextBox();
+            this.T4_INPUT_PeriodPermission = new System.Windows.Forms.TextBox();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel12 = new System.Windows.Forms.TableLayoutPanel();
@@ -294,47 +333,6 @@
             this.textBox90 = new System.Windows.Forms.TextBox();
             this.textBox91 = new System.Windows.Forms.TextBox();
             this.textBox92 = new System.Windows.Forms.TextBox();
-            this.T1_INPUT_StuffedMonth_En = new System.Windows.Forms.TextBox();
-            this.T1_INPUT_StuffedMonth = new System.Windows.Forms.ComboBox();
-            this.T1_INPUT_MonthStarted_En = new System.Windows.Forms.TextBox();
-            this.T1_INPUT_MonthStarted = new System.Windows.Forms.ComboBox();
-            this.T2_INPUT_PassportDate = new System.Windows.Forms.TextBox();
-            this.T2_INPUT_PassportMonth = new System.Windows.Forms.ComboBox();
-            this.T2_INPUT_PassportMonth_En = new System.Windows.Forms.TextBox();
-            this.T2_INPUT_VisaDate = new System.Windows.Forms.TextBox();
-            this.T2_INPUT_VisaMonth = new System.Windows.Forms.ComboBox();
-            this.T2_INPUT_VisaYear_En = new System.Windows.Forms.TextBox();
-            this.T2_INPUT_ReachedDate = new System.Windows.Forms.TextBox();
-            this.T2_INPUT_ReachedMonth = new System.Windows.Forms.ComboBox();
-            this.T2_INPUT_ReachedMonth_En = new System.Windows.Forms.TextBox();
-            this.T2_INPUT_DueDate = new System.Windows.Forms.TextBox();
-            this.T2_INPUT_Renew_Date = new System.Windows.Forms.TextBox();
-            this.T2_INPUT_Renew_Month = new System.Windows.Forms.ComboBox();
-            this.T2_INPUT_DueMonth = new System.Windows.Forms.ComboBox();
-            this.T2_INPUT_DueMonth_En = new System.Windows.Forms.TextBox();
-            this.T2_INPUT_Renew_Month_En = new System.Windows.Forms.TextBox();
-            this.T2_INPUT_VisaMonth_En = new System.Windows.Forms.TextBox();
-            this.T3_INPUT_PassportExpMonth = new System.Windows.Forms.ComboBox();
-            this.T3_INPUT_ContractMonth = new System.Windows.Forms.ComboBox();
-            this.T3_INPUT_ContractDate = new System.Windows.Forms.TextBox();
-            this.T3_INPUT_PassportExpDate = new System.Windows.Forms.TextBox();
-            this.T3_INPUT_ContractMonth_En = new System.Windows.Forms.TextBox();
-            this.T3_INPUT_PassportExpMonth_En = new System.Windows.Forms.TextBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.T4_INPUT_MonthIssue = new System.Windows.Forms.ComboBox();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
-            this.comboBox4 = new System.Windows.Forms.ComboBox();
-            this.T4_INPUT_DateIssue = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.T4_INPUT_MonthIssue_En = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.T4_INPUT_PlaceIssue = new System.Windows.Forms.TextBox();
-            this.tableLayoutPanel13 = new System.Windows.Forms.TableLayoutPanel();
-            this.T4_INPUT_PeriodPermission = new System.Windows.Forms.TextBox();
-            this.label152 = new System.Windows.Forms.Label();
             this.MainTab.SuspendLayout();
             this.THisrotyTab.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -354,7 +352,6 @@
             this.tableLayoutPanel9.SuspendLayout();
             this.tabPage4.SuspendLayout();
             this.tableLayoutPanel12.SuspendLayout();
-            this.tableLayoutPanel13.SuspendLayout();
             this.SuspendLayout();
             // 
             // MainTab
@@ -440,6 +437,62 @@
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
             this.tableLayoutPanel3.Size = new System.Drawing.Size(388, 480);
             this.tableLayoutPanel3.TabIndex = 2;
+            // 
+            // T1_INPUT_MonthStarted
+            // 
+            this.T1_INPUT_MonthStarted.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.T1_INPUT_MonthStarted.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.T1_INPUT_MonthStarted.FormattingEnabled = true;
+            this.T1_INPUT_MonthStarted.Items.AddRange(new object[] {
+            "-",
+            "มกราคม",
+            "กุมภาพันธ์",
+            "มีนาคม",
+            "เมษายน",
+            "พฤษภาคม",
+            "มิถุนายน",
+            "กรกฎาคม",
+            "สิงหาคม",
+            "กันยายน",
+            "ตุลาคม",
+            "พฤศจิกายน",
+            "ธันวาคม"});
+            this.T1_INPUT_MonthStarted.Location = new System.Drawing.Point(119, 289);
+            this.T1_INPUT_MonthStarted.Name = "T1_INPUT_MonthStarted";
+            this.T1_INPUT_MonthStarted.Size = new System.Drawing.Size(150, 24);
+            this.T1_INPUT_MonthStarted.TabIndex = 34;
+            // 
+            // T1_INPUT_MonthStarted_En
+            // 
+            this.T1_INPUT_MonthStarted_En.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.T1_INPUT_MonthStarted_En.Location = new System.Drawing.Point(119, 328);
+            this.T1_INPUT_MonthStarted_En.Name = "T1_INPUT_MonthStarted_En";
+            this.T1_INPUT_MonthStarted_En.Size = new System.Drawing.Size(100, 23);
+            this.T1_INPUT_MonthStarted_En.TabIndex = 33;
+            // 
+            // T1_INPUT_StuffedMonth
+            // 
+            this.T1_INPUT_StuffedMonth.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.T1_INPUT_StuffedMonth.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.T1_INPUT_StuffedMonth.FormattingEnabled = true;
+            this.T1_INPUT_StuffedMonth.Items.AddRange(new object[] {
+            "-",
+            "มกราคม",
+            "กุมภาพันธ์",
+            "มีนาคม",
+            "เมษายน",
+            "พฤษภาคม",
+            "มิถุนายน",
+            "กรกฎาคม",
+            "สิงหาคม",
+            "กันยายน",
+            "ตุลาคม",
+            "พฤศจิกายน",
+            "ธันวาคม"});
+            this.T1_INPUT_StuffedMonth.Location = new System.Drawing.Point(119, 89);
+            this.T1_INPUT_StuffedMonth.Name = "T1_INPUT_StuffedMonth";
+            this.T1_INPUT_StuffedMonth.Size = new System.Drawing.Size(150, 24);
+            this.T1_INPUT_StuffedMonth.TabIndex = 30;
             // 
             // label23
             // 
@@ -607,6 +660,14 @@
             this.YearStarted_En.Size = new System.Drawing.Size(100, 23);
             this.YearStarted_En.TabIndex = 27;
             // 
+            // T1_INPUT_StuffedMonth_En
+            // 
+            this.T1_INPUT_StuffedMonth_En.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.T1_INPUT_StuffedMonth_En.Location = new System.Drawing.Point(119, 128);
+            this.T1_INPUT_StuffedMonth_En.Name = "T1_INPUT_StuffedMonth_En";
+            this.T1_INPUT_StuffedMonth_En.Size = new System.Drawing.Size(100, 23);
+            this.T1_INPUT_StuffedMonth_En.TabIndex = 32;
+            // 
             // tableLayoutPanel2
             // 
             this.tableLayoutPanel2.ColumnCount = 2;
@@ -665,7 +726,7 @@
             "AB",
             "RH+",
             "RH-"});
-            this.T1_INPUT_blood_Grp.Location = new System.Drawing.Point(119, 249);
+            this.T1_INPUT_blood_Grp.Location = new System.Drawing.Point(119, 248);
             this.T1_INPUT_blood_Grp.Name = "T1_INPUT_blood_Grp";
             this.T1_INPUT_blood_Grp.Size = new System.Drawing.Size(150, 24);
             this.T1_INPUT_blood_Grp.TabIndex = 28;
@@ -689,7 +750,7 @@
             "ตุลาคม",
             "พฤศจิกายน",
             "ธันวาคม"});
-            this.T1_INPUT_Month_Birth.Location = new System.Drawing.Point(119, 49);
+            this.T1_INPUT_Month_Birth.Location = new System.Drawing.Point(119, 48);
             this.T1_INPUT_Month_Birth.Name = "T1_INPUT_Month_Birth";
             this.T1_INPUT_Month_Birth.Size = new System.Drawing.Size(150, 24);
             this.T1_INPUT_Month_Birth.TabIndex = 26;
@@ -932,7 +993,7 @@
             "-",
             "ชาย",
             "หญิง"});
-            this.T1_INPUT_Sex.Location = new System.Drawing.Point(119, 329);
+            this.T1_INPUT_Sex.Location = new System.Drawing.Point(119, 328);
             this.T1_INPUT_Sex.Name = "T1_INPUT_Sex";
             this.T1_INPUT_Sex.Size = new System.Drawing.Size(150, 24);
             this.T1_INPUT_Sex.TabIndex = 27;
@@ -947,7 +1008,7 @@
             "Mr.",
             "Miss",
             "Mrs."});
-            this.T1_INPUT_En_Title.Location = new System.Drawing.Point(119, 208);
+            this.T1_INPUT_En_Title.Location = new System.Drawing.Point(119, 209);
             this.T1_INPUT_En_Title.Name = "T1_INPUT_En_Title";
             this.T1_INPUT_En_Title.Size = new System.Drawing.Size(150, 24);
             this.T1_INPUT_En_Title.TabIndex = 26;
@@ -1138,7 +1199,7 @@
             "นาย",
             "นาง",
             "นางสาว"});
-            this.T1_INPUT_Th_Title.Location = new System.Drawing.Point(119, 89);
+            this.T1_INPUT_Th_Title.Location = new System.Drawing.Point(119, 88);
             this.T1_INPUT_Th_Title.Name = "T1_INPUT_Th_Title";
             this.T1_INPUT_Th_Title.Size = new System.Drawing.Size(150, 24);
             this.T1_INPUT_Th_Title.TabIndex = 25;
@@ -1221,6 +1282,30 @@
             this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel6.Size = new System.Drawing.Size(388, 600);
             this.tableLayoutPanel6.TabIndex = 3;
+            // 
+            // T2_INPUT_Renew_Month
+            // 
+            this.T2_INPUT_Renew_Month.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.T2_INPUT_Renew_Month.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.T2_INPUT_Renew_Month.FormattingEnabled = true;
+            this.T2_INPUT_Renew_Month.Items.AddRange(new object[] {
+            "-",
+            "มกราคม",
+            "กุมภาพันธ์",
+            "มีนาคม",
+            "เมษายน",
+            "พฤษภาคม",
+            "มิถุนายน",
+            "กรกฎาคม",
+            "สิงหาคม",
+            "กันยายน",
+            "ตุลาคม",
+            "พฤศจิกายน",
+            "ธันวาคม"});
+            this.T2_INPUT_Renew_Month.Location = new System.Drawing.Point(119, 329);
+            this.T2_INPUT_Renew_Month.Name = "T2_INPUT_Renew_Month";
+            this.T2_INPUT_Renew_Month.Size = new System.Drawing.Size(150, 24);
+            this.T2_INPUT_Renew_Month.TabIndex = 59;
             // 
             // T2_INPUT_DueYear
             // 
@@ -1374,6 +1459,62 @@
             this.T2_INPUT_Renew_Year_En.Size = new System.Drawing.Size(100, 23);
             this.T2_INPUT_Renew_Year_En.TabIndex = 67;
             // 
+            // T2_INPUT_DueDate
+            // 
+            this.T2_INPUT_DueDate.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.T2_INPUT_DueDate.Location = new System.Drawing.Point(119, 48);
+            this.T2_INPUT_DueDate.Name = "T2_INPUT_DueDate";
+            this.T2_INPUT_DueDate.Size = new System.Drawing.Size(100, 23);
+            this.T2_INPUT_DueDate.TabIndex = 68;
+            // 
+            // T2_INPUT_Renew_Date
+            // 
+            this.T2_INPUT_Renew_Date.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.T2_INPUT_Renew_Date.Location = new System.Drawing.Point(119, 288);
+            this.T2_INPUT_Renew_Date.Name = "T2_INPUT_Renew_Date";
+            this.T2_INPUT_Renew_Date.Size = new System.Drawing.Size(100, 23);
+            this.T2_INPUT_Renew_Date.TabIndex = 69;
+            // 
+            // T2_INPUT_DueMonth
+            // 
+            this.T2_INPUT_DueMonth.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.T2_INPUT_DueMonth.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.T2_INPUT_DueMonth.FormattingEnabled = true;
+            this.T2_INPUT_DueMonth.Items.AddRange(new object[] {
+            "-",
+            "มกราคม",
+            "กุมภาพันธ์",
+            "มีนาคม",
+            "เมษายน",
+            "พฤษภาคม",
+            "มิถุนายน",
+            "กรกฎาคม",
+            "สิงหาคม",
+            "กันยายน",
+            "ตุลาคม",
+            "พฤศจิกายน",
+            "ธันวาคม"});
+            this.T2_INPUT_DueMonth.Location = new System.Drawing.Point(119, 89);
+            this.T2_INPUT_DueMonth.Name = "T2_INPUT_DueMonth";
+            this.T2_INPUT_DueMonth.Size = new System.Drawing.Size(150, 24);
+            this.T2_INPUT_DueMonth.TabIndex = 70;
+            // 
+            // T2_INPUT_DueMonth_En
+            // 
+            this.T2_INPUT_DueMonth_En.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.T2_INPUT_DueMonth_En.Location = new System.Drawing.Point(119, 128);
+            this.T2_INPUT_DueMonth_En.Name = "T2_INPUT_DueMonth_En";
+            this.T2_INPUT_DueMonth_En.Size = new System.Drawing.Size(100, 23);
+            this.T2_INPUT_DueMonth_En.TabIndex = 71;
+            // 
+            // T2_INPUT_Renew_Month_En
+            // 
+            this.T2_INPUT_Renew_Month_En.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.T2_INPUT_Renew_Month_En.Location = new System.Drawing.Point(119, 368);
+            this.T2_INPUT_Renew_Month_En.Name = "T2_INPUT_Renew_Month_En";
+            this.T2_INPUT_Renew_Month_En.Size = new System.Drawing.Size(100, 23);
+            this.T2_INPUT_Renew_Month_En.TabIndex = 72;
+            // 
             // tableLayoutPanel5
             // 
             this.tableLayoutPanel5.ColumnCount = 2;
@@ -1425,6 +1566,30 @@
             this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
             this.tableLayoutPanel5.Size = new System.Drawing.Size(388, 600);
             this.tableLayoutPanel5.TabIndex = 2;
+            // 
+            // T2_INPUT_ReachedMonth
+            // 
+            this.T2_INPUT_ReachedMonth.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.T2_INPUT_ReachedMonth.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.T2_INPUT_ReachedMonth.FormattingEnabled = true;
+            this.T2_INPUT_ReachedMonth.Items.AddRange(new object[] {
+            "-",
+            "มกราคม",
+            "กุมภาพันธ์",
+            "มีนาคม",
+            "เมษายน",
+            "พฤษภาคม",
+            "มิถุนายน",
+            "กรกฎาคม",
+            "สิงหาคม",
+            "กันยายน",
+            "ตุลาคม",
+            "พฤศจิกายน",
+            "ธันวาคม"});
+            this.T2_INPUT_ReachedMonth.Location = new System.Drawing.Point(119, 169);
+            this.T2_INPUT_ReachedMonth.Name = "T2_INPUT_ReachedMonth";
+            this.T2_INPUT_ReachedMonth.Size = new System.Drawing.Size(150, 24);
+            this.T2_INPUT_ReachedMonth.TabIndex = 48;
             // 
             // label59
             // 
@@ -1556,16 +1721,6 @@
             this.T2_INPUT_DefineYear.Size = new System.Drawing.Size(100, 23);
             this.T2_INPUT_DefineYear.TabIndex = 46;
             // 
-            // label70
-            // 
-            this.label70.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.label70.AutoSize = true;
-            this.label70.Location = new System.Drawing.Point(97, 452);
-            this.label70.Name = "label70";
-            this.label70.Size = new System.Drawing.Size(16, 16);
-            this.label70.TabIndex = 45;
-            this.label70.Text = "ปี";
-            // 
             // label69
             // 
             this.label69.Anchor = System.Windows.Forms.AnchorStyles.Right;
@@ -1575,16 +1730,6 @@
             this.label69.Size = new System.Drawing.Size(36, 16);
             this.label69.TabIndex = 44;
             this.label69.Text = "เดือน";
-            // 
-            // label68
-            // 
-            this.label68.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.label68.AutoSize = true;
-            this.label68.Location = new System.Drawing.Point(91, 532);
-            this.label68.Name = "label68";
-            this.label68.Size = new System.Drawing.Size(22, 16);
-            this.label68.TabIndex = 43;
-            this.label68.Text = "วัน";
             // 
             // label71
             // 
@@ -1629,6 +1774,50 @@
             this.T2_INPUT_Departure.Name = "T2_INPUT_Departure";
             this.T2_INPUT_Departure.Size = new System.Drawing.Size(260, 23);
             this.T2_INPUT_Departure.TabIndex = 42;
+            // 
+            // T2_INPUT_VisaYear_En
+            // 
+            this.T2_INPUT_VisaYear_En.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.T2_INPUT_VisaYear_En.Location = new System.Drawing.Point(119, 8);
+            this.T2_INPUT_VisaYear_En.Name = "T2_INPUT_VisaYear_En";
+            this.T2_INPUT_VisaYear_En.Size = new System.Drawing.Size(100, 23);
+            this.T2_INPUT_VisaYear_En.TabIndex = 56;
+            // 
+            // T2_INPUT_ReachedDate
+            // 
+            this.T2_INPUT_ReachedDate.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.T2_INPUT_ReachedDate.Location = new System.Drawing.Point(119, 128);
+            this.T2_INPUT_ReachedDate.Name = "T2_INPUT_ReachedDate";
+            this.T2_INPUT_ReachedDate.Size = new System.Drawing.Size(100, 23);
+            this.T2_INPUT_ReachedDate.TabIndex = 57;
+            // 
+            // T2_INPUT_ReachedMonth_En
+            // 
+            this.T2_INPUT_ReachedMonth_En.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.T2_INPUT_ReachedMonth_En.Location = new System.Drawing.Point(119, 208);
+            this.T2_INPUT_ReachedMonth_En.Name = "T2_INPUT_ReachedMonth_En";
+            this.T2_INPUT_ReachedMonth_En.Size = new System.Drawing.Size(100, 23);
+            this.T2_INPUT_ReachedMonth_En.TabIndex = 58;
+            // 
+            // label70
+            // 
+            this.label70.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.label70.AutoSize = true;
+            this.label70.Location = new System.Drawing.Point(97, 452);
+            this.label70.Name = "label70";
+            this.label70.Size = new System.Drawing.Size(16, 16);
+            this.label70.TabIndex = 45;
+            this.label70.Text = "ปี";
+            // 
+            // label68
+            // 
+            this.label68.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.label68.AutoSize = true;
+            this.label68.Location = new System.Drawing.Point(91, 532);
+            this.label68.Name = "label68";
+            this.label68.Size = new System.Drawing.Size(22, 16);
+            this.label68.TabIndex = 43;
+            this.label68.Text = "วัน";
             // 
             // tableLayoutPanel4
             // 
@@ -1684,6 +1873,14 @@
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel4.Size = new System.Drawing.Size(388, 600);
             this.tableLayoutPanel4.TabIndex = 1;
+            // 
+            // T2_INPUT_PassportDate
+            // 
+            this.T2_INPUT_PassportDate.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.T2_INPUT_PassportDate.Location = new System.Drawing.Point(119, 88);
+            this.T2_INPUT_PassportDate.Name = "T2_INPUT_PassportDate";
+            this.T2_INPUT_PassportDate.Size = new System.Drawing.Size(100, 23);
+            this.T2_INPUT_PassportDate.TabIndex = 43;
             // 
             // label54
             // 
@@ -1868,7 +2065,7 @@
             this.T2_INPUT_KindVISA.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.T2_INPUT_KindVISA.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.T2_INPUT_KindVISA.FormattingEnabled = true;
-            this.T2_INPUT_KindVISA.Location = new System.Drawing.Point(119, 368);
+            this.T2_INPUT_KindVISA.Location = new System.Drawing.Point(119, 369);
             this.T2_INPUT_KindVISA.Name = "T2_INPUT_KindVISA";
             this.T2_INPUT_KindVISA.Size = new System.Drawing.Size(150, 24);
             this.T2_INPUT_KindVISA.TabIndex = 42;
@@ -1892,6 +2089,78 @@
             this.label56.Size = new System.Drawing.Size(88, 16);
             this.label56.TabIndex = 4;
             this.label56.Text = "เดือนที่ออก EN";
+            // 
+            // T2_INPUT_PassportMonth
+            // 
+            this.T2_INPUT_PassportMonth.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.T2_INPUT_PassportMonth.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.T2_INPUT_PassportMonth.FormattingEnabled = true;
+            this.T2_INPUT_PassportMonth.Items.AddRange(new object[] {
+            "-",
+            "มกราคม",
+            "กุมภาพันธ์",
+            "มีนาคม",
+            "เมษายน",
+            "พฤษภาคม",
+            "มิถุนายน",
+            "กรกฎาคม",
+            "สิงหาคม",
+            "กันยายน",
+            "ตุลาคม",
+            "พฤศจิกายน",
+            "ธันวาคม"});
+            this.T2_INPUT_PassportMonth.Location = new System.Drawing.Point(119, 129);
+            this.T2_INPUT_PassportMonth.Name = "T2_INPUT_PassportMonth";
+            this.T2_INPUT_PassportMonth.Size = new System.Drawing.Size(150, 24);
+            this.T2_INPUT_PassportMonth.TabIndex = 44;
+            // 
+            // T2_INPUT_PassportMonth_En
+            // 
+            this.T2_INPUT_PassportMonth_En.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.T2_INPUT_PassportMonth_En.Location = new System.Drawing.Point(119, 168);
+            this.T2_INPUT_PassportMonth_En.Name = "T2_INPUT_PassportMonth_En";
+            this.T2_INPUT_PassportMonth_En.Size = new System.Drawing.Size(100, 23);
+            this.T2_INPUT_PassportMonth_En.TabIndex = 45;
+            // 
+            // T2_INPUT_VisaDate
+            // 
+            this.T2_INPUT_VisaDate.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.T2_INPUT_VisaDate.Location = new System.Drawing.Point(119, 448);
+            this.T2_INPUT_VisaDate.Name = "T2_INPUT_VisaDate";
+            this.T2_INPUT_VisaDate.Size = new System.Drawing.Size(100, 23);
+            this.T2_INPUT_VisaDate.TabIndex = 46;
+            // 
+            // T2_INPUT_VisaMonth
+            // 
+            this.T2_INPUT_VisaMonth.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.T2_INPUT_VisaMonth.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.T2_INPUT_VisaMonth.FormattingEnabled = true;
+            this.T2_INPUT_VisaMonth.Items.AddRange(new object[] {
+            "-",
+            "มกราคม",
+            "กุมภาพันธ์",
+            "มีนาคม",
+            "เมษายน",
+            "พฤษภาคม",
+            "มิถุนายน",
+            "กรกฎาคม",
+            "สิงหาคม",
+            "กันยายน",
+            "ตุลาคม",
+            "พฤศจิกายน",
+            "ธันวาคม"});
+            this.T2_INPUT_VisaMonth.Location = new System.Drawing.Point(119, 489);
+            this.T2_INPUT_VisaMonth.Name = "T2_INPUT_VisaMonth";
+            this.T2_INPUT_VisaMonth.Size = new System.Drawing.Size(150, 24);
+            this.T2_INPUT_VisaMonth.TabIndex = 47;
+            // 
+            // T2_INPUT_VisaMonth_En
+            // 
+            this.T2_INPUT_VisaMonth_En.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.T2_INPUT_VisaMonth_En.Location = new System.Drawing.Point(119, 528);
+            this.T2_INPUT_VisaMonth_En.Name = "T2_INPUT_VisaMonth_En";
+            this.T2_INPUT_VisaMonth_En.Size = new System.Drawing.Size(100, 23);
+            this.T2_INPUT_VisaMonth_En.TabIndex = 57;
             // 
             // tabPage1
             // 
@@ -1943,6 +2212,30 @@
             this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel8.Size = new System.Drawing.Size(388, 600);
             this.tableLayoutPanel8.TabIndex = 3;
+            // 
+            // T3_INPUT_ContractMonth
+            // 
+            this.T3_INPUT_ContractMonth.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.T3_INPUT_ContractMonth.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.T3_INPUT_ContractMonth.FormattingEnabled = true;
+            this.T3_INPUT_ContractMonth.Items.AddRange(new object[] {
+            "-",
+            "มกราคม",
+            "กุมภาพันธ์",
+            "มีนาคม",
+            "เมษายน",
+            "พฤษภาคม",
+            "มิถุนายน",
+            "กรกฎาคม",
+            "สิงหาคม",
+            "กันยายน",
+            "ตุลาคม",
+            "พฤศจิกายน",
+            "ธันวาคม"});
+            this.T3_INPUT_ContractMonth.Location = new System.Drawing.Point(119, 89);
+            this.T3_INPUT_ContractMonth.Name = "T3_INPUT_ContractMonth";
+            this.T3_INPUT_ContractMonth.Size = new System.Drawing.Size(150, 24);
+            this.T3_INPUT_ContractMonth.TabIndex = 46;
             // 
             // label61
             // 
@@ -2020,6 +2313,22 @@
             this.T3_INPUT_ContractYear.Size = new System.Drawing.Size(100, 23);
             this.T3_INPUT_ContractYear.TabIndex = 44;
             // 
+            // T3_INPUT_ContractDate
+            // 
+            this.T3_INPUT_ContractDate.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.T3_INPUT_ContractDate.Location = new System.Drawing.Point(119, 48);
+            this.T3_INPUT_ContractDate.Name = "T3_INPUT_ContractDate";
+            this.T3_INPUT_ContractDate.Size = new System.Drawing.Size(100, 23);
+            this.T3_INPUT_ContractDate.TabIndex = 47;
+            // 
+            // T3_INPUT_ContractMonth_En
+            // 
+            this.T3_INPUT_ContractMonth_En.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.T3_INPUT_ContractMonth_En.Location = new System.Drawing.Point(119, 128);
+            this.T3_INPUT_ContractMonth_En.Name = "T3_INPUT_ContractMonth_En";
+            this.T3_INPUT_ContractMonth_En.Size = new System.Drawing.Size(100, 23);
+            this.T3_INPUT_ContractMonth_En.TabIndex = 48;
+            // 
             // tableLayoutPanel7
             // 
             this.tableLayoutPanel7.ColumnCount = 2;
@@ -2057,6 +2366,22 @@
             this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel7.Size = new System.Drawing.Size(388, 600);
             this.tableLayoutPanel7.TabIndex = 2;
+            // 
+            // T3_INPUT_PassportExpMonth_En
+            // 
+            this.T3_INPUT_PassportExpMonth_En.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.T3_INPUT_PassportExpMonth_En.Location = new System.Drawing.Point(119, 128);
+            this.T3_INPUT_PassportExpMonth_En.Name = "T3_INPUT_PassportExpMonth_En";
+            this.T3_INPUT_PassportExpMonth_En.Size = new System.Drawing.Size(100, 23);
+            this.T3_INPUT_PassportExpMonth_En.TabIndex = 49;
+            // 
+            // T3_INPUT_PassportExpDate
+            // 
+            this.T3_INPUT_PassportExpDate.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.T3_INPUT_PassportExpDate.Location = new System.Drawing.Point(119, 48);
+            this.T3_INPUT_PassportExpDate.Name = "T3_INPUT_PassportExpDate";
+            this.T3_INPUT_PassportExpDate.Size = new System.Drawing.Size(100, 23);
+            this.T3_INPUT_PassportExpDate.TabIndex = 48;
             // 
             // label62
             // 
@@ -2134,6 +2459,30 @@
             this.T3_INPUT_PassportExpYear.Size = new System.Drawing.Size(100, 23);
             this.T3_INPUT_PassportExpYear.TabIndex = 44;
             // 
+            // T3_INPUT_PassportExpMonth
+            // 
+            this.T3_INPUT_PassportExpMonth.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.T3_INPUT_PassportExpMonth.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.T3_INPUT_PassportExpMonth.FormattingEnabled = true;
+            this.T3_INPUT_PassportExpMonth.Items.AddRange(new object[] {
+            "-",
+            "มกราคม",
+            "กุมภาพันธ์",
+            "มีนาคม",
+            "เมษายน",
+            "พฤษภาคม",
+            "มิถุนายน",
+            "กรกฎาคม",
+            "สิงหาคม",
+            "กันยายน",
+            "ตุลาคม",
+            "พฤศจิกายน",
+            "ธันวาคม"});
+            this.T3_INPUT_PassportExpMonth.Location = new System.Drawing.Point(119, 89);
+            this.T3_INPUT_PassportExpMonth.Name = "T3_INPUT_PassportExpMonth";
+            this.T3_INPUT_PassportExpMonth.Size = new System.Drawing.Size(150, 24);
+            this.T3_INPUT_PassportExpMonth.TabIndex = 45;
+            // 
             // tabPage2
             // 
             this.tabPage2.Controls.Add(this.tableLayoutPanel11);
@@ -2153,11 +2502,11 @@
             this.tableLayoutPanel11.ColumnCount = 2;
             this.tableLayoutPanel11.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 30F));
             this.tableLayoutPanel11.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 70F));
-            this.tableLayoutPanel11.Controls.Add(this.textBox74, 1, 2);
-            this.tableLayoutPanel11.Controls.Add(this.textBox67, 1, 6);
+            this.tableLayoutPanel11.Controls.Add(this.T4_INPUT_School, 1, 2);
+            this.tableLayoutPanel11.Controls.Add(this.T4_INPUT_Lane, 1, 6);
             this.tableLayoutPanel11.Controls.Add(this.textBox73, 1, 13);
-            this.tableLayoutPanel11.Controls.Add(this.textBox72, 1, 12);
-            this.tableLayoutPanel11.Controls.Add(this.textBox71, 1, 11);
+            this.tableLayoutPanel11.Controls.Add(this.T4_INPUT_Phone, 1, 12);
+            this.tableLayoutPanel11.Controls.Add(this.T4_INPUT_PostCode, 1, 11);
             this.tableLayoutPanel11.Controls.Add(this.label130, 1, 0);
             this.tableLayoutPanel11.Controls.Add(this.button1, 1, 1);
             this.tableLayoutPanel11.Controls.Add(this.label111, 0, 2);
@@ -2175,13 +2524,13 @@
             this.tableLayoutPanel11.Controls.Add(this.label133, 0, 14);
             this.tableLayoutPanel11.Controls.Add(this.label134, 0, 15);
             this.tableLayoutPanel11.Controls.Add(this.label135, 0, 16);
-            this.tableLayoutPanel11.Controls.Add(this.textBox75, 1, 3);
-            this.tableLayoutPanel11.Controls.Add(this.textBox76, 1, 4);
-            this.tableLayoutPanel11.Controls.Add(this.textBox77, 1, 5);
-            this.tableLayoutPanel11.Controls.Add(this.textBox78, 1, 7);
-            this.tableLayoutPanel11.Controls.Add(this.textBox79, 1, 8);
-            this.tableLayoutPanel11.Controls.Add(this.textBox80, 1, 9);
-            this.tableLayoutPanel11.Controls.Add(this.textBox81, 1, 10);
+            this.tableLayoutPanel11.Controls.Add(this.T4_INPUT_Bossname, 1, 3);
+            this.tableLayoutPanel11.Controls.Add(this.T4_INPUT_HomeNo, 1, 4);
+            this.tableLayoutPanel11.Controls.Add(this.T4_INPUT_Village, 1, 5);
+            this.tableLayoutPanel11.Controls.Add(this.T4_INPUT_Road, 1, 7);
+            this.tableLayoutPanel11.Controls.Add(this.T4_INPUT_Tambol, 1, 8);
+            this.tableLayoutPanel11.Controls.Add(this.T4_INPUT_Amphur, 1, 9);
+            this.tableLayoutPanel11.Controls.Add(this.T4_INPUT_Province, 1, 10);
             this.tableLayoutPanel11.Controls.Add(this.textBox82, 1, 14);
             this.tableLayoutPanel11.Controls.Add(this.textBox83, 1, 15);
             this.tableLayoutPanel11.Controls.Add(this.textBox84, 1, 16);
@@ -2208,21 +2557,21 @@
             this.tableLayoutPanel11.Size = new System.Drawing.Size(388, 680);
             this.tableLayoutPanel11.TabIndex = 6;
             // 
-            // textBox74
+            // T4_INPUT_School
             // 
-            this.textBox74.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.textBox74.Location = new System.Drawing.Point(119, 88);
-            this.textBox74.Name = "textBox74";
-            this.textBox74.Size = new System.Drawing.Size(260, 23);
-            this.textBox74.TabIndex = 68;
+            this.T4_INPUT_School.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.T4_INPUT_School.Location = new System.Drawing.Point(119, 88);
+            this.T4_INPUT_School.Name = "T4_INPUT_School";
+            this.T4_INPUT_School.Size = new System.Drawing.Size(260, 23);
+            this.T4_INPUT_School.TabIndex = 68;
             // 
-            // textBox67
+            // T4_INPUT_Lane
             // 
-            this.textBox67.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.textBox67.Location = new System.Drawing.Point(119, 248);
-            this.textBox67.Name = "textBox67";
-            this.textBox67.Size = new System.Drawing.Size(100, 23);
-            this.textBox67.TabIndex = 29;
+            this.T4_INPUT_Lane.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.T4_INPUT_Lane.Location = new System.Drawing.Point(119, 248);
+            this.T4_INPUT_Lane.Name = "T4_INPUT_Lane";
+            this.T4_INPUT_Lane.Size = new System.Drawing.Size(100, 23);
+            this.T4_INPUT_Lane.TabIndex = 29;
             // 
             // textBox73
             // 
@@ -2232,21 +2581,21 @@
             this.textBox73.Size = new System.Drawing.Size(100, 23);
             this.textBox73.TabIndex = 65;
             // 
-            // textBox72
+            // T4_INPUT_Phone
             // 
-            this.textBox72.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.textBox72.Location = new System.Drawing.Point(119, 488);
-            this.textBox72.Name = "textBox72";
-            this.textBox72.Size = new System.Drawing.Size(100, 23);
-            this.textBox72.TabIndex = 64;
+            this.T4_INPUT_Phone.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.T4_INPUT_Phone.Location = new System.Drawing.Point(119, 488);
+            this.T4_INPUT_Phone.Name = "T4_INPUT_Phone";
+            this.T4_INPUT_Phone.Size = new System.Drawing.Size(100, 23);
+            this.T4_INPUT_Phone.TabIndex = 64;
             // 
-            // textBox71
+            // T4_INPUT_PostCode
             // 
-            this.textBox71.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.textBox71.Location = new System.Drawing.Point(119, 448);
-            this.textBox71.Name = "textBox71";
-            this.textBox71.Size = new System.Drawing.Size(100, 23);
-            this.textBox71.TabIndex = 61;
+            this.T4_INPUT_PostCode.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.T4_INPUT_PostCode.Location = new System.Drawing.Point(119, 448);
+            this.T4_INPUT_PostCode.Name = "T4_INPUT_PostCode";
+            this.T4_INPUT_PostCode.Size = new System.Drawing.Size(100, 23);
+            this.T4_INPUT_PostCode.TabIndex = 61;
             // 
             // label130
             // 
@@ -2418,61 +2767,61 @@
             this.label135.TabIndex = 77;
             this.label135.Text = "foo";
             // 
-            // textBox75
+            // T4_INPUT_Bossname
             // 
-            this.textBox75.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.textBox75.Location = new System.Drawing.Point(119, 128);
-            this.textBox75.Name = "textBox75";
-            this.textBox75.Size = new System.Drawing.Size(260, 23);
-            this.textBox75.TabIndex = 78;
+            this.T4_INPUT_Bossname.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.T4_INPUT_Bossname.Location = new System.Drawing.Point(119, 128);
+            this.T4_INPUT_Bossname.Name = "T4_INPUT_Bossname";
+            this.T4_INPUT_Bossname.Size = new System.Drawing.Size(260, 23);
+            this.T4_INPUT_Bossname.TabIndex = 78;
             // 
-            // textBox76
+            // T4_INPUT_HomeNo
             // 
-            this.textBox76.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.textBox76.Location = new System.Drawing.Point(119, 168);
-            this.textBox76.Name = "textBox76";
-            this.textBox76.Size = new System.Drawing.Size(100, 23);
-            this.textBox76.TabIndex = 79;
+            this.T4_INPUT_HomeNo.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.T4_INPUT_HomeNo.Location = new System.Drawing.Point(119, 168);
+            this.T4_INPUT_HomeNo.Name = "T4_INPUT_HomeNo";
+            this.T4_INPUT_HomeNo.Size = new System.Drawing.Size(100, 23);
+            this.T4_INPUT_HomeNo.TabIndex = 79;
             // 
-            // textBox77
+            // T4_INPUT_Village
             // 
-            this.textBox77.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.textBox77.Location = new System.Drawing.Point(119, 208);
-            this.textBox77.Name = "textBox77";
-            this.textBox77.Size = new System.Drawing.Size(100, 23);
-            this.textBox77.TabIndex = 80;
+            this.T4_INPUT_Village.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.T4_INPUT_Village.Location = new System.Drawing.Point(119, 208);
+            this.T4_INPUT_Village.Name = "T4_INPUT_Village";
+            this.T4_INPUT_Village.Size = new System.Drawing.Size(100, 23);
+            this.T4_INPUT_Village.TabIndex = 80;
             // 
-            // textBox78
+            // T4_INPUT_Road
             // 
-            this.textBox78.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.textBox78.Location = new System.Drawing.Point(119, 288);
-            this.textBox78.Name = "textBox78";
-            this.textBox78.Size = new System.Drawing.Size(100, 23);
-            this.textBox78.TabIndex = 81;
+            this.T4_INPUT_Road.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.T4_INPUT_Road.Location = new System.Drawing.Point(119, 288);
+            this.T4_INPUT_Road.Name = "T4_INPUT_Road";
+            this.T4_INPUT_Road.Size = new System.Drawing.Size(100, 23);
+            this.T4_INPUT_Road.TabIndex = 81;
             // 
-            // textBox79
+            // T4_INPUT_Tambol
             // 
-            this.textBox79.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.textBox79.Location = new System.Drawing.Point(119, 328);
-            this.textBox79.Name = "textBox79";
-            this.textBox79.Size = new System.Drawing.Size(100, 23);
-            this.textBox79.TabIndex = 82;
+            this.T4_INPUT_Tambol.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.T4_INPUT_Tambol.Location = new System.Drawing.Point(119, 328);
+            this.T4_INPUT_Tambol.Name = "T4_INPUT_Tambol";
+            this.T4_INPUT_Tambol.Size = new System.Drawing.Size(100, 23);
+            this.T4_INPUT_Tambol.TabIndex = 82;
             // 
-            // textBox80
+            // T4_INPUT_Amphur
             // 
-            this.textBox80.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.textBox80.Location = new System.Drawing.Point(119, 368);
-            this.textBox80.Name = "textBox80";
-            this.textBox80.Size = new System.Drawing.Size(100, 23);
-            this.textBox80.TabIndex = 83;
+            this.T4_INPUT_Amphur.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.T4_INPUT_Amphur.Location = new System.Drawing.Point(119, 368);
+            this.T4_INPUT_Amphur.Name = "T4_INPUT_Amphur";
+            this.T4_INPUT_Amphur.Size = new System.Drawing.Size(100, 23);
+            this.T4_INPUT_Amphur.TabIndex = 83;
             // 
-            // textBox81
+            // T4_INPUT_Province
             // 
-            this.textBox81.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.textBox81.Location = new System.Drawing.Point(119, 408);
-            this.textBox81.Name = "textBox81";
-            this.textBox81.Size = new System.Drawing.Size(100, 23);
-            this.textBox81.TabIndex = 84;
+            this.T4_INPUT_Province.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.T4_INPUT_Province.Location = new System.Drawing.Point(119, 408);
+            this.T4_INPUT_Province.Name = "T4_INPUT_Province";
+            this.T4_INPUT_Province.Size = new System.Drawing.Size(100, 23);
+            this.T4_INPUT_Province.TabIndex = 84;
             // 
             // textBox82
             // 
@@ -2503,35 +2852,35 @@
             this.tableLayoutPanel10.ColumnCount = 2;
             this.tableLayoutPanel10.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 30F));
             this.tableLayoutPanel10.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 70F));
-            this.tableLayoutPanel10.Controls.Add(this.textBox6, 1, 3);
-            this.tableLayoutPanel10.Controls.Add(this.textBox4, 1, 7);
-            this.tableLayoutPanel10.Controls.Add(this.textBox2, 1, 1);
-            this.tableLayoutPanel10.Controls.Add(this.comboBox3, 1, 2);
+            this.tableLayoutPanel10.Controls.Add(this.T4_INPUT_PerLicenseMonth_En, 1, 3);
+            this.tableLayoutPanel10.Controls.Add(this.T4_INPUT_ThroughDate, 1, 7);
+            this.tableLayoutPanel10.Controls.Add(this.T4_INPUT_PerLicenseDate, 1, 1);
+            this.tableLayoutPanel10.Controls.Add(this.T4_INPUT_PerLicenseMonth, 1, 2);
             this.tableLayoutPanel10.Controls.Add(this.label103, 1, 0);
             this.tableLayoutPanel10.Controls.Add(this.label110, 0, 1);
-            this.tableLayoutPanel10.Controls.Add(this.textBox68, 1, 15);
+            this.tableLayoutPanel10.Controls.Add(this.T4_INPUT_Wage, 1, 15);
             this.tableLayoutPanel10.Controls.Add(this.label118, 0, 15);
             this.tableLayoutPanel10.Controls.Add(this.label119, 0, 14);
-            this.tableLayoutPanel10.Controls.Add(this.textBox70, 1, 14);
+            this.tableLayoutPanel10.Controls.Add(this.T4_INPUT_JobDescription, 1, 14);
             this.tableLayoutPanel10.Controls.Add(this.label120, 0, 13);
-            this.tableLayoutPanel10.Controls.Add(this.textBox69, 1, 13);
+            this.tableLayoutPanel10.Controls.Add(this.T4_INPUT_Profession, 1, 13);
             this.tableLayoutPanel10.Controls.Add(this.label109, 0, 2);
             this.tableLayoutPanel10.Controls.Add(this.label108, 0, 3);
             this.tableLayoutPanel10.Controls.Add(this.label123, 1, 12);
             this.tableLayoutPanel10.Controls.Add(this.label107, 0, 4);
-            this.tableLayoutPanel10.Controls.Add(this.textBox61, 1, 4);
+            this.tableLayoutPanel10.Controls.Add(this.T4_INPUT_PerLicenseYear, 1, 4);
             this.tableLayoutPanel10.Controls.Add(this.label106, 0, 5);
-            this.tableLayoutPanel10.Controls.Add(this.textBox60, 1, 5);
+            this.tableLayoutPanel10.Controls.Add(this.T4_INPUT_PerLicenseYear_En, 1, 5);
             this.tableLayoutPanel10.Controls.Add(this.label112, 1, 6);
             this.tableLayoutPanel10.Controls.Add(this.label104, 0, 7);
             this.tableLayoutPanel10.Controls.Add(this.label114, 0, 8);
             this.tableLayoutPanel10.Controls.Add(this.label117, 0, 9);
             this.tableLayoutPanel10.Controls.Add(this.label116, 0, 10);
             this.tableLayoutPanel10.Controls.Add(this.label105, 0, 11);
-            this.tableLayoutPanel10.Controls.Add(this.textBox66, 1, 9);
-            this.tableLayoutPanel10.Controls.Add(this.textBox65, 1, 10);
-            this.tableLayoutPanel10.Controls.Add(this.textBox64, 1, 11);
-            this.tableLayoutPanel10.Controls.Add(this.comboBox4, 1, 8);
+            this.tableLayoutPanel10.Controls.Add(this.T4_INPUT_ThroughMonth_En, 1, 9);
+            this.tableLayoutPanel10.Controls.Add(this.T4_INPUT_ThroughYear, 1, 10);
+            this.tableLayoutPanel10.Controls.Add(this.T4_INPUT_ThroughYear_En, 1, 11);
+            this.tableLayoutPanel10.Controls.Add(this.T4_INPUT_ThroughMonth, 1, 8);
             this.tableLayoutPanel10.Location = new System.Drawing.Point(427, 10);
             this.tableLayoutPanel10.Name = "tableLayoutPanel10";
             this.tableLayoutPanel10.RowCount = 17;
@@ -2555,6 +2904,54 @@
             this.tableLayoutPanel10.Size = new System.Drawing.Size(388, 680);
             this.tableLayoutPanel10.TabIndex = 5;
             // 
+            // T4_INPUT_PerLicenseMonth_En
+            // 
+            this.T4_INPUT_PerLicenseMonth_En.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.T4_INPUT_PerLicenseMonth_En.Location = new System.Drawing.Point(119, 128);
+            this.T4_INPUT_PerLicenseMonth_En.Name = "T4_INPUT_PerLicenseMonth_En";
+            this.T4_INPUT_PerLicenseMonth_En.Size = new System.Drawing.Size(100, 23);
+            this.T4_INPUT_PerLicenseMonth_En.TabIndex = 74;
+            // 
+            // T4_INPUT_ThroughDate
+            // 
+            this.T4_INPUT_ThroughDate.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.T4_INPUT_ThroughDate.Location = new System.Drawing.Point(119, 288);
+            this.T4_INPUT_ThroughDate.Name = "T4_INPUT_ThroughDate";
+            this.T4_INPUT_ThroughDate.Size = new System.Drawing.Size(100, 23);
+            this.T4_INPUT_ThroughDate.TabIndex = 72;
+            // 
+            // T4_INPUT_PerLicenseDate
+            // 
+            this.T4_INPUT_PerLicenseDate.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.T4_INPUT_PerLicenseDate.Location = new System.Drawing.Point(119, 48);
+            this.T4_INPUT_PerLicenseDate.Name = "T4_INPUT_PerLicenseDate";
+            this.T4_INPUT_PerLicenseDate.Size = new System.Drawing.Size(100, 23);
+            this.T4_INPUT_PerLicenseDate.TabIndex = 70;
+            // 
+            // T4_INPUT_PerLicenseMonth
+            // 
+            this.T4_INPUT_PerLicenseMonth.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.T4_INPUT_PerLicenseMonth.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.T4_INPUT_PerLicenseMonth.FormattingEnabled = true;
+            this.T4_INPUT_PerLicenseMonth.Items.AddRange(new object[] {
+            "-",
+            "มกราคม",
+            "กุมภาพันธ์",
+            "มีนาคม",
+            "เมษายน",
+            "พฤษภาคม",
+            "มิถุนายน",
+            "กรกฎาคม",
+            "สิงหาคม",
+            "กันยายน",
+            "ตุลาคม",
+            "พฤศจิกายน",
+            "ธันวาคม"});
+            this.T4_INPUT_PerLicenseMonth.Location = new System.Drawing.Point(119, 89);
+            this.T4_INPUT_PerLicenseMonth.Name = "T4_INPUT_PerLicenseMonth";
+            this.T4_INPUT_PerLicenseMonth.Size = new System.Drawing.Size(150, 24);
+            this.T4_INPUT_PerLicenseMonth.TabIndex = 65;
+            // 
             // label103
             // 
             this.label103.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -2575,13 +2972,13 @@
             this.label110.TabIndex = 1;
             this.label110.Text = "วันที่";
             // 
-            // textBox68
+            // T4_INPUT_Wage
             // 
-            this.textBox68.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.textBox68.Location = new System.Drawing.Point(119, 608);
-            this.textBox68.Name = "textBox68";
-            this.textBox68.Size = new System.Drawing.Size(100, 23);
-            this.textBox68.TabIndex = 44;
+            this.T4_INPUT_Wage.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.T4_INPUT_Wage.Location = new System.Drawing.Point(119, 608);
+            this.T4_INPUT_Wage.Name = "T4_INPUT_Wage";
+            this.T4_INPUT_Wage.Size = new System.Drawing.Size(100, 23);
+            this.T4_INPUT_Wage.TabIndex = 44;
             // 
             // label118
             // 
@@ -2603,13 +3000,13 @@
             this.label119.TabIndex = 2;
             this.label119.Text = "ลักษณะงาน";
             // 
-            // textBox70
+            // T4_INPUT_JobDescription
             // 
-            this.textBox70.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.textBox70.Location = new System.Drawing.Point(119, 568);
-            this.textBox70.Name = "textBox70";
-            this.textBox70.Size = new System.Drawing.Size(260, 23);
-            this.textBox70.TabIndex = 67;
+            this.T4_INPUT_JobDescription.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.T4_INPUT_JobDescription.Location = new System.Drawing.Point(119, 568);
+            this.T4_INPUT_JobDescription.Name = "T4_INPUT_JobDescription";
+            this.T4_INPUT_JobDescription.Size = new System.Drawing.Size(260, 23);
+            this.T4_INPUT_JobDescription.TabIndex = 67;
             // 
             // label120
             // 
@@ -2621,13 +3018,13 @@
             this.label120.TabIndex = 1;
             this.label120.Text = "ตำแหน่งงาน";
             // 
-            // textBox69
+            // T4_INPUT_Profession
             // 
-            this.textBox69.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.textBox69.Location = new System.Drawing.Point(119, 528);
-            this.textBox69.Name = "textBox69";
-            this.textBox69.Size = new System.Drawing.Size(260, 23);
-            this.textBox69.TabIndex = 43;
+            this.T4_INPUT_Profession.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.T4_INPUT_Profession.Location = new System.Drawing.Point(119, 528);
+            this.T4_INPUT_Profession.Name = "T4_INPUT_Profession";
+            this.T4_INPUT_Profession.Size = new System.Drawing.Size(260, 23);
+            this.T4_INPUT_Profession.TabIndex = 43;
             // 
             // label109
             // 
@@ -2669,13 +3066,13 @@
             this.label107.TabIndex = 5;
             this.label107.Text = "ปีที่ พ.ศ.";
             // 
-            // textBox61
+            // T4_INPUT_PerLicenseYear
             // 
-            this.textBox61.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.textBox61.Location = new System.Drawing.Point(119, 168);
-            this.textBox61.Name = "textBox61";
-            this.textBox61.Size = new System.Drawing.Size(100, 23);
-            this.textBox61.TabIndex = 44;
+            this.T4_INPUT_PerLicenseYear.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.T4_INPUT_PerLicenseYear.Location = new System.Drawing.Point(119, 168);
+            this.T4_INPUT_PerLicenseYear.Name = "T4_INPUT_PerLicenseYear";
+            this.T4_INPUT_PerLicenseYear.Size = new System.Drawing.Size(100, 23);
+            this.T4_INPUT_PerLicenseYear.TabIndex = 44;
             // 
             // label106
             // 
@@ -2687,13 +3084,13 @@
             this.label106.TabIndex = 4;
             this.label106.Text = "ปีที่ ค.ศ.";
             // 
-            // textBox60
+            // T4_INPUT_PerLicenseYear_En
             // 
-            this.textBox60.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.textBox60.Location = new System.Drawing.Point(119, 208);
-            this.textBox60.Name = "textBox60";
-            this.textBox60.Size = new System.Drawing.Size(100, 23);
-            this.textBox60.TabIndex = 29;
+            this.T4_INPUT_PerLicenseYear_En.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.T4_INPUT_PerLicenseYear_En.Location = new System.Drawing.Point(119, 208);
+            this.T4_INPUT_PerLicenseYear_En.Name = "T4_INPUT_PerLicenseYear_En";
+            this.T4_INPUT_PerLicenseYear_En.Size = new System.Drawing.Size(100, 23);
+            this.T4_INPUT_PerLicenseYear_En.TabIndex = 29;
             // 
             // label112
             // 
@@ -2755,36 +3152,60 @@
             this.label105.TabIndex = 66;
             this.label105.Text = "ปีที่ ค.ศ.";
             // 
-            // textBox66
+            // T4_INPUT_ThroughMonth_En
             // 
-            this.textBox66.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.textBox66.Location = new System.Drawing.Point(119, 368);
-            this.textBox66.Name = "textBox66";
-            this.textBox66.Size = new System.Drawing.Size(100, 23);
-            this.textBox66.TabIndex = 61;
+            this.T4_INPUT_ThroughMonth_En.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.T4_INPUT_ThroughMonth_En.Location = new System.Drawing.Point(119, 368);
+            this.T4_INPUT_ThroughMonth_En.Name = "T4_INPUT_ThroughMonth_En";
+            this.T4_INPUT_ThroughMonth_En.Size = new System.Drawing.Size(100, 23);
+            this.T4_INPUT_ThroughMonth_En.TabIndex = 61;
             // 
-            // textBox65
+            // T4_INPUT_ThroughYear
             // 
-            this.textBox65.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.textBox65.Location = new System.Drawing.Point(119, 408);
-            this.textBox65.Name = "textBox65";
-            this.textBox65.Size = new System.Drawing.Size(100, 23);
-            this.textBox65.TabIndex = 64;
+            this.T4_INPUT_ThroughYear.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.T4_INPUT_ThroughYear.Location = new System.Drawing.Point(119, 408);
+            this.T4_INPUT_ThroughYear.Name = "T4_INPUT_ThroughYear";
+            this.T4_INPUT_ThroughYear.Size = new System.Drawing.Size(100, 23);
+            this.T4_INPUT_ThroughYear.TabIndex = 64;
             // 
-            // textBox64
+            // T4_INPUT_ThroughYear_En
             // 
-            this.textBox64.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.textBox64.Location = new System.Drawing.Point(119, 448);
-            this.textBox64.Name = "textBox64";
-            this.textBox64.Size = new System.Drawing.Size(100, 23);
-            this.textBox64.TabIndex = 65;
+            this.T4_INPUT_ThroughYear_En.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.T4_INPUT_ThroughYear_En.Location = new System.Drawing.Point(119, 448);
+            this.T4_INPUT_ThroughYear_En.Name = "T4_INPUT_ThroughYear_En";
+            this.T4_INPUT_ThroughYear_En.Size = new System.Drawing.Size(100, 23);
+            this.T4_INPUT_ThroughYear_En.TabIndex = 65;
+            // 
+            // T4_INPUT_ThroughMonth
+            // 
+            this.T4_INPUT_ThroughMonth.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.T4_INPUT_ThroughMonth.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.T4_INPUT_ThroughMonth.FormattingEnabled = true;
+            this.T4_INPUT_ThroughMonth.Items.AddRange(new object[] {
+            "-",
+            "มกราคม",
+            "กุมภาพันธ์",
+            "มีนาคม",
+            "เมษายน",
+            "พฤษภาคม",
+            "มิถุนายน",
+            "กรกฎาคม",
+            "สิงหาคม",
+            "กันยายน",
+            "ตุลาคม",
+            "พฤศจิกายน",
+            "ธันวาคม"});
+            this.T4_INPUT_ThroughMonth.Location = new System.Drawing.Point(119, 329);
+            this.T4_INPUT_ThroughMonth.Name = "T4_INPUT_ThroughMonth";
+            this.T4_INPUT_ThroughMonth.Size = new System.Drawing.Size(150, 24);
+            this.T4_INPUT_ThroughMonth.TabIndex = 68;
             // 
             // tableLayoutPanel9
             // 
             this.tableLayoutPanel9.ColumnCount = 2;
             this.tableLayoutPanel9.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 30F));
             this.tableLayoutPanel9.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 70F));
-            this.tableLayoutPanel9.Controls.Add(this.textBox3, 1, 10);
+            this.tableLayoutPanel9.Controls.Add(this.T4_INPUT_ExpireOn, 1, 10);
             this.tableLayoutPanel9.Controls.Add(this.T4_INPUT_DateIssue, 1, 3);
             this.tableLayoutPanel9.Controls.Add(this.label88, 1, 0);
             this.tableLayoutPanel9.Controls.Add(this.label94, 0, 1);
@@ -2805,14 +3226,14 @@
             this.tableLayoutPanel9.Controls.Add(this.label101, 0, 14);
             this.tableLayoutPanel9.Controls.Add(this.label100, 0, 13);
             this.tableLayoutPanel9.Controls.Add(this.label102, 0, 12);
-            this.tableLayoutPanel9.Controls.Add(this.textBox58, 1, 13);
-            this.tableLayoutPanel9.Controls.Add(this.textBox59, 1, 14);
-            this.tableLayoutPanel9.Controls.Add(this.comboBox1, 1, 11);
+            this.tableLayoutPanel9.Controls.Add(this.T4_INPUT_ExpireYear, 1, 13);
+            this.tableLayoutPanel9.Controls.Add(this.T4_INPUT_ExpireYear_en, 1, 14);
+            this.tableLayoutPanel9.Controls.Add(this.T4_INPUT_ExpireMonth, 1, 11);
             this.tableLayoutPanel9.Controls.Add(this.T4_INPUT_MonthIssue, 1, 4);
             this.tableLayoutPanel9.Controls.Add(this.T4_INPUT_MonthIssue_En, 1, 5);
-            this.tableLayoutPanel9.Controls.Add(this.textBox5, 1, 12);
+            this.tableLayoutPanel9.Controls.Add(this.T4_INPUT_ExpireMonth_En, 1, 12);
             this.tableLayoutPanel9.Controls.Add(this.T4_INPUT_PlaceIssue, 1, 8);
-            this.tableLayoutPanel9.Controls.Add(this.tableLayoutPanel13, 1, 15);
+            this.tableLayoutPanel9.Controls.Add(this.T4_INPUT_PeriodPermission, 1, 15);
             this.tableLayoutPanel9.Location = new System.Drawing.Point(10, 10);
             this.tableLayoutPanel9.Name = "tableLayoutPanel9";
             this.tableLayoutPanel9.RowCount = 17;
@@ -2835,6 +3256,22 @@
             this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
             this.tableLayoutPanel9.Size = new System.Drawing.Size(388, 680);
             this.tableLayoutPanel9.TabIndex = 4;
+            // 
+            // T4_INPUT_ExpireOn
+            // 
+            this.T4_INPUT_ExpireOn.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.T4_INPUT_ExpireOn.Location = new System.Drawing.Point(119, 408);
+            this.T4_INPUT_ExpireOn.Name = "T4_INPUT_ExpireOn";
+            this.T4_INPUT_ExpireOn.Size = new System.Drawing.Size(100, 23);
+            this.T4_INPUT_ExpireOn.TabIndex = 71;
+            // 
+            // T4_INPUT_DateIssue
+            // 
+            this.T4_INPUT_DateIssue.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.T4_INPUT_DateIssue.Location = new System.Drawing.Point(119, 128);
+            this.T4_INPUT_DateIssue.Name = "T4_INPUT_DateIssue";
+            this.T4_INPUT_DateIssue.Size = new System.Drawing.Size(100, 23);
+            this.T4_INPUT_DateIssue.TabIndex = 69;
             // 
             // label88
             // 
@@ -3020,21 +3457,181 @@
             this.label102.TabIndex = 56;
             this.label102.Text = "เดือนที่ EN";
             // 
-            // textBox58
+            // T4_INPUT_ExpireYear
             // 
-            this.textBox58.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.textBox58.Location = new System.Drawing.Point(119, 528);
-            this.textBox58.Name = "textBox58";
-            this.textBox58.Size = new System.Drawing.Size(100, 23);
-            this.textBox58.TabIndex = 60;
+            this.T4_INPUT_ExpireYear.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.T4_INPUT_ExpireYear.Location = new System.Drawing.Point(119, 528);
+            this.T4_INPUT_ExpireYear.Name = "T4_INPUT_ExpireYear";
+            this.T4_INPUT_ExpireYear.Size = new System.Drawing.Size(100, 23);
+            this.T4_INPUT_ExpireYear.TabIndex = 60;
             // 
-            // textBox59
+            // T4_INPUT_ExpireYear_en
             // 
-            this.textBox59.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.textBox59.Location = new System.Drawing.Point(119, 568);
-            this.textBox59.Name = "textBox59";
-            this.textBox59.Size = new System.Drawing.Size(100, 23);
-            this.textBox59.TabIndex = 61;
+            this.T4_INPUT_ExpireYear_en.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.T4_INPUT_ExpireYear_en.Location = new System.Drawing.Point(119, 568);
+            this.T4_INPUT_ExpireYear_en.Name = "T4_INPUT_ExpireYear_en";
+            this.T4_INPUT_ExpireYear_en.Size = new System.Drawing.Size(100, 23);
+            this.T4_INPUT_ExpireYear_en.TabIndex = 61;
+            // 
+            // T4_INPUT_ExpireMonth
+            // 
+            this.T4_INPUT_ExpireMonth.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.T4_INPUT_ExpireMonth.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.T4_INPUT_ExpireMonth.FormattingEnabled = true;
+            this.T4_INPUT_ExpireMonth.Items.AddRange(new object[] {
+            "-",
+            "มกราคม",
+            "กุมภาพันธ์",
+            "มีนาคม",
+            "เมษายน",
+            "พฤษภาคม",
+            "มิถุนายน",
+            "กรกฎาคม",
+            "สิงหาคม",
+            "กันยายน",
+            "ตุลาคม",
+            "พฤศจิกายน",
+            "ธันวาคม"});
+            this.T4_INPUT_ExpireMonth.Location = new System.Drawing.Point(119, 449);
+            this.T4_INPUT_ExpireMonth.Name = "T4_INPUT_ExpireMonth";
+            this.T4_INPUT_ExpireMonth.Size = new System.Drawing.Size(150, 24);
+            this.T4_INPUT_ExpireMonth.TabIndex = 63;
+            // 
+            // T4_INPUT_MonthIssue
+            // 
+            this.T4_INPUT_MonthIssue.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.T4_INPUT_MonthIssue.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.T4_INPUT_MonthIssue.FormattingEnabled = true;
+            this.T4_INPUT_MonthIssue.Items.AddRange(new object[] {
+            "-",
+            "มกราคม",
+            "กุมภาพันธ์",
+            "มีนาคม",
+            "เมษายน",
+            "พฤษภาคม",
+            "มิถุนายน",
+            "กรกฎาคม",
+            "สิงหาคม",
+            "กันยายน",
+            "ตุลาคม",
+            "พฤศจิกายน",
+            "ธันวาคม"});
+            this.T4_INPUT_MonthIssue.Location = new System.Drawing.Point(119, 169);
+            this.T4_INPUT_MonthIssue.Name = "T4_INPUT_MonthIssue";
+            this.T4_INPUT_MonthIssue.Size = new System.Drawing.Size(150, 24);
+            this.T4_INPUT_MonthIssue.TabIndex = 64;
+            // 
+            // T4_INPUT_MonthIssue_En
+            // 
+            this.T4_INPUT_MonthIssue_En.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.T4_INPUT_MonthIssue_En.Location = new System.Drawing.Point(119, 208);
+            this.T4_INPUT_MonthIssue_En.Name = "T4_INPUT_MonthIssue_En";
+            this.T4_INPUT_MonthIssue_En.Size = new System.Drawing.Size(100, 23);
+            this.T4_INPUT_MonthIssue_En.TabIndex = 72;
+            // 
+            // T4_INPUT_ExpireMonth_En
+            // 
+            this.T4_INPUT_ExpireMonth_En.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.T4_INPUT_ExpireMonth_En.Location = new System.Drawing.Point(119, 488);
+            this.T4_INPUT_ExpireMonth_En.Name = "T4_INPUT_ExpireMonth_En";
+            this.T4_INPUT_ExpireMonth_En.Size = new System.Drawing.Size(100, 23);
+            this.T4_INPUT_ExpireMonth_En.TabIndex = 73;
+            // 
+            // T4_INPUT_PlaceIssue
+            // 
+            this.T4_INPUT_PlaceIssue.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.T4_INPUT_PlaceIssue.AutoCompleteCustomSource.AddRange(new string[] {
+            "กระบี่",
+            "กรุงเทพมหานคร",
+            "กาญจนบุรี",
+            "กาฬสินธุ์",
+            "กำแพงเพชร",
+            "ขอนแก่น",
+            "จันทบุรี",
+            "ฉะเชิงเทรา",
+            "ชลบุรี",
+            "ชัยนาท",
+            "ชัยภูมิ",
+            "ชุมพร",
+            "เชียงราย",
+            "เชียงใหม่",
+            "ตรัง",
+            "ตราด",
+            "ตาก",
+            "นครนายก",
+            "นครปฐม",
+            "นครพนม",
+            "นครราชสีมา",
+            "นครศรีธรรมราช",
+            "นครสวรรค์",
+            "นนทบุรี",
+            "นราธิวาส",
+            "น่าน",
+            "บึงกาฬ",
+            "บุรีรัมย์",
+            "ปทุมธานี",
+            "ประจวบคีรีขันธ์",
+            "ปราจีนบุรี",
+            "ปัตตานี",
+            "พระนครศรีอยุธยา",
+            "พะเยา",
+            "พังงา",
+            "พัทลุง",
+            "พิจิตร",
+            "พิษณุโลก",
+            "เพชรบุรี",
+            "เพชรบูรณ์",
+            "แพร่",
+            "ภูเก็ต",
+            "มหาสารคาม",
+            "มุกดาหาร",
+            "แม่ฮ่องสอน",
+            "ยโสธร",
+            "ยะลา",
+            "ร้อยเอ็ด",
+            "ระนอง",
+            "ระยอง",
+            "ราชบุรี",
+            "ลพบุรี",
+            "ลำปาง",
+            "ลำพูน",
+            "เลย",
+            "ศรีสะเกษ",
+            "สกลนคร",
+            "สงขลา",
+            "สตูล",
+            "สมุทรปราการ",
+            "สมุทรสงคราม",
+            "สมุทรสาคร",
+            "สระแก้ว",
+            "สระบุรี",
+            "สิงห์บุรี",
+            "สุโขทัย",
+            "สุพรรณบุรี",
+            "สุราษฎร์ธานี",
+            "สุรินทร์",
+            "หนองคาย",
+            "หนองบัวลำภู",
+            "อ่างทอง",
+            "อำนาจเจริญ",
+            "อุดรธานี",
+            "อุตรดิตถ์",
+            "อุทัยธานี",
+            "อุบลราชธานี"});
+            this.T4_INPUT_PlaceIssue.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Append;
+            this.T4_INPUT_PlaceIssue.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
+            this.T4_INPUT_PlaceIssue.Location = new System.Drawing.Point(119, 328);
+            this.T4_INPUT_PlaceIssue.Name = "T4_INPUT_PlaceIssue";
+            this.T4_INPUT_PlaceIssue.Size = new System.Drawing.Size(260, 23);
+            this.T4_INPUT_PlaceIssue.TabIndex = 74;
+            // 
+            // T4_INPUT_PeriodPermission
+            // 
+            this.T4_INPUT_PeriodPermission.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.T4_INPUT_PeriodPermission.Location = new System.Drawing.Point(119, 608);
+            this.T4_INPUT_PeriodPermission.Name = "T4_INPUT_PeriodPermission";
+            this.T4_INPUT_PeriodPermission.Size = new System.Drawing.Size(100, 23);
+            this.T4_INPUT_PeriodPermission.TabIndex = 76;
             // 
             // tabPage3
             // 
@@ -3140,7 +3737,7 @@
             this.comboBox34.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.comboBox34.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox34.FormattingEnabled = true;
-            this.comboBox34.Location = new System.Drawing.Point(119, 329);
+            this.comboBox34.Location = new System.Drawing.Point(119, 328);
             this.comboBox34.Name = "comboBox34";
             this.comboBox34.Size = new System.Drawing.Size(150, 24);
             this.comboBox34.TabIndex = 49;
@@ -3214,7 +3811,7 @@
             this.comboBox35.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.comboBox35.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox35.FormattingEnabled = true;
-            this.comboBox35.Location = new System.Drawing.Point(119, 169);
+            this.comboBox35.Location = new System.Drawing.Point(119, 168);
             this.comboBox35.Name = "comboBox35";
             this.comboBox35.Size = new System.Drawing.Size(150, 24);
             this.comboBox35.TabIndex = 31;
@@ -3262,7 +3859,7 @@
             this.comboBox36.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.comboBox36.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox36.FormattingEnabled = true;
-            this.comboBox36.Location = new System.Drawing.Point(119, 129);
+            this.comboBox36.Location = new System.Drawing.Point(119, 128);
             this.comboBox36.Name = "comboBox36";
             this.comboBox36.Size = new System.Drawing.Size(150, 24);
             this.comboBox36.TabIndex = 45;
@@ -3350,7 +3947,7 @@
             this.comboBox37.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.comboBox37.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox37.FormattingEnabled = true;
-            this.comboBox37.Location = new System.Drawing.Point(119, 409);
+            this.comboBox37.Location = new System.Drawing.Point(119, 408);
             this.comboBox37.Name = "comboBox37";
             this.comboBox37.Size = new System.Drawing.Size(150, 24);
             this.comboBox37.TabIndex = 57;
@@ -3360,7 +3957,7 @@
             this.comboBox38.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.comboBox38.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox38.FormattingEnabled = true;
-            this.comboBox38.Location = new System.Drawing.Point(119, 449);
+            this.comboBox38.Location = new System.Drawing.Point(119, 448);
             this.comboBox38.Name = "comboBox38";
             this.comboBox38.Size = new System.Drawing.Size(150, 24);
             this.comboBox38.TabIndex = 58;
@@ -3388,631 +3985,6 @@
             this.textBox92.Name = "textBox92";
             this.textBox92.Size = new System.Drawing.Size(100, 23);
             this.textBox92.TabIndex = 61;
-            // 
-            // T1_INPUT_StuffedMonth_En
-            // 
-            this.T1_INPUT_StuffedMonth_En.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.T1_INPUT_StuffedMonth_En.Location = new System.Drawing.Point(119, 128);
-            this.T1_INPUT_StuffedMonth_En.Name = "T1_INPUT_StuffedMonth_En";
-            this.T1_INPUT_StuffedMonth_En.Size = new System.Drawing.Size(100, 23);
-            this.T1_INPUT_StuffedMonth_En.TabIndex = 32;
-            // 
-            // T1_INPUT_StuffedMonth
-            // 
-            this.T1_INPUT_StuffedMonth.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.T1_INPUT_StuffedMonth.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.T1_INPUT_StuffedMonth.FormattingEnabled = true;
-            this.T1_INPUT_StuffedMonth.Items.AddRange(new object[] {
-            "-",
-            "มกราคม",
-            "กุมภาพันธ์",
-            "มีนาคม",
-            "เมษายน",
-            "พฤษภาคม",
-            "มิถุนายน",
-            "กรกฎาคม",
-            "สิงหาคม",
-            "กันยายน",
-            "ตุลาคม",
-            "พฤศจิกายน",
-            "ธันวาคม"});
-            this.T1_INPUT_StuffedMonth.Location = new System.Drawing.Point(119, 88);
-            this.T1_INPUT_StuffedMonth.Name = "T1_INPUT_StuffedMonth";
-            this.T1_INPUT_StuffedMonth.Size = new System.Drawing.Size(150, 24);
-            this.T1_INPUT_StuffedMonth.TabIndex = 30;
-            // 
-            // T1_INPUT_MonthStarted_En
-            // 
-            this.T1_INPUT_MonthStarted_En.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.T1_INPUT_MonthStarted_En.Location = new System.Drawing.Point(119, 328);
-            this.T1_INPUT_MonthStarted_En.Name = "T1_INPUT_MonthStarted_En";
-            this.T1_INPUT_MonthStarted_En.Size = new System.Drawing.Size(100, 23);
-            this.T1_INPUT_MonthStarted_En.TabIndex = 33;
-            // 
-            // T1_INPUT_MonthStarted
-            // 
-            this.T1_INPUT_MonthStarted.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.T1_INPUT_MonthStarted.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.T1_INPUT_MonthStarted.FormattingEnabled = true;
-            this.T1_INPUT_MonthStarted.Items.AddRange(new object[] {
-            "-",
-            "มกราคม",
-            "กุมภาพันธ์",
-            "มีนาคม",
-            "เมษายน",
-            "พฤษภาคม",
-            "มิถุนายน",
-            "กรกฎาคม",
-            "สิงหาคม",
-            "กันยายน",
-            "ตุลาคม",
-            "พฤศจิกายน",
-            "ธันวาคม"});
-            this.T1_INPUT_MonthStarted.Location = new System.Drawing.Point(119, 288);
-            this.T1_INPUT_MonthStarted.Name = "T1_INPUT_MonthStarted";
-            this.T1_INPUT_MonthStarted.Size = new System.Drawing.Size(150, 24);
-            this.T1_INPUT_MonthStarted.TabIndex = 34;
-            // 
-            // T2_INPUT_PassportDate
-            // 
-            this.T2_INPUT_PassportDate.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.T2_INPUT_PassportDate.Location = new System.Drawing.Point(119, 88);
-            this.T2_INPUT_PassportDate.Name = "T2_INPUT_PassportDate";
-            this.T2_INPUT_PassportDate.Size = new System.Drawing.Size(100, 23);
-            this.T2_INPUT_PassportDate.TabIndex = 43;
-            // 
-            // T2_INPUT_PassportMonth
-            // 
-            this.T2_INPUT_PassportMonth.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.T2_INPUT_PassportMonth.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.T2_INPUT_PassportMonth.FormattingEnabled = true;
-            this.T2_INPUT_PassportMonth.Items.AddRange(new object[] {
-            "-",
-            "มกราคม",
-            "กุมภาพันธ์",
-            "มีนาคม",
-            "เมษายน",
-            "พฤษภาคม",
-            "มิถุนายน",
-            "กรกฎาคม",
-            "สิงหาคม",
-            "กันยายน",
-            "ตุลาคม",
-            "พฤศจิกายน",
-            "ธันวาคม"});
-            this.T2_INPUT_PassportMonth.Location = new System.Drawing.Point(119, 128);
-            this.T2_INPUT_PassportMonth.Name = "T2_INPUT_PassportMonth";
-            this.T2_INPUT_PassportMonth.Size = new System.Drawing.Size(150, 24);
-            this.T2_INPUT_PassportMonth.TabIndex = 44;
-            // 
-            // T2_INPUT_PassportMonth_En
-            // 
-            this.T2_INPUT_PassportMonth_En.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.T2_INPUT_PassportMonth_En.Location = new System.Drawing.Point(119, 168);
-            this.T2_INPUT_PassportMonth_En.Name = "T2_INPUT_PassportMonth_En";
-            this.T2_INPUT_PassportMonth_En.Size = new System.Drawing.Size(100, 23);
-            this.T2_INPUT_PassportMonth_En.TabIndex = 45;
-            // 
-            // T2_INPUT_VisaDate
-            // 
-            this.T2_INPUT_VisaDate.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.T2_INPUT_VisaDate.Location = new System.Drawing.Point(119, 448);
-            this.T2_INPUT_VisaDate.Name = "T2_INPUT_VisaDate";
-            this.T2_INPUT_VisaDate.Size = new System.Drawing.Size(100, 23);
-            this.T2_INPUT_VisaDate.TabIndex = 46;
-            // 
-            // T2_INPUT_VisaMonth
-            // 
-            this.T2_INPUT_VisaMonth.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.T2_INPUT_VisaMonth.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.T2_INPUT_VisaMonth.FormattingEnabled = true;
-            this.T2_INPUT_VisaMonth.Items.AddRange(new object[] {
-            "-",
-            "มกราคม",
-            "กุมภาพันธ์",
-            "มีนาคม",
-            "เมษายน",
-            "พฤษภาคม",
-            "มิถุนายน",
-            "กรกฎาคม",
-            "สิงหาคม",
-            "กันยายน",
-            "ตุลาคม",
-            "พฤศจิกายน",
-            "ธันวาคม"});
-            this.T2_INPUT_VisaMonth.Location = new System.Drawing.Point(119, 488);
-            this.T2_INPUT_VisaMonth.Name = "T2_INPUT_VisaMonth";
-            this.T2_INPUT_VisaMonth.Size = new System.Drawing.Size(150, 24);
-            this.T2_INPUT_VisaMonth.TabIndex = 47;
-            // 
-            // T2_INPUT_VisaYear_En
-            // 
-            this.T2_INPUT_VisaYear_En.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.T2_INPUT_VisaYear_En.Location = new System.Drawing.Point(119, 8);
-            this.T2_INPUT_VisaYear_En.Name = "T2_INPUT_VisaYear_En";
-            this.T2_INPUT_VisaYear_En.Size = new System.Drawing.Size(100, 23);
-            this.T2_INPUT_VisaYear_En.TabIndex = 56;
-            // 
-            // T2_INPUT_ReachedDate
-            // 
-            this.T2_INPUT_ReachedDate.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.T2_INPUT_ReachedDate.Location = new System.Drawing.Point(119, 128);
-            this.T2_INPUT_ReachedDate.Name = "T2_INPUT_ReachedDate";
-            this.T2_INPUT_ReachedDate.Size = new System.Drawing.Size(100, 23);
-            this.T2_INPUT_ReachedDate.TabIndex = 57;
-            // 
-            // T2_INPUT_ReachedMonth
-            // 
-            this.T2_INPUT_ReachedMonth.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.T2_INPUT_ReachedMonth.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.T2_INPUT_ReachedMonth.FormattingEnabled = true;
-            this.T2_INPUT_ReachedMonth.Items.AddRange(new object[] {
-            "-",
-            "มกราคม",
-            "กุมภาพันธ์",
-            "มีนาคม",
-            "เมษายน",
-            "พฤษภาคม",
-            "มิถุนายน",
-            "กรกฎาคม",
-            "สิงหาคม",
-            "กันยายน",
-            "ตุลาคม",
-            "พฤศจิกายน",
-            "ธันวาคม"});
-            this.T2_INPUT_ReachedMonth.Location = new System.Drawing.Point(119, 168);
-            this.T2_INPUT_ReachedMonth.Name = "T2_INPUT_ReachedMonth";
-            this.T2_INPUT_ReachedMonth.Size = new System.Drawing.Size(150, 24);
-            this.T2_INPUT_ReachedMonth.TabIndex = 48;
-            // 
-            // T2_INPUT_ReachedMonth_En
-            // 
-            this.T2_INPUT_ReachedMonth_En.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.T2_INPUT_ReachedMonth_En.Location = new System.Drawing.Point(119, 208);
-            this.T2_INPUT_ReachedMonth_En.Name = "T2_INPUT_ReachedMonth_En";
-            this.T2_INPUT_ReachedMonth_En.Size = new System.Drawing.Size(100, 23);
-            this.T2_INPUT_ReachedMonth_En.TabIndex = 58;
-            // 
-            // T2_INPUT_DueDate
-            // 
-            this.T2_INPUT_DueDate.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.T2_INPUT_DueDate.Location = new System.Drawing.Point(119, 48);
-            this.T2_INPUT_DueDate.Name = "T2_INPUT_DueDate";
-            this.T2_INPUT_DueDate.Size = new System.Drawing.Size(100, 23);
-            this.T2_INPUT_DueDate.TabIndex = 68;
-            // 
-            // T2_INPUT_Renew_Date
-            // 
-            this.T2_INPUT_Renew_Date.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.T2_INPUT_Renew_Date.Location = new System.Drawing.Point(119, 288);
-            this.T2_INPUT_Renew_Date.Name = "T2_INPUT_Renew_Date";
-            this.T2_INPUT_Renew_Date.Size = new System.Drawing.Size(100, 23);
-            this.T2_INPUT_Renew_Date.TabIndex = 69;
-            // 
-            // T2_INPUT_Renew_Month
-            // 
-            this.T2_INPUT_Renew_Month.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.T2_INPUT_Renew_Month.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.T2_INPUT_Renew_Month.FormattingEnabled = true;
-            this.T2_INPUT_Renew_Month.Items.AddRange(new object[] {
-            "-",
-            "มกราคม",
-            "กุมภาพันธ์",
-            "มีนาคม",
-            "เมษายน",
-            "พฤษภาคม",
-            "มิถุนายน",
-            "กรกฎาคม",
-            "สิงหาคม",
-            "กันยายน",
-            "ตุลาคม",
-            "พฤศจิกายน",
-            "ธันวาคม"});
-            this.T2_INPUT_Renew_Month.Location = new System.Drawing.Point(119, 328);
-            this.T2_INPUT_Renew_Month.Name = "T2_INPUT_Renew_Month";
-            this.T2_INPUT_Renew_Month.Size = new System.Drawing.Size(150, 24);
-            this.T2_INPUT_Renew_Month.TabIndex = 59;
-            // 
-            // T2_INPUT_DueMonth
-            // 
-            this.T2_INPUT_DueMonth.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.T2_INPUT_DueMonth.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.T2_INPUT_DueMonth.FormattingEnabled = true;
-            this.T2_INPUT_DueMonth.Items.AddRange(new object[] {
-            "-",
-            "มกราคม",
-            "กุมภาพันธ์",
-            "มีนาคม",
-            "เมษายน",
-            "พฤษภาคม",
-            "มิถุนายน",
-            "กรกฎาคม",
-            "สิงหาคม",
-            "กันยายน",
-            "ตุลาคม",
-            "พฤศจิกายน",
-            "ธันวาคม"});
-            this.T2_INPUT_DueMonth.Location = new System.Drawing.Point(119, 88);
-            this.T2_INPUT_DueMonth.Name = "T2_INPUT_DueMonth";
-            this.T2_INPUT_DueMonth.Size = new System.Drawing.Size(150, 24);
-            this.T2_INPUT_DueMonth.TabIndex = 70;
-            // 
-            // T2_INPUT_DueMonth_En
-            // 
-            this.T2_INPUT_DueMonth_En.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.T2_INPUT_DueMonth_En.Location = new System.Drawing.Point(119, 128);
-            this.T2_INPUT_DueMonth_En.Name = "T2_INPUT_DueMonth_En";
-            this.T2_INPUT_DueMonth_En.Size = new System.Drawing.Size(100, 23);
-            this.T2_INPUT_DueMonth_En.TabIndex = 71;
-            // 
-            // T2_INPUT_Renew_Month_En
-            // 
-            this.T2_INPUT_Renew_Month_En.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.T2_INPUT_Renew_Month_En.Location = new System.Drawing.Point(119, 368);
-            this.T2_INPUT_Renew_Month_En.Name = "T2_INPUT_Renew_Month_En";
-            this.T2_INPUT_Renew_Month_En.Size = new System.Drawing.Size(100, 23);
-            this.T2_INPUT_Renew_Month_En.TabIndex = 72;
-            // 
-            // T2_INPUT_VisaMonth_En
-            // 
-            this.T2_INPUT_VisaMonth_En.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.T2_INPUT_VisaMonth_En.Location = new System.Drawing.Point(119, 528);
-            this.T2_INPUT_VisaMonth_En.Name = "T2_INPUT_VisaMonth_En";
-            this.T2_INPUT_VisaMonth_En.Size = new System.Drawing.Size(100, 23);
-            this.T2_INPUT_VisaMonth_En.TabIndex = 57;
-            // 
-            // T3_INPUT_PassportExpMonth
-            // 
-            this.T3_INPUT_PassportExpMonth.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.T3_INPUT_PassportExpMonth.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.T3_INPUT_PassportExpMonth.FormattingEnabled = true;
-            this.T3_INPUT_PassportExpMonth.Items.AddRange(new object[] {
-            "-",
-            "มกราคม",
-            "กุมภาพันธ์",
-            "มีนาคม",
-            "เมษายน",
-            "พฤษภาคม",
-            "มิถุนายน",
-            "กรกฎาคม",
-            "สิงหาคม",
-            "กันยายน",
-            "ตุลาคม",
-            "พฤศจิกายน",
-            "ธันวาคม"});
-            this.T3_INPUT_PassportExpMonth.Location = new System.Drawing.Point(119, 88);
-            this.T3_INPUT_PassportExpMonth.Name = "T3_INPUT_PassportExpMonth";
-            this.T3_INPUT_PassportExpMonth.Size = new System.Drawing.Size(150, 24);
-            this.T3_INPUT_PassportExpMonth.TabIndex = 45;
-            // 
-            // T3_INPUT_ContractMonth
-            // 
-            this.T3_INPUT_ContractMonth.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.T3_INPUT_ContractMonth.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.T3_INPUT_ContractMonth.FormattingEnabled = true;
-            this.T3_INPUT_ContractMonth.Items.AddRange(new object[] {
-            "-",
-            "มกราคม",
-            "กุมภาพันธ์",
-            "มีนาคม",
-            "เมษายน",
-            "พฤษภาคม",
-            "มิถุนายน",
-            "กรกฎาคม",
-            "สิงหาคม",
-            "กันยายน",
-            "ตุลาคม",
-            "พฤศจิกายน",
-            "ธันวาคม"});
-            this.T3_INPUT_ContractMonth.Location = new System.Drawing.Point(119, 88);
-            this.T3_INPUT_ContractMonth.Name = "T3_INPUT_ContractMonth";
-            this.T3_INPUT_ContractMonth.Size = new System.Drawing.Size(150, 24);
-            this.T3_INPUT_ContractMonth.TabIndex = 46;
-            // 
-            // T3_INPUT_ContractDate
-            // 
-            this.T3_INPUT_ContractDate.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.T3_INPUT_ContractDate.Location = new System.Drawing.Point(119, 48);
-            this.T3_INPUT_ContractDate.Name = "T3_INPUT_ContractDate";
-            this.T3_INPUT_ContractDate.Size = new System.Drawing.Size(100, 23);
-            this.T3_INPUT_ContractDate.TabIndex = 47;
-            // 
-            // T3_INPUT_PassportExpDate
-            // 
-            this.T3_INPUT_PassportExpDate.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.T3_INPUT_PassportExpDate.Location = new System.Drawing.Point(119, 48);
-            this.T3_INPUT_PassportExpDate.Name = "T3_INPUT_PassportExpDate";
-            this.T3_INPUT_PassportExpDate.Size = new System.Drawing.Size(100, 23);
-            this.T3_INPUT_PassportExpDate.TabIndex = 48;
-            // 
-            // T3_INPUT_ContractMonth_En
-            // 
-            this.T3_INPUT_ContractMonth_En.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.T3_INPUT_ContractMonth_En.Location = new System.Drawing.Point(119, 128);
-            this.T3_INPUT_ContractMonth_En.Name = "T3_INPUT_ContractMonth_En";
-            this.T3_INPUT_ContractMonth_En.Size = new System.Drawing.Size(100, 23);
-            this.T3_INPUT_ContractMonth_En.TabIndex = 48;
-            // 
-            // T3_INPUT_PassportExpMonth_En
-            // 
-            this.T3_INPUT_PassportExpMonth_En.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.T3_INPUT_PassportExpMonth_En.Location = new System.Drawing.Point(119, 128);
-            this.T3_INPUT_PassportExpMonth_En.Name = "T3_INPUT_PassportExpMonth_En";
-            this.T3_INPUT_PassportExpMonth_En.Size = new System.Drawing.Size(100, 23);
-            this.T3_INPUT_PassportExpMonth_En.TabIndex = 49;
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
-            "-",
-            "มกราคม",
-            "กุมภาพันธ์",
-            "มีนาคม",
-            "เมษายน",
-            "พฤษภาคม",
-            "มิถุนายน",
-            "กรกฎาคม",
-            "สิงหาคม",
-            "กันยายน",
-            "ตุลาคม",
-            "พฤศจิกายน",
-            "ธันวาคม"});
-            this.comboBox1.Location = new System.Drawing.Point(119, 448);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(150, 24);
-            this.comboBox1.TabIndex = 63;
-            // 
-            // T4_INPUT_MonthIssue
-            // 
-            this.T4_INPUT_MonthIssue.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.T4_INPUT_MonthIssue.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.T4_INPUT_MonthIssue.FormattingEnabled = true;
-            this.T4_INPUT_MonthIssue.Items.AddRange(new object[] {
-            "-",
-            "มกราคม",
-            "กุมภาพันธ์",
-            "มีนาคม",
-            "เมษายน",
-            "พฤษภาคม",
-            "มิถุนายน",
-            "กรกฎาคม",
-            "สิงหาคม",
-            "กันยายน",
-            "ตุลาคม",
-            "พฤศจิกายน",
-            "ธันวาคม"});
-            this.T4_INPUT_MonthIssue.Location = new System.Drawing.Point(119, 168);
-            this.T4_INPUT_MonthIssue.Name = "T4_INPUT_MonthIssue";
-            this.T4_INPUT_MonthIssue.Size = new System.Drawing.Size(150, 24);
-            this.T4_INPUT_MonthIssue.TabIndex = 64;
-            // 
-            // comboBox3
-            // 
-            this.comboBox3.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.comboBox3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Items.AddRange(new object[] {
-            "-",
-            "มกราคม",
-            "กุมภาพันธ์",
-            "มีนาคม",
-            "เมษายน",
-            "พฤษภาคม",
-            "มิถุนายน",
-            "กรกฎาคม",
-            "สิงหาคม",
-            "กันยายน",
-            "ตุลาคม",
-            "พฤศจิกายน",
-            "ธันวาคม"});
-            this.comboBox3.Location = new System.Drawing.Point(119, 88);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(150, 24);
-            this.comboBox3.TabIndex = 65;
-            // 
-            // comboBox4
-            // 
-            this.comboBox4.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.comboBox4.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox4.FormattingEnabled = true;
-            this.comboBox4.Items.AddRange(new object[] {
-            "-",
-            "มกราคม",
-            "กุมภาพันธ์",
-            "มีนาคม",
-            "เมษายน",
-            "พฤษภาคม",
-            "มิถุนายน",
-            "กรกฎาคม",
-            "สิงหาคม",
-            "กันยายน",
-            "ตุลาคม",
-            "พฤศจิกายน",
-            "ธันวาคม"});
-            this.comboBox4.Location = new System.Drawing.Point(119, 328);
-            this.comboBox4.Name = "comboBox4";
-            this.comboBox4.Size = new System.Drawing.Size(150, 24);
-            this.comboBox4.TabIndex = 68;
-            // 
-            // T4_INPUT_DateIssue
-            // 
-            this.T4_INPUT_DateIssue.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.T4_INPUT_DateIssue.Location = new System.Drawing.Point(119, 128);
-            this.T4_INPUT_DateIssue.Name = "T4_INPUT_DateIssue";
-            this.T4_INPUT_DateIssue.Size = new System.Drawing.Size(100, 23);
-            this.T4_INPUT_DateIssue.TabIndex = 69;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.textBox2.Location = new System.Drawing.Point(119, 48);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 23);
-            this.textBox2.TabIndex = 70;
-            // 
-            // textBox3
-            // 
-            this.textBox3.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.textBox3.Location = new System.Drawing.Point(119, 408);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 23);
-            this.textBox3.TabIndex = 71;
-            // 
-            // textBox4
-            // 
-            this.textBox4.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.textBox4.Location = new System.Drawing.Point(119, 288);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(100, 23);
-            this.textBox4.TabIndex = 72;
-            // 
-            // T4_INPUT_MonthIssue_En
-            // 
-            this.T4_INPUT_MonthIssue_En.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.T4_INPUT_MonthIssue_En.Location = new System.Drawing.Point(119, 208);
-            this.T4_INPUT_MonthIssue_En.Name = "T4_INPUT_MonthIssue_En";
-            this.T4_INPUT_MonthIssue_En.Size = new System.Drawing.Size(100, 23);
-            this.T4_INPUT_MonthIssue_En.TabIndex = 72;
-            // 
-            // textBox5
-            // 
-            this.textBox5.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.textBox5.Location = new System.Drawing.Point(119, 488);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(100, 23);
-            this.textBox5.TabIndex = 73;
-            // 
-            // textBox6
-            // 
-            this.textBox6.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.textBox6.Location = new System.Drawing.Point(119, 128);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(100, 23);
-            this.textBox6.TabIndex = 74;
-            // 
-            // T4_INPUT_PlaceIssue
-            // 
-            this.T4_INPUT_PlaceIssue.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.T4_INPUT_PlaceIssue.AutoCompleteCustomSource.AddRange(new string[] {
-            "กระบี่",
-            "กรุงเทพมหานคร",
-            "กาญจนบุรี",
-            "กาฬสินธุ์",
-            "กำแพงเพชร",
-            "ขอนแก่น",
-            "จันทบุรี",
-            "ฉะเชิงเทรา",
-            "ชลบุรี",
-            "ชัยนาท",
-            "ชัยภูมิ",
-            "ชุมพร",
-            "เชียงราย",
-            "เชียงใหม่",
-            "ตรัง",
-            "ตราด",
-            "ตาก",
-            "นครนายก",
-            "นครปฐม",
-            "นครพนม",
-            "นครราชสีมา",
-            "นครศรีธรรมราช",
-            "นครสวรรค์",
-            "นนทบุรี",
-            "นราธิวาส",
-            "น่าน",
-            "บึงกาฬ",
-            "บุรีรัมย์",
-            "ปทุมธานี",
-            "ประจวบคีรีขันธ์",
-            "ปราจีนบุรี",
-            "ปัตตานี",
-            "พระนครศรีอยุธยา",
-            "พะเยา",
-            "พังงา",
-            "พัทลุง",
-            "พิจิตร",
-            "พิษณุโลก",
-            "เพชรบุรี",
-            "เพชรบูรณ์",
-            "แพร่",
-            "ภูเก็ต",
-            "มหาสารคาม",
-            "มุกดาหาร",
-            "แม่ฮ่องสอน",
-            "ยโสธร",
-            "ยะลา",
-            "ร้อยเอ็ด",
-            "ระนอง",
-            "ระยอง",
-            "ราชบุรี",
-            "ลพบุรี",
-            "ลำปาง",
-            "ลำพูน",
-            "เลย",
-            "ศรีสะเกษ",
-            "สกลนคร",
-            "สงขลา",
-            "สตูล",
-            "สมุทรปราการ",
-            "สมุทรสงคราม",
-            "สมุทรสาคร",
-            "สระแก้ว",
-            "สระบุรี",
-            "สิงห์บุรี",
-            "สุโขทัย",
-            "สุพรรณบุรี",
-            "สุราษฎร์ธานี",
-            "สุรินทร์",
-            "หนองคาย",
-            "หนองบัวลำภู",
-            "อ่างทอง",
-            "อำนาจเจริญ",
-            "อุดรธานี",
-            "อุตรดิตถ์",
-            "อุทัยธานี",
-            "อุบลราชธานี"});
-            this.T4_INPUT_PlaceIssue.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Append;
-            this.T4_INPUT_PlaceIssue.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
-            this.T4_INPUT_PlaceIssue.Location = new System.Drawing.Point(119, 328);
-            this.T4_INPUT_PlaceIssue.Name = "T4_INPUT_PlaceIssue";
-            this.T4_INPUT_PlaceIssue.Size = new System.Drawing.Size(260, 23);
-            this.T4_INPUT_PlaceIssue.TabIndex = 74;
-            // 
-            // tableLayoutPanel13
-            // 
-            this.tableLayoutPanel13.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.tableLayoutPanel13.ColumnCount = 2;
-            this.tableLayoutPanel13.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 45F));
-            this.tableLayoutPanel13.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 55F));
-            this.tableLayoutPanel13.Controls.Add(this.label152, 1, 0);
-            this.tableLayoutPanel13.Controls.Add(this.T4_INPUT_PeriodPermission, 0, 0);
-            this.tableLayoutPanel13.Location = new System.Drawing.Point(119, 603);
-            this.tableLayoutPanel13.Name = "tableLayoutPanel13";
-            this.tableLayoutPanel13.RowCount = 1;
-            this.tableLayoutPanel13.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
-            this.tableLayoutPanel13.Size = new System.Drawing.Size(260, 34);
-            this.tableLayoutPanel13.TabIndex = 75;
-            // 
-            // T4_INPUT_PeriodPermission
-            // 
-            this.T4_INPUT_PeriodPermission.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.T4_INPUT_PeriodPermission.Location = new System.Drawing.Point(3, 8);
-            this.T4_INPUT_PeriodPermission.Name = "T4_INPUT_PeriodPermission";
-            this.T4_INPUT_PeriodPermission.Size = new System.Drawing.Size(100, 23);
-            this.T4_INPUT_PeriodPermission.TabIndex = 76;
-            // 
-            // label152
-            // 
-            this.label152.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.label152.AutoSize = true;
-            this.label152.Location = new System.Drawing.Point(120, 12);
-            this.label152.Name = "label152";
-            this.label152.Size = new System.Drawing.Size(22, 16);
-            this.label152.TabIndex = 76;
-            this.label152.Text = "วัน";
             // 
             // Form_Main
             // 
@@ -4056,8 +4028,6 @@
             this.tabPage4.ResumeLayout(false);
             this.tableLayoutPanel12.ResumeLayout(false);
             this.tableLayoutPanel12.PerformLayout();
-            this.tableLayoutPanel13.ResumeLayout(false);
-            this.tableLayoutPanel13.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -4237,17 +4207,17 @@
         private System.Windows.Forms.Label label101;
         private System.Windows.Forms.Label label100;
         private System.Windows.Forms.Label label102;
-        private System.Windows.Forms.TextBox textBox58;
-        private System.Windows.Forms.TextBox textBox59;
+        private System.Windows.Forms.TextBox T4_INPUT_ExpireYear;
+        private System.Windows.Forms.TextBox T4_INPUT_ExpireYear_en;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel10;
         private System.Windows.Forms.Label label112;
         private System.Windows.Forms.Label label114;
         private System.Windows.Forms.Label label116;
         private System.Windows.Forms.Label label117;
-        private System.Windows.Forms.TextBox textBox66;
+        private System.Windows.Forms.TextBox T4_INPUT_ThroughMonth_En;
         private System.Windows.Forms.Label label106;
-        private System.Windows.Forms.TextBox textBox60;
-        private System.Windows.Forms.TextBox textBox61;
+        private System.Windows.Forms.TextBox T4_INPUT_PerLicenseYear_En;
+        private System.Windows.Forms.TextBox T4_INPUT_PerLicenseYear;
         private System.Windows.Forms.Label label107;
         private System.Windows.Forms.Label label108;
         private System.Windows.Forms.Label label109;
@@ -4255,29 +4225,29 @@
         private System.Windows.Forms.Label label103;
         private System.Windows.Forms.Label label113;
         private System.Windows.Forms.Label label104;
-        private System.Windows.Forms.TextBox textBox65;
-        private System.Windows.Forms.TextBox textBox64;
+        private System.Windows.Forms.TextBox T4_INPUT_ThroughYear;
+        private System.Windows.Forms.TextBox T4_INPUT_ThroughYear_En;
         private System.Windows.Forms.Label label105;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel11;
         private System.Windows.Forms.Label label111;
-        private System.Windows.Forms.TextBox textBox67;
-        private System.Windows.Forms.TextBox textBox68;
+        private System.Windows.Forms.TextBox T4_INPUT_Lane;
+        private System.Windows.Forms.TextBox T4_INPUT_Wage;
         private System.Windows.Forms.Label label115;
         private System.Windows.Forms.Label label118;
-        private System.Windows.Forms.TextBox textBox69;
+        private System.Windows.Forms.TextBox T4_INPUT_Profession;
         private System.Windows.Forms.Label label119;
         private System.Windows.Forms.Label label120;
         private System.Windows.Forms.Label label123;
         private System.Windows.Forms.Label label124;
         private System.Windows.Forms.Label label125;
-        private System.Windows.Forms.TextBox textBox71;
+        private System.Windows.Forms.TextBox T4_INPUT_PostCode;
         private System.Windows.Forms.Label label126;
         private System.Windows.Forms.Label label127;
-        private System.Windows.Forms.TextBox textBox72;
+        private System.Windows.Forms.TextBox T4_INPUT_Phone;
         private System.Windows.Forms.TextBox textBox73;
         private System.Windows.Forms.Label label128;
-        private System.Windows.Forms.TextBox textBox70;
-        private System.Windows.Forms.TextBox textBox74;
+        private System.Windows.Forms.TextBox T4_INPUT_JobDescription;
+        private System.Windows.Forms.TextBox T4_INPUT_School;
         private System.Windows.Forms.Label label130;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label121;
@@ -4288,13 +4258,13 @@
         private System.Windows.Forms.Label label133;
         private System.Windows.Forms.Label label134;
         private System.Windows.Forms.Label label135;
-        private System.Windows.Forms.TextBox textBox75;
-        private System.Windows.Forms.TextBox textBox76;
-        private System.Windows.Forms.TextBox textBox77;
-        private System.Windows.Forms.TextBox textBox78;
-        private System.Windows.Forms.TextBox textBox79;
-        private System.Windows.Forms.TextBox textBox80;
-        private System.Windows.Forms.TextBox textBox81;
+        private System.Windows.Forms.TextBox T4_INPUT_Bossname;
+        private System.Windows.Forms.TextBox T4_INPUT_HomeNo;
+        private System.Windows.Forms.TextBox T4_INPUT_Village;
+        private System.Windows.Forms.TextBox T4_INPUT_Road;
+        private System.Windows.Forms.TextBox T4_INPUT_Tambol;
+        private System.Windows.Forms.TextBox T4_INPUT_Amphur;
+        private System.Windows.Forms.TextBox T4_INPUT_Province;
         private System.Windows.Forms.TextBox textBox82;
         private System.Windows.Forms.TextBox textBox83;
         private System.Windows.Forms.TextBox textBox84;
@@ -4356,20 +4326,18 @@
         private System.Windows.Forms.TextBox T3_INPUT_PassportExpMonth_En;
         private System.Windows.Forms.TextBox T3_INPUT_PassportExpDate;
         private System.Windows.Forms.ComboBox T3_INPUT_PassportExpMonth;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.ComboBox comboBox3;
-        private System.Windows.Forms.ComboBox comboBox4;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox T4_INPUT_PerLicenseMonth_En;
+        private System.Windows.Forms.TextBox T4_INPUT_ThroughDate;
+        private System.Windows.Forms.TextBox T4_INPUT_PerLicenseDate;
+        private System.Windows.Forms.ComboBox T4_INPUT_PerLicenseMonth;
+        private System.Windows.Forms.ComboBox T4_INPUT_ThroughMonth;
+        private System.Windows.Forms.TextBox T4_INPUT_ExpireOn;
         private System.Windows.Forms.TextBox T4_INPUT_DateIssue;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox T4_INPUT_ExpireMonth;
         private System.Windows.Forms.ComboBox T4_INPUT_MonthIssue;
         private System.Windows.Forms.TextBox T4_INPUT_MonthIssue_En;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox T4_INPUT_ExpireMonth_En;
         private System.Windows.Forms.TextBox T4_INPUT_PlaceIssue;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel13;
-        private System.Windows.Forms.Label label152;
         private System.Windows.Forms.TextBox T4_INPUT_PeriodPermission;
     }
 }
