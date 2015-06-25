@@ -81,7 +81,10 @@ namespace TeacherForeignPro
         public int ConvBloodToIndex(string _BloodName)
         {
             int Result = 0;
-            switch (_BloodName.ToLower()){
+            string BloodName = _BloodName;
+            BloodName = _BloodName.ToLower();
+            switch (BloodName)
+            {
                 case "a":
                     Result = 1;
                     break;
@@ -105,6 +108,23 @@ namespace TeacherForeignPro
                     break;
             }
             return Result;
+        }
+        public int ConvSexToIndex(string _SexName)
+        {
+            int IndexResult = 0;
+            switch (_SexName)
+            {
+                case "ชาย":
+                    IndexResult = 1;
+                    break;
+                case "หญิง":
+                    IndexResult = 2;
+                    break;
+                default:
+                    IndexResult = 0;
+                    break;
+            }
+            return IndexResult;
         }
         public string ConvThMonthToEnMonth(string _MonthName)
         {
@@ -156,11 +176,21 @@ namespace TeacherForeignPro
         public string ConvThYearToEnYear(string _ThYear)
         {
             string Result = string.Empty;
-            if (_ThYear == string.Empty)
+            string ThYear = _ThYear;
+            if (ThYear.IsNumeric())
             {
-                return Result;
+                ThYear = (Convert.ToInt16(ThYear) - 543).ToString();
             }
-            return Result = (Convert.ToInt16(_ThYear) - 543).ToString();
+            return Result = ThYear;
+        }
+    }
+
+    public static class StringExt
+    {
+        public static bool IsNumeric(this string text)
+        {
+            double test;
+            return double.TryParse(text, out test);
         }
     }
 }

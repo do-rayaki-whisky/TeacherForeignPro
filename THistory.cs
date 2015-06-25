@@ -243,40 +243,40 @@ namespace TeacherForeignPro
                 {
                     Read.Read();
                     _HisID = Read.GetValue(0).ToString();
-                    _Passport = Read.GetString(1);
-                    _Th_Title = Read.GetString(2);
-                    _Th_Name = Read.GetString(3);
-                    _Th_Lastname = Read.GetString(4);
-                    _En_Title = Read.GetString(5);
-                    _En_Name = Read.GetString(6);
-                    _En_Lastname = Read.GetString(7);
-                    _Sex = Read.GetString(8);
-                    _Nationality = Read.GetString(9);
-                    _Nationality_En = Read.GetString(10);
-                    _Date_Birth = Read.GetString(11);
-                    _Month_Birth = Read.GetString(12);
-                    _Month_Birth_En = Read.GetString(13);
-                    _Year_Birth = Read.GetString(14);
-                    _Year_Birth_En = Read.GetString(15);
-                    _Age = Read.GetString(16);
-                    _Degree = Read.GetString(17);
-                    _Year_Received = Read.GetString(18);
-                    _Name_Institute = Read.GetString(19);
-                    _Country_Edu = Read.GetString(20);
-                    _Stuffed_ID = Read.GetString(22);
-                    _StuffedDate = Read.GetString(23);
-                    _StuffedMonth = Read.GetString(24);
-                    _StuffedMonth_En = Read.GetString(25);
-                    _StuffedYear = Read.GetString(26);
-                    _StuffedYear_En = Read.GetString(27);
-                    _DateStarted = Read.GetString(28);
-                    _MonthStarted = Read.GetString(29);
-                    _MonthStarted_En = Read.GetString(30);
-                    _YearStarted = Read.GetString(31);
-                    _YearStarted_En = Read.GetString(32);
-                    _Phone = Read.GetString(33);
-                    _Pic = Read.GetString(34);
-                    _blood_Grp = Read.GetString(35);
+                    _Passport = Read.GetString(1).Trim();
+                    _Th_Title = Read.GetString(2).Trim();
+                    _Th_Name = Read.GetString(3).Trim();
+                    _Th_Lastname = Read.GetString(4).Trim();
+                    _En_Title = Read.GetString(5).Trim();
+                    _En_Name = Read.GetString(6).Trim();
+                    _En_Lastname = Read.GetString(7).Trim();
+                    _Sex = Read.GetString(8).Trim();
+                    _Nationality = Read.GetString(9).Trim();
+                    _Nationality_En = Read.GetString(10).Trim();
+                    _Date_Birth = Read.GetString(11).Trim();
+                    _Month_Birth = Read.GetString(12).Trim();
+                    _Month_Birth_En = Read.GetString(13).Trim();
+                    _Year_Birth = Read.GetString(14).Trim();
+                    _Year_Birth_En = Read.GetString(15).Trim();
+                    _Age = Read.GetString(16).Trim();
+                    _Degree = Read.GetString(17).Trim();
+                    _Year_Received = Read.GetString(18).Trim();
+                    _Name_Institute = Read.GetString(19).Trim();
+                    _Country_Edu = Read.GetString(20).Trim();
+                    _Stuffed_ID = Read.GetString(22).Trim();
+                    _StuffedDate = Read.GetString(23).Trim();
+                    _StuffedMonth = Read.GetString(24).Trim();
+                    _StuffedMonth_En = Read.GetString(25).Trim();
+                    _StuffedYear = Read.GetString(26).Trim();
+                    _StuffedYear_En = Read.GetString(27).Trim();
+                    _DateStarted = Read.GetString(28).Trim();
+                    _MonthStarted = Read.GetString(29).Trim();
+                    _MonthStarted_En = Read.GetString(30).Trim();
+                    _YearStarted = Read.GetString(31).Trim();
+                    _YearStarted_En = Read.GetString(32).Trim();
+                    _Phone = Read.GetString(33).Trim();
+                    _Pic = Read.GetString(34).Trim();
+                    _blood_Grp = Read.GetString(35).Trim();
 
                     _ResultMessage = "Success";
                 }
@@ -286,6 +286,147 @@ namespace TeacherForeignPro
                 _ResultMessage = ex.ToString();
             }
             Con.Close();
+        }
+
+        public string ImageLocation(string _ImageName)
+        {
+            string Result = string.Empty;
+            if (_ImageName == string.Empty) { } else { Result = ".//Pic/" + _ImageName + ".jpg"; }
+            return Result;
+        }
+
+        public void NewTeacher()
+        {
+            _HisID = string.Empty;
+            _Passport = string.Empty;
+            _Th_Title = string.Empty; ;
+            _Th_Name = string.Empty;
+            _Th_Lastname = string.Empty;
+            _En_Title = string.Empty; ;
+            _En_Name = string.Empty;
+            _En_Lastname = string.Empty;
+            _Sex = string.Empty; ;
+            _Nationality = string.Empty;
+            _Nationality_En = string.Empty;
+            _Date_Birth = string.Empty;
+            _Month_Birth = string.Empty; ;
+            _Month_Birth_En = string.Empty;
+            _Year_Birth = string.Empty;
+            _Year_Birth_En = string.Empty;
+            _Age = string.Empty;
+            _Degree = string.Empty;
+            _Year_Received = string.Empty;
+            _Name_Institute = string.Empty;
+            _Country_Edu = string.Empty;
+            _Stuffed_ID = string.Empty;
+            _StuffedDate = string.Empty;
+            _StuffedMonth = string.Empty; ;
+            _StuffedMonth_En = string.Empty;
+            _StuffedYear = string.Empty;
+            _StuffedYear_En = string.Empty;
+            _DateStarted = string.Empty;
+            _MonthStarted = string.Empty;
+            _MonthStarted_En = string.Empty;
+            _YearStarted = string.Empty;
+            _YearStarted_En = string.Empty;
+            _Phone = string.Empty;
+            _Pic = string.Empty;
+            _blood_Grp = string.Empty;
+        }
+
+        public void InsertTeacher()
+        {
+            if (_Passport == string.Empty)
+            {
+                _ResultMessage = "หมายเลข Passport ว่างเปล่าไม่ได้";
+                return;
+            }
+            if(_HisID == string.Empty)
+            {
+                _ResultMessage = "รหัสประจำตัวครูว่างเปล่าไม่ได้";
+            }
+
+            bool n = _HisID.IsNumeric();          
+            if (n == false)
+            {
+                _ResultMessage = "รหัสครูต้องเป็นตัวเลขเท่านั้น";
+                return;
+            }
+   
+            string var_QuerySelectPassportA = "select [Passport] from [THistory] where [Passport]='" + _Passport + "'";
+            string var_QuerySelectPassportB = "select [HisID] from [THistory] where [HisID]=" + _HisID;
+            string var_QuerySelectPassportC = "select [Passport], [HisID] from [THistory] where [Passport]='" + _Passport + "' and [HisID]=" + _HisID;
+
+            string var_QueryInsertTHistory = "insert into [THistory] ([Passport], [HisID]) values ('" + _Passport + "', " + _HisID + ")";
+            string var_QueryInsterTDocument = "insert into [TDocument] ([Passport]) values ('" + _Passport + "')";
+            string var_QueryInsterTPassportExp = "insert into [TPassportExp] ([Passport]) values ('" + _Passport + "')";
+            string var_QueryInsterTWorkplace = "insert into [TWorkplace] ([Passport]) values ('" + _Passport + "')";
+
+            bool var_HasKeyPassport;
+            bool var_HasKeyHisID;
+            bool var_HasKeyPassportAndHisID;
+
+            OleDbConnection Con = new OleDbConnection(ConnectionString);      
+            OleDbCommand Com = new OleDbCommand();
+            OleDbDataReader Reader;
+            
+            try
+            {
+                Con.Open();
+                Com.Connection = Con;
+                Com.CommandText = var_QuerySelectPassportA;
+                Reader = Com.ExecuteReader();
+                var_HasKeyPassport = Reader.HasRows;
+                Reader.Close();
+
+                Com.CommandText = var_QuerySelectPassportB;
+                Reader = Com.ExecuteReader();
+                var_HasKeyHisID = Reader.HasRows;
+                Reader.Close();
+
+                Com.CommandText = var_QuerySelectPassportC;
+                Reader = Com.ExecuteReader();
+                var_HasKeyPassportAndHisID = Reader.HasRows;
+                Reader.Close();
+
+                if ((var_HasKeyPassport == false) && (var_HasKeyHisID == false) && (var_HasKeyPassportAndHisID == false))
+                {                    
+                    Com.CommandText = var_QueryInsertTHistory;
+                    Com.ExecuteNonQuery();
+
+                    Com.CommandText = var_QueryInsterTDocument;
+                    Com.ExecuteNonQuery();
+
+                    Com.CommandText = var_QueryInsterTPassportExp;
+                    Com.ExecuteNonQuery();
+
+                    Com.CommandText = var_QueryInsterTWorkplace;
+                    Com.ExecuteNonQuery();
+                }
+                else if ((var_HasKeyPassport == true) && (var_HasKeyHisID == false) && (var_HasKeyPassportAndHisID == false))
+                {
+                    _ResultMessage = "หมายเลข Passport " + _Passport + " มีอยู่ในฐานข้อมูลแล้ว";
+                }
+                else if ((var_HasKeyPassport == false) && (var_HasKeyHisID == true) && (var_HasKeyPassportAndHisID == false))
+                {
+                    _ResultMessage = "หมายเลขประจำตัวครู " + _HisID + " มีอยู่ในฐานข้อมูลแล้ว";
+                }
+            }
+            catch (Exception ex)
+            {
+                _ResultMessage = ex.ToString();
+            }
+            Con.Close();
+        }
+
+        public void UpdateTeacher()
+        {
+
+        }
+
+        private void UdateTeacher(string _PassportName, string _HisIDName)
+        {
+
         }
     }
 }

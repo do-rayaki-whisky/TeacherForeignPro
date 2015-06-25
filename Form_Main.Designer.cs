@@ -30,7 +30,7 @@
         {
             this.MainTab = new System.Windows.Forms.TabControl();
             this.THisrotyTab = new System.Windows.Forms.TabPage();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.T1_INPUT_Pic = new System.Windows.Forms.PictureBox();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.T1_INPUT_MonthStarted = new System.Windows.Forms.ComboBox();
             this.T1_INPUT_MonthStarted_En = new System.Windows.Forms.TextBox();
@@ -52,7 +52,7 @@
             this.T1_INPUT_StuffedYear_En = new System.Windows.Forms.TextBox();
             this.T1_INPUT_DateStarted = new System.Windows.Forms.TextBox();
             this.T1_INPUT_YearStarted = new System.Windows.Forms.TextBox();
-            this.YearStarted_En = new System.Windows.Forms.TextBox();
+            this.T1_INPUT_YearStarted_En = new System.Windows.Forms.TextBox();
             this.T1_INPUT_StuffedMonth_En = new System.Windows.Forms.TextBox();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.T1_INPUT_blood_Grp = new System.Windows.Forms.ComboBox();
@@ -302,36 +302,39 @@
             this.T4_INPUT_PlaceIssue = new System.Windows.Forms.TextBox();
             this.T4_INPUT_PeriodPermission = new System.Windows.Forms.TextBox();
             this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.T6_SUMBIT_Update = new System.Windows.Forms.Button();
             this.tableLayoutPanel12 = new System.Windows.Forms.TableLayoutPanel();
             this.label136 = new System.Windows.Forms.Label();
-            this.label137 = new System.Windows.Forms.Label();
+            this.label150 = new System.Windows.Forms.Label();
+            this.T6_INPUT_Phone = new System.Windows.Forms.TextBox();
+            this.label151 = new System.Windows.Forms.Label();
+            this.T6_INPUT_PostCode = new System.Windows.Forms.TextBox();
+            this.label148 = new System.Windows.Forms.Label();
+            this.T6_INPUT_Province = new System.Windows.Forms.TextBox();
+            this.label147 = new System.Windows.Forms.Label();
+            this.T6_INPUT_Amphur = new System.Windows.Forms.TextBox();
+            this.T6_INPUT_Tambol = new System.Windows.Forms.TextBox();
             this.label138 = new System.Windows.Forms.Label();
             this.label139 = new System.Windows.Forms.Label();
-            this.T6_INPUT_Tambol = new System.Windows.Forms.TextBox();
             this.T6_INPUT_Road = new System.Windows.Forms.TextBox();
             this.label140 = new System.Windows.Forms.Label();
+            this.T6_INPUT_Lane = new System.Windows.Forms.TextBox();
+            this.T6_INPUT_Village = new System.Windows.Forms.TextBox();
             this.label141 = new System.Windows.Forms.Label();
+            this.T6_INPUT_HomeNo = new System.Windows.Forms.TextBox();
             this.label142 = new System.Windows.Forms.Label();
             this.label144 = new System.Windows.Forms.Label();
-            this.T6_INPUT_School = new System.Windows.Forms.TextBox();
-            this.label147 = new System.Windows.Forms.Label();
-            this.label148 = new System.Windows.Forms.Label();
-            this.label150 = new System.Windows.Forms.Label();
-            this.label151 = new System.Windows.Forms.Label();
             this.T6_INPUT_Bossname = new System.Windows.Forms.TextBox();
-            this.T6_INPUT_HomeNo = new System.Windows.Forms.TextBox();
-            this.T6_INPUT_Village = new System.Windows.Forms.TextBox();
-            this.T6_INPUT_Lane = new System.Windows.Forms.TextBox();
-            this.T6_INPUT_Amphur = new System.Windows.Forms.TextBox();
-            this.T6_INPUT_Province = new System.Windows.Forms.TextBox();
-            this.T6_INPUT_PostCode = new System.Windows.Forms.TextBox();
-            this.T6_INPUT_Phone = new System.Windows.Forms.TextBox();
+            this.T6_INPUT_School = new System.Windows.Forms.TextBox();
+            this.label137 = new System.Windows.Forms.Label();
             this.T6_INPUT_Choose = new System.Windows.Forms.ComboBox();
-            this.T6_SUMBIT_Update = new System.Windows.Forms.Button();
+            this.MAIN_BTN_Find = new System.Windows.Forms.Button();
+            this.MAIN_BTN_New = new System.Windows.Forms.Button();
+            this.MAIN_BTN_Save = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.MainTab.SuspendLayout();
             this.THisrotyTab.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.T1_INPUT_Pic)).BeginInit();
             this.tableLayoutPanel3.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
@@ -366,7 +369,7 @@
             // 
             // THisrotyTab
             // 
-            this.THisrotyTab.Controls.Add(this.pictureBox1);
+            this.THisrotyTab.Controls.Add(this.T1_INPUT_Pic);
             this.THisrotyTab.Controls.Add(this.tableLayoutPanel3);
             this.THisrotyTab.Controls.Add(this.tableLayoutPanel2);
             this.THisrotyTab.Controls.Add(this.tableLayoutPanel1);
@@ -379,14 +382,16 @@
             this.THisrotyTab.Text = "ประวัติครู";
             this.THisrotyTab.UseVisualStyleBackColor = true;
             // 
-            // pictureBox1
+            // T1_INPUT_Pic
             // 
-            this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox1.Location = new System.Drawing.Point(1261, 6);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(145, 192);
-            this.pictureBox1.TabIndex = 3;
-            this.pictureBox1.TabStop = false;
+            this.T1_INPUT_Pic.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.T1_INPUT_Pic.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.T1_INPUT_Pic.Location = new System.Drawing.Point(1260, 10);
+            this.T1_INPUT_Pic.Name = "T1_INPUT_Pic";
+            this.T1_INPUT_Pic.Size = new System.Drawing.Size(145, 192);
+            this.T1_INPUT_Pic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.T1_INPUT_Pic.TabIndex = 3;
+            this.T1_INPUT_Pic.TabStop = false;
             // 
             // tableLayoutPanel3
             // 
@@ -413,7 +418,7 @@
             this.tableLayoutPanel3.Controls.Add(this.T1_INPUT_StuffedYear_En, 1, 5);
             this.tableLayoutPanel3.Controls.Add(this.T1_INPUT_DateStarted, 1, 6);
             this.tableLayoutPanel3.Controls.Add(this.T1_INPUT_YearStarted, 1, 9);
-            this.tableLayoutPanel3.Controls.Add(this.YearStarted_En, 1, 10);
+            this.tableLayoutPanel3.Controls.Add(this.T1_INPUT_YearStarted_En, 1, 10);
             this.tableLayoutPanel3.Controls.Add(this.T1_INPUT_StuffedMonth_En, 1, 3);
             this.tableLayoutPanel3.Location = new System.Drawing.Point(842, 10);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
@@ -452,18 +457,21 @@
             "ตุลาคม",
             "พฤศจิกายน",
             "ธันวาคม"});
-            this.T1_INPUT_MonthStarted.Location = new System.Drawing.Point(119, 288);
+            this.T1_INPUT_MonthStarted.Location = new System.Drawing.Point(119, 289);
             this.T1_INPUT_MonthStarted.Name = "T1_INPUT_MonthStarted";
             this.T1_INPUT_MonthStarted.Size = new System.Drawing.Size(150, 24);
-            this.T1_INPUT_MonthStarted.TabIndex = 34;
+            this.T1_INPUT_MonthStarted.TabIndex = 26;
+            this.T1_INPUT_MonthStarted.SelectedIndexChanged += new System.EventHandler(this.T1_INPUT_MonthStarted_SelectedIndexChanged);
             // 
             // T1_INPUT_MonthStarted_En
             // 
             this.T1_INPUT_MonthStarted_En.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.T1_INPUT_MonthStarted_En.Location = new System.Drawing.Point(119, 328);
             this.T1_INPUT_MonthStarted_En.Name = "T1_INPUT_MonthStarted_En";
+            this.T1_INPUT_MonthStarted_En.ReadOnly = true;
             this.T1_INPUT_MonthStarted_En.Size = new System.Drawing.Size(100, 23);
             this.T1_INPUT_MonthStarted_En.TabIndex = 33;
+            this.T1_INPUT_MonthStarted_En.TabStop = false;
             // 
             // T1_INPUT_StuffedMonth
             // 
@@ -484,10 +492,11 @@
             "ตุลาคม",
             "พฤศจิกายน",
             "ธันวาคม"});
-            this.T1_INPUT_StuffedMonth.Location = new System.Drawing.Point(119, 88);
+            this.T1_INPUT_StuffedMonth.Location = new System.Drawing.Point(119, 89);
             this.T1_INPUT_StuffedMonth.Name = "T1_INPUT_StuffedMonth";
             this.T1_INPUT_StuffedMonth.Size = new System.Drawing.Size(150, 24);
-            this.T1_INPUT_StuffedMonth.TabIndex = 30;
+            this.T1_INPUT_StuffedMonth.TabIndex = 23;
+            this.T1_INPUT_StuffedMonth.SelectedIndexChanged += new System.EventHandler(this.T1_INPUT_StuffedMonth_SelectedIndexChanged);
             // 
             // label23
             // 
@@ -619,22 +628,27 @@
             // 
             this.T1_INPUT_StuffedYear.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.T1_INPUT_StuffedYear.Location = new System.Drawing.Point(119, 168);
+            this.T1_INPUT_StuffedYear.MaxLength = 4;
             this.T1_INPUT_StuffedYear.Name = "T1_INPUT_StuffedYear";
             this.T1_INPUT_StuffedYear.Size = new System.Drawing.Size(100, 23);
-            this.T1_INPUT_StuffedYear.TabIndex = 23;
+            this.T1_INPUT_StuffedYear.TabIndex = 24;
+            this.T1_INPUT_StuffedYear.TextChanged += new System.EventHandler(this.T1_INPUT_StuffedYear_TextChanged);
             // 
             // T1_INPUT_StuffedYear_En
             // 
             this.T1_INPUT_StuffedYear_En.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.T1_INPUT_StuffedYear_En.Location = new System.Drawing.Point(119, 208);
             this.T1_INPUT_StuffedYear_En.Name = "T1_INPUT_StuffedYear_En";
+            this.T1_INPUT_StuffedYear_En.ReadOnly = true;
             this.T1_INPUT_StuffedYear_En.Size = new System.Drawing.Size(100, 23);
             this.T1_INPUT_StuffedYear_En.TabIndex = 24;
+            this.T1_INPUT_StuffedYear_En.TabStop = false;
             // 
             // T1_INPUT_DateStarted
             // 
             this.T1_INPUT_DateStarted.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.T1_INPUT_DateStarted.Location = new System.Drawing.Point(119, 248);
+            this.T1_INPUT_DateStarted.MaxLength = 2;
             this.T1_INPUT_DateStarted.Name = "T1_INPUT_DateStarted";
             this.T1_INPUT_DateStarted.Size = new System.Drawing.Size(100, 23);
             this.T1_INPUT_DateStarted.TabIndex = 25;
@@ -643,25 +657,31 @@
             // 
             this.T1_INPUT_YearStarted.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.T1_INPUT_YearStarted.Location = new System.Drawing.Point(119, 368);
+            this.T1_INPUT_YearStarted.MaxLength = 4;
             this.T1_INPUT_YearStarted.Name = "T1_INPUT_YearStarted";
             this.T1_INPUT_YearStarted.Size = new System.Drawing.Size(100, 23);
-            this.T1_INPUT_YearStarted.TabIndex = 26;
+            this.T1_INPUT_YearStarted.TabIndex = 27;
+            this.T1_INPUT_YearStarted.TextChanged += new System.EventHandler(this.T1_INPUT_YearStarted_TextChanged);
             // 
-            // YearStarted_En
+            // T1_INPUT_YearStarted_En
             // 
-            this.YearStarted_En.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.YearStarted_En.Location = new System.Drawing.Point(119, 408);
-            this.YearStarted_En.Name = "YearStarted_En";
-            this.YearStarted_En.Size = new System.Drawing.Size(100, 23);
-            this.YearStarted_En.TabIndex = 27;
+            this.T1_INPUT_YearStarted_En.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.T1_INPUT_YearStarted_En.Location = new System.Drawing.Point(119, 408);
+            this.T1_INPUT_YearStarted_En.Name = "T1_INPUT_YearStarted_En";
+            this.T1_INPUT_YearStarted_En.ReadOnly = true;
+            this.T1_INPUT_YearStarted_En.Size = new System.Drawing.Size(100, 23);
+            this.T1_INPUT_YearStarted_En.TabIndex = 27;
+            this.T1_INPUT_YearStarted_En.TabStop = false;
             // 
             // T1_INPUT_StuffedMonth_En
             // 
             this.T1_INPUT_StuffedMonth_En.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.T1_INPUT_StuffedMonth_En.Location = new System.Drawing.Point(119, 128);
             this.T1_INPUT_StuffedMonth_En.Name = "T1_INPUT_StuffedMonth_En";
+            this.T1_INPUT_StuffedMonth_En.ReadOnly = true;
             this.T1_INPUT_StuffedMonth_En.Size = new System.Drawing.Size(100, 23);
             this.T1_INPUT_StuffedMonth_En.TabIndex = 32;
+            this.T1_INPUT_StuffedMonth_En.TabStop = false;
             // 
             // tableLayoutPanel2
             // 
@@ -721,10 +741,10 @@
             "AB",
             "RH+",
             "RH-"});
-            this.T1_INPUT_blood_Grp.Location = new System.Drawing.Point(119, 249);
+            this.T1_INPUT_blood_Grp.Location = new System.Drawing.Point(119, 248);
             this.T1_INPUT_blood_Grp.Name = "T1_INPUT_blood_Grp";
             this.T1_INPUT_blood_Grp.Size = new System.Drawing.Size(150, 24);
-            this.T1_INPUT_blood_Grp.TabIndex = 28;
+            this.T1_INPUT_blood_Grp.TabIndex = 16;
             // 
             // T1_INPUT_Month_Birth
             // 
@@ -745,10 +765,10 @@
             "ตุลาคม",
             "พฤศจิกายน",
             "ธันวาคม"});
-            this.T1_INPUT_Month_Birth.Location = new System.Drawing.Point(119, 49);
+            this.T1_INPUT_Month_Birth.Location = new System.Drawing.Point(119, 48);
             this.T1_INPUT_Month_Birth.Name = "T1_INPUT_Month_Birth";
             this.T1_INPUT_Month_Birth.Size = new System.Drawing.Size(150, 24);
-            this.T1_INPUT_Month_Birth.TabIndex = 26;
+            this.T1_INPUT_Month_Birth.TabIndex = 13;
             this.T1_INPUT_Month_Birth.SelectedIndexChanged += new System.EventHandler(this.T1_INPUT_Month_Birth_SelectedIndexChanged);
             // 
             // label12
@@ -865,17 +885,19 @@
             // 
             this.T1_INPUT_Date_Birth.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.T1_INPUT_Date_Birth.Location = new System.Drawing.Point(119, 8);
+            this.T1_INPUT_Date_Birth.MaxLength = 2;
             this.T1_INPUT_Date_Birth.Name = "T1_INPUT_Date_Birth";
             this.T1_INPUT_Date_Birth.Size = new System.Drawing.Size(100, 23);
-            this.T1_INPUT_Date_Birth.TabIndex = 17;
+            this.T1_INPUT_Date_Birth.TabIndex = 12;
             // 
             // T1_INPUT_Age
             // 
             this.T1_INPUT_Age.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.T1_INPUT_Age.Location = new System.Drawing.Point(119, 208);
+            this.T1_INPUT_Age.MaxLength = 3;
             this.T1_INPUT_Age.Name = "T1_INPUT_Age";
             this.T1_INPUT_Age.Size = new System.Drawing.Size(100, 23);
-            this.T1_INPUT_Age.TabIndex = 18;
+            this.T1_INPUT_Age.TabIndex = 15;
             // 
             // T1_INPUT_Degree
             // 
@@ -883,7 +905,7 @@
             this.T1_INPUT_Degree.Location = new System.Drawing.Point(119, 288);
             this.T1_INPUT_Degree.Name = "T1_INPUT_Degree";
             this.T1_INPUT_Degree.Size = new System.Drawing.Size(260, 23);
-            this.T1_INPUT_Degree.TabIndex = 19;
+            this.T1_INPUT_Degree.TabIndex = 17;
             // 
             // T1_INPUT_Name_institute
             // 
@@ -891,15 +913,16 @@
             this.T1_INPUT_Name_institute.Location = new System.Drawing.Point(119, 368);
             this.T1_INPUT_Name_institute.Name = "T1_INPUT_Name_institute";
             this.T1_INPUT_Name_institute.Size = new System.Drawing.Size(260, 23);
-            this.T1_INPUT_Name_institute.TabIndex = 20;
+            this.T1_INPUT_Name_institute.TabIndex = 19;
             // 
             // T1_INPUT_Year_Recievied
             // 
             this.T1_INPUT_Year_Recievied.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.T1_INPUT_Year_Recievied.Location = new System.Drawing.Point(119, 328);
+            this.T1_INPUT_Year_Recievied.MaxLength = 4;
             this.T1_INPUT_Year_Recievied.Name = "T1_INPUT_Year_Recievied";
             this.T1_INPUT_Year_Recievied.Size = new System.Drawing.Size(100, 23);
-            this.T1_INPUT_Year_Recievied.TabIndex = 21;
+            this.T1_INPUT_Year_Recievied.TabIndex = 18;
             // 
             // T1_INPUT_Country_Edu
             // 
@@ -907,7 +930,7 @@
             this.T1_INPUT_Country_Edu.Location = new System.Drawing.Point(119, 408);
             this.T1_INPUT_Country_Edu.Name = "T1_INPUT_Country_Edu";
             this.T1_INPUT_Country_Edu.Size = new System.Drawing.Size(260, 23);
-            this.T1_INPUT_Country_Edu.TabIndex = 22;
+            this.T1_INPUT_Country_Edu.TabIndex = 20;
             // 
             // T1_INPUT_Year_Birth
             // 
@@ -916,7 +939,7 @@
             this.T1_INPUT_Year_Birth.MaxLength = 4;
             this.T1_INPUT_Year_Birth.Name = "T1_INPUT_Year_Birth";
             this.T1_INPUT_Year_Birth.Size = new System.Drawing.Size(100, 23);
-            this.T1_INPUT_Year_Birth.TabIndex = 23;
+            this.T1_INPUT_Year_Birth.TabIndex = 14;
             this.T1_INPUT_Year_Birth.TextChanged += new System.EventHandler(this.T1_INPUT_Year_Birth_TextChanged);
             // 
             // T1_INPUT_Year_Birth_En
@@ -924,16 +947,20 @@
             this.T1_INPUT_Year_Birth_En.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.T1_INPUT_Year_Birth_En.Location = new System.Drawing.Point(119, 168);
             this.T1_INPUT_Year_Birth_En.Name = "T1_INPUT_Year_Birth_En";
+            this.T1_INPUT_Year_Birth_En.ReadOnly = true;
             this.T1_INPUT_Year_Birth_En.Size = new System.Drawing.Size(100, 23);
             this.T1_INPUT_Year_Birth_En.TabIndex = 24;
+            this.T1_INPUT_Year_Birth_En.TabStop = false;
             // 
             // T1_INPUT_Month_Birth_En
             // 
             this.T1_INPUT_Month_Birth_En.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.T1_INPUT_Month_Birth_En.Location = new System.Drawing.Point(119, 88);
             this.T1_INPUT_Month_Birth_En.Name = "T1_INPUT_Month_Birth_En";
+            this.T1_INPUT_Month_Birth_En.ReadOnly = true;
             this.T1_INPUT_Month_Birth_En.Size = new System.Drawing.Size(100, 23);
             this.T1_INPUT_Month_Birth_En.TabIndex = 29;
+            this.T1_INPUT_Month_Birth_En.TabStop = false;
             // 
             // tableLayoutPanel1
             // 
@@ -991,10 +1018,10 @@
             "-",
             "ชาย",
             "หญิง"});
-            this.T1_INPUT_Sex.Location = new System.Drawing.Point(119, 329);
+            this.T1_INPUT_Sex.Location = new System.Drawing.Point(119, 328);
             this.T1_INPUT_Sex.Name = "T1_INPUT_Sex";
             this.T1_INPUT_Sex.Size = new System.Drawing.Size(150, 24);
-            this.T1_INPUT_Sex.TabIndex = 27;
+            this.T1_INPUT_Sex.TabIndex = 8;
             // 
             // T1_INPUT_En_Title
             // 
@@ -1006,10 +1033,10 @@
             "Mr.",
             "Mrs.",
             "Miss"});
-            this.T1_INPUT_En_Title.Location = new System.Drawing.Point(119, 208);
+            this.T1_INPUT_En_Title.Location = new System.Drawing.Point(119, 209);
             this.T1_INPUT_En_Title.Name = "T1_INPUT_En_Title";
             this.T1_INPUT_En_Title.Size = new System.Drawing.Size(150, 24);
-            this.T1_INPUT_En_Title.TabIndex = 26;
+            this.T1_INPUT_En_Title.TabIndex = 5;
             // 
             // T1_INPUT_HisID
             // 
@@ -1017,7 +1044,7 @@
             this.T1_INPUT_HisID.Location = new System.Drawing.Point(119, 48);
             this.T1_INPUT_HisID.Name = "T1_INPUT_HisID";
             this.T1_INPUT_HisID.Size = new System.Drawing.Size(100, 23);
-            this.T1_INPUT_HisID.TabIndex = 11;
+            this.T1_INPUT_HisID.TabIndex = 1;
             // 
             // label11
             // 
@@ -1145,7 +1172,7 @@
             this.T1_INPUT_Passport.Location = new System.Drawing.Point(119, 8);
             this.T1_INPUT_Passport.Name = "T1_INPUT_Passport";
             this.T1_INPUT_Passport.Size = new System.Drawing.Size(260, 23);
-            this.T1_INPUT_Passport.TabIndex = 10;
+            this.T1_INPUT_Passport.TabIndex = 0;
             // 
             // T1_INPUT_Th_Name
             // 
@@ -1153,7 +1180,7 @@
             this.T1_INPUT_Th_Name.Location = new System.Drawing.Point(119, 128);
             this.T1_INPUT_Th_Name.Name = "T1_INPUT_Th_Name";
             this.T1_INPUT_Th_Name.Size = new System.Drawing.Size(260, 23);
-            this.T1_INPUT_Th_Name.TabIndex = 12;
+            this.T1_INPUT_Th_Name.TabIndex = 3;
             // 
             // T1_INPUT_Th_Lastname
             // 
@@ -1161,7 +1188,7 @@
             this.T1_INPUT_Th_Lastname.Location = new System.Drawing.Point(119, 168);
             this.T1_INPUT_Th_Lastname.Name = "T1_INPUT_Th_Lastname";
             this.T1_INPUT_Th_Lastname.Size = new System.Drawing.Size(260, 23);
-            this.T1_INPUT_Th_Lastname.TabIndex = 13;
+            this.T1_INPUT_Th_Lastname.TabIndex = 4;
             // 
             // T1_INPUT_En_Name
             // 
@@ -1169,7 +1196,7 @@
             this.T1_INPUT_En_Name.Location = new System.Drawing.Point(119, 248);
             this.T1_INPUT_En_Name.Name = "T1_INPUT_En_Name";
             this.T1_INPUT_En_Name.Size = new System.Drawing.Size(260, 23);
-            this.T1_INPUT_En_Name.TabIndex = 14;
+            this.T1_INPUT_En_Name.TabIndex = 6;
             // 
             // T1_INPUT_EN_Lastname
             // 
@@ -1177,7 +1204,7 @@
             this.T1_INPUT_EN_Lastname.Location = new System.Drawing.Point(119, 288);
             this.T1_INPUT_EN_Lastname.Name = "T1_INPUT_EN_Lastname";
             this.T1_INPUT_EN_Lastname.Size = new System.Drawing.Size(260, 23);
-            this.T1_INPUT_EN_Lastname.TabIndex = 15;
+            this.T1_INPUT_EN_Lastname.TabIndex = 7;
             // 
             // T1_INPUT_Nationality
             // 
@@ -1185,7 +1212,7 @@
             this.T1_INPUT_Nationality.Location = new System.Drawing.Point(119, 368);
             this.T1_INPUT_Nationality.Name = "T1_INPUT_Nationality";
             this.T1_INPUT_Nationality.Size = new System.Drawing.Size(260, 23);
-            this.T1_INPUT_Nationality.TabIndex = 16;
+            this.T1_INPUT_Nationality.TabIndex = 9;
             // 
             // T1_INPUT_Th_Title
             // 
@@ -1197,10 +1224,10 @@
             "นาย",
             "นาง",
             "นางสาว"});
-            this.T1_INPUT_Th_Title.Location = new System.Drawing.Point(119, 89);
+            this.T1_INPUT_Th_Title.Location = new System.Drawing.Point(119, 88);
             this.T1_INPUT_Th_Title.Name = "T1_INPUT_Th_Title";
             this.T1_INPUT_Th_Title.Size = new System.Drawing.Size(150, 24);
-            this.T1_INPUT_Th_Title.TabIndex = 25;
+            this.T1_INPUT_Th_Title.TabIndex = 2;
             // 
             // T1_INPUT_Nationality_EN
             // 
@@ -1208,7 +1235,7 @@
             this.T1_INPUT_Nationality_EN.Location = new System.Drawing.Point(119, 408);
             this.T1_INPUT_Nationality_EN.Name = "T1_INPUT_Nationality_EN";
             this.T1_INPUT_Nationality_EN.Size = new System.Drawing.Size(260, 23);
-            this.T1_INPUT_Nationality_EN.TabIndex = 17;
+            this.T1_INPUT_Nationality_EN.TabIndex = 10;
             // 
             // T1_INPUT_Phone
             // 
@@ -1216,7 +1243,7 @@
             this.T1_INPUT_Phone.Location = new System.Drawing.Point(119, 448);
             this.T1_INPUT_Phone.Name = "T1_INPUT_Phone";
             this.T1_INPUT_Phone.Size = new System.Drawing.Size(260, 23);
-            this.T1_INPUT_Phone.TabIndex = 18;
+            this.T1_INPUT_Phone.TabIndex = 11;
             // 
             // TDocument
             // 
@@ -1300,7 +1327,7 @@
             "ตุลาคม",
             "พฤศจิกายน",
             "ธันวาคม"});
-            this.T2_INPUT_Renew_Month.Location = new System.Drawing.Point(119, 328);
+            this.T2_INPUT_Renew_Month.Location = new System.Drawing.Point(119, 329);
             this.T2_INPUT_Renew_Month.Name = "T2_INPUT_Renew_Month";
             this.T2_INPUT_Renew_Month.Size = new System.Drawing.Size(150, 24);
             this.T2_INPUT_Renew_Month.TabIndex = 59;
@@ -1492,7 +1519,7 @@
             "ตุลาคม",
             "พฤศจิกายน",
             "ธันวาคม"});
-            this.T2_INPUT_DueMonth.Location = new System.Drawing.Point(119, 88);
+            this.T2_INPUT_DueMonth.Location = new System.Drawing.Point(119, 89);
             this.T2_INPUT_DueMonth.Name = "T2_INPUT_DueMonth";
             this.T2_INPUT_DueMonth.Size = new System.Drawing.Size(150, 24);
             this.T2_INPUT_DueMonth.TabIndex = 70;
@@ -1584,7 +1611,7 @@
             "ตุลาคม",
             "พฤศจิกายน",
             "ธันวาคม"});
-            this.T2_INPUT_ReachedMonth.Location = new System.Drawing.Point(119, 168);
+            this.T2_INPUT_ReachedMonth.Location = new System.Drawing.Point(119, 169);
             this.T2_INPUT_ReachedMonth.Name = "T2_INPUT_ReachedMonth";
             this.T2_INPUT_ReachedMonth.Size = new System.Drawing.Size(150, 24);
             this.T2_INPUT_ReachedMonth.TabIndex = 48;
@@ -2063,7 +2090,7 @@
             this.T2_INPUT_KindVISA.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.T2_INPUT_KindVISA.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.T2_INPUT_KindVISA.FormattingEnabled = true;
-            this.T2_INPUT_KindVISA.Location = new System.Drawing.Point(119, 368);
+            this.T2_INPUT_KindVISA.Location = new System.Drawing.Point(119, 369);
             this.T2_INPUT_KindVISA.Name = "T2_INPUT_KindVISA";
             this.T2_INPUT_KindVISA.Size = new System.Drawing.Size(150, 24);
             this.T2_INPUT_KindVISA.TabIndex = 42;
@@ -2107,7 +2134,7 @@
             "ตุลาคม",
             "พฤศจิกายน",
             "ธันวาคม"});
-            this.T2_INPUT_PassportMonth.Location = new System.Drawing.Point(119, 128);
+            this.T2_INPUT_PassportMonth.Location = new System.Drawing.Point(119, 129);
             this.T2_INPUT_PassportMonth.Name = "T2_INPUT_PassportMonth";
             this.T2_INPUT_PassportMonth.Size = new System.Drawing.Size(150, 24);
             this.T2_INPUT_PassportMonth.TabIndex = 44;
@@ -2147,7 +2174,7 @@
             "ตุลาคม",
             "พฤศจิกายน",
             "ธันวาคม"});
-            this.T2_INPUT_VisaMonth.Location = new System.Drawing.Point(119, 488);
+            this.T2_INPUT_VisaMonth.Location = new System.Drawing.Point(119, 489);
             this.T2_INPUT_VisaMonth.Name = "T2_INPUT_VisaMonth";
             this.T2_INPUT_VisaMonth.Size = new System.Drawing.Size(150, 24);
             this.T2_INPUT_VisaMonth.TabIndex = 47;
@@ -2230,7 +2257,7 @@
             "ตุลาคม",
             "พฤศจิกายน",
             "ธันวาคม"});
-            this.T3_INPUT_ContractMonth.Location = new System.Drawing.Point(119, 88);
+            this.T3_INPUT_ContractMonth.Location = new System.Drawing.Point(119, 89);
             this.T3_INPUT_ContractMonth.Name = "T3_INPUT_ContractMonth";
             this.T3_INPUT_ContractMonth.Size = new System.Drawing.Size(150, 24);
             this.T3_INPUT_ContractMonth.TabIndex = 46;
@@ -2476,7 +2503,7 @@
             "ตุลาคม",
             "พฤศจิกายน",
             "ธันวาคม"});
-            this.T3_INPUT_PassportExpMonth.Location = new System.Drawing.Point(119, 88);
+            this.T3_INPUT_PassportExpMonth.Location = new System.Drawing.Point(119, 89);
             this.T3_INPUT_PassportExpMonth.Name = "T3_INPUT_PassportExpMonth";
             this.T3_INPUT_PassportExpMonth.Size = new System.Drawing.Size(150, 24);
             this.T3_INPUT_PassportExpMonth.TabIndex = 45;
@@ -2945,7 +2972,7 @@
             "ตุลาคม",
             "พฤศจิกายน",
             "ธันวาคม"});
-            this.T4_INPUT_PerLicenseMonth.Location = new System.Drawing.Point(119, 88);
+            this.T4_INPUT_PerLicenseMonth.Location = new System.Drawing.Point(119, 89);
             this.T4_INPUT_PerLicenseMonth.Name = "T4_INPUT_PerLicenseMonth";
             this.T4_INPUT_PerLicenseMonth.Size = new System.Drawing.Size(150, 24);
             this.T4_INPUT_PerLicenseMonth.TabIndex = 65;
@@ -3193,7 +3220,7 @@
             "ตุลาคม",
             "พฤศจิกายน",
             "ธันวาคม"});
-            this.T4_INPUT_ThroughMonth.Location = new System.Drawing.Point(119, 328);
+            this.T4_INPUT_ThroughMonth.Location = new System.Drawing.Point(119, 329);
             this.T4_INPUT_ThroughMonth.Name = "T4_INPUT_ThroughMonth";
             this.T4_INPUT_ThroughMonth.Size = new System.Drawing.Size(150, 24);
             this.T4_INPUT_ThroughMonth.TabIndex = 68;
@@ -3490,7 +3517,7 @@
             "ตุลาคม",
             "พฤศจิกายน",
             "ธันวาคม"});
-            this.T4_INPUT_ExpireMonth.Location = new System.Drawing.Point(119, 448);
+            this.T4_INPUT_ExpireMonth.Location = new System.Drawing.Point(119, 449);
             this.T4_INPUT_ExpireMonth.Name = "T4_INPUT_ExpireMonth";
             this.T4_INPUT_ExpireMonth.Size = new System.Drawing.Size(150, 24);
             this.T4_INPUT_ExpireMonth.TabIndex = 63;
@@ -3514,7 +3541,7 @@
             "ตุลาคม",
             "พฤศจิกายน",
             "ธันวาคม"});
-            this.T4_INPUT_MonthIssue.Location = new System.Drawing.Point(119, 168);
+            this.T4_INPUT_MonthIssue.Location = new System.Drawing.Point(119, 169);
             this.T4_INPUT_MonthIssue.Name = "T4_INPUT_MonthIssue";
             this.T4_INPUT_MonthIssue.Size = new System.Drawing.Size(150, 24);
             this.T4_INPUT_MonthIssue.TabIndex = 64;
@@ -3643,6 +3670,16 @@
             this.tabPage4.Text = "ข้อมูลโรงเรียน";
             this.tabPage4.UseVisualStyleBackColor = true;
             // 
+            // T6_SUMBIT_Update
+            // 
+            this.T6_SUMBIT_Update.Location = new System.Drawing.Point(420, 57);
+            this.T6_SUMBIT_Update.Name = "T6_SUMBIT_Update";
+            this.T6_SUMBIT_Update.Size = new System.Drawing.Size(100, 25);
+            this.T6_SUMBIT_Update.TabIndex = 6;
+            this.T6_SUMBIT_Update.Text = "จัดเก็บ";
+            this.T6_SUMBIT_Update.UseVisualStyleBackColor = true;
+            this.T6_SUMBIT_Update.Click += new System.EventHandler(this.T6_SUMBIT_Update_Click);
+            // 
             // tableLayoutPanel12
             // 
             this.tableLayoutPanel12.ColumnCount = 2;
@@ -3705,15 +3742,85 @@
             this.label136.TabIndex = 40;
             this.label136.Text = "ข้อมูลโรงเรียน";
             // 
-            // label137
+            // label150
             // 
-            this.label137.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.label137.AutoSize = true;
-            this.label137.Location = new System.Drawing.Point(45, 92);
-            this.label137.Name = "label137";
-            this.label137.Size = new System.Drawing.Size(68, 16);
-            this.label137.TabIndex = 46;
-            this.label137.Text = "ชื่อโรงเรียน";
+            this.label150.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.label150.AutoSize = true;
+            this.label150.Location = new System.Drawing.Point(32, 492);
+            this.label150.Name = "label150";
+            this.label150.Size = new System.Drawing.Size(81, 16);
+            this.label150.TabIndex = 54;
+            this.label150.Text = "เบอร์โทรศัพท์";
+            // 
+            // T6_INPUT_Phone
+            // 
+            this.T6_INPUT_Phone.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.T6_INPUT_Phone.Location = new System.Drawing.Point(119, 488);
+            this.T6_INPUT_Phone.Name = "T6_INPUT_Phone";
+            this.T6_INPUT_Phone.Size = new System.Drawing.Size(100, 23);
+            this.T6_INPUT_Phone.TabIndex = 66;
+            // 
+            // label151
+            // 
+            this.label151.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.label151.AutoSize = true;
+            this.label151.Location = new System.Drawing.Point(33, 452);
+            this.label151.Name = "label151";
+            this.label151.Size = new System.Drawing.Size(80, 16);
+            this.label151.TabIndex = 56;
+            this.label151.Text = "รหัสไปรษณีย์";
+            // 
+            // T6_INPUT_PostCode
+            // 
+            this.T6_INPUT_PostCode.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.T6_INPUT_PostCode.Location = new System.Drawing.Point(119, 448);
+            this.T6_INPUT_PostCode.Name = "T6_INPUT_PostCode";
+            this.T6_INPUT_PostCode.Size = new System.Drawing.Size(100, 23);
+            this.T6_INPUT_PostCode.TabIndex = 65;
+            // 
+            // label148
+            // 
+            this.label148.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.label148.AutoSize = true;
+            this.label148.Location = new System.Drawing.Point(70, 412);
+            this.label148.Name = "label148";
+            this.label148.Size = new System.Drawing.Size(43, 16);
+            this.label148.TabIndex = 53;
+            this.label148.Text = "จังหวัด";
+            // 
+            // T6_INPUT_Province
+            // 
+            this.T6_INPUT_Province.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.T6_INPUT_Province.Location = new System.Drawing.Point(119, 408);
+            this.T6_INPUT_Province.Name = "T6_INPUT_Province";
+            this.T6_INPUT_Province.Size = new System.Drawing.Size(100, 23);
+            this.T6_INPUT_Province.TabIndex = 64;
+            // 
+            // label147
+            // 
+            this.label147.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.label147.AutoSize = true;
+            this.label147.Location = new System.Drawing.Point(71, 372);
+            this.label147.Name = "label147";
+            this.label147.Size = new System.Drawing.Size(42, 16);
+            this.label147.TabIndex = 52;
+            this.label147.Text = "อำเภอ";
+            // 
+            // T6_INPUT_Amphur
+            // 
+            this.T6_INPUT_Amphur.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.T6_INPUT_Amphur.Location = new System.Drawing.Point(119, 368);
+            this.T6_INPUT_Amphur.Name = "T6_INPUT_Amphur";
+            this.T6_INPUT_Amphur.Size = new System.Drawing.Size(100, 23);
+            this.T6_INPUT_Amphur.TabIndex = 63;
+            // 
+            // T6_INPUT_Tambol
+            // 
+            this.T6_INPUT_Tambol.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.T6_INPUT_Tambol.Location = new System.Drawing.Point(119, 328);
+            this.T6_INPUT_Tambol.Name = "T6_INPUT_Tambol";
+            this.T6_INPUT_Tambol.Size = new System.Drawing.Size(100, 23);
+            this.T6_INPUT_Tambol.TabIndex = 29;
             // 
             // label138
             // 
@@ -3735,14 +3842,6 @@
             this.label139.TabIndex = 4;
             this.label139.Text = "ถนน";
             // 
-            // T6_INPUT_Tambol
-            // 
-            this.T6_INPUT_Tambol.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.T6_INPUT_Tambol.Location = new System.Drawing.Point(119, 328);
-            this.T6_INPUT_Tambol.Name = "T6_INPUT_Tambol";
-            this.T6_INPUT_Tambol.Size = new System.Drawing.Size(100, 23);
-            this.T6_INPUT_Tambol.TabIndex = 29;
-            // 
             // T6_INPUT_Road
             // 
             this.T6_INPUT_Road.Anchor = System.Windows.Forms.AnchorStyles.Left;
@@ -3761,6 +3860,22 @@
             this.label140.TabIndex = 5;
             this.label140.Text = "ซอย";
             // 
+            // T6_INPUT_Lane
+            // 
+            this.T6_INPUT_Lane.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.T6_INPUT_Lane.Location = new System.Drawing.Point(119, 248);
+            this.T6_INPUT_Lane.Name = "T6_INPUT_Lane";
+            this.T6_INPUT_Lane.Size = new System.Drawing.Size(100, 23);
+            this.T6_INPUT_Lane.TabIndex = 62;
+            // 
+            // T6_INPUT_Village
+            // 
+            this.T6_INPUT_Village.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.T6_INPUT_Village.Location = new System.Drawing.Point(119, 208);
+            this.T6_INPUT_Village.Name = "T6_INPUT_Village";
+            this.T6_INPUT_Village.Size = new System.Drawing.Size(100, 23);
+            this.T6_INPUT_Village.TabIndex = 61;
+            // 
             // label141
             // 
             this.label141.Anchor = System.Windows.Forms.AnchorStyles.Right;
@@ -3770,6 +3885,14 @@
             this.label141.Size = new System.Drawing.Size(46, 16);
             this.label141.TabIndex = 3;
             this.label141.Text = "หมู่บ้าน";
+            // 
+            // T6_INPUT_HomeNo
+            // 
+            this.T6_INPUT_HomeNo.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.T6_INPUT_HomeNo.Location = new System.Drawing.Point(119, 168);
+            this.T6_INPUT_HomeNo.Name = "T6_INPUT_HomeNo";
+            this.T6_INPUT_HomeNo.Size = new System.Drawing.Size(100, 23);
+            this.T6_INPUT_HomeNo.TabIndex = 60;
             // 
             // label142
             // 
@@ -3791,6 +3914,14 @@
             this.label144.TabIndex = 1;
             this.label144.Text = "ชื่อผู้อำนวยการ";
             // 
+            // T6_INPUT_Bossname
+            // 
+            this.T6_INPUT_Bossname.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.T6_INPUT_Bossname.Location = new System.Drawing.Point(119, 128);
+            this.T6_INPUT_Bossname.Name = "T6_INPUT_Bossname";
+            this.T6_INPUT_Bossname.Size = new System.Drawing.Size(260, 23);
+            this.T6_INPUT_Bossname.TabIndex = 59;
+            // 
             // T6_INPUT_School
             // 
             this.T6_INPUT_School.Anchor = System.Windows.Forms.AnchorStyles.Left;
@@ -3800,109 +3931,15 @@
             this.T6_INPUT_School.Size = new System.Drawing.Size(260, 23);
             this.T6_INPUT_School.TabIndex = 47;
             // 
-            // label147
+            // label137
             // 
-            this.label147.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.label147.AutoSize = true;
-            this.label147.Location = new System.Drawing.Point(71, 372);
-            this.label147.Name = "label147";
-            this.label147.Size = new System.Drawing.Size(42, 16);
-            this.label147.TabIndex = 52;
-            this.label147.Text = "อำเภอ";
-            // 
-            // label148
-            // 
-            this.label148.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.label148.AutoSize = true;
-            this.label148.Location = new System.Drawing.Point(70, 412);
-            this.label148.Name = "label148";
-            this.label148.Size = new System.Drawing.Size(43, 16);
-            this.label148.TabIndex = 53;
-            this.label148.Text = "จังหวัด";
-            // 
-            // label150
-            // 
-            this.label150.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.label150.AutoSize = true;
-            this.label150.Location = new System.Drawing.Point(32, 492);
-            this.label150.Name = "label150";
-            this.label150.Size = new System.Drawing.Size(81, 16);
-            this.label150.TabIndex = 54;
-            this.label150.Text = "เบอร์โทรศัพท์";
-            // 
-            // label151
-            // 
-            this.label151.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.label151.AutoSize = true;
-            this.label151.Location = new System.Drawing.Point(33, 452);
-            this.label151.Name = "label151";
-            this.label151.Size = new System.Drawing.Size(80, 16);
-            this.label151.TabIndex = 56;
-            this.label151.Text = "รหัสไปรษณีย์";
-            // 
-            // T6_INPUT_Bossname
-            // 
-            this.T6_INPUT_Bossname.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.T6_INPUT_Bossname.Location = new System.Drawing.Point(119, 128);
-            this.T6_INPUT_Bossname.Name = "T6_INPUT_Bossname";
-            this.T6_INPUT_Bossname.Size = new System.Drawing.Size(260, 23);
-            this.T6_INPUT_Bossname.TabIndex = 59;
-            // 
-            // T6_INPUT_HomeNo
-            // 
-            this.T6_INPUT_HomeNo.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.T6_INPUT_HomeNo.Location = new System.Drawing.Point(119, 168);
-            this.T6_INPUT_HomeNo.Name = "T6_INPUT_HomeNo";
-            this.T6_INPUT_HomeNo.Size = new System.Drawing.Size(100, 23);
-            this.T6_INPUT_HomeNo.TabIndex = 60;
-            // 
-            // T6_INPUT_Village
-            // 
-            this.T6_INPUT_Village.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.T6_INPUT_Village.Location = new System.Drawing.Point(119, 208);
-            this.T6_INPUT_Village.Name = "T6_INPUT_Village";
-            this.T6_INPUT_Village.Size = new System.Drawing.Size(100, 23);
-            this.T6_INPUT_Village.TabIndex = 61;
-            // 
-            // T6_INPUT_Lane
-            // 
-            this.T6_INPUT_Lane.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.T6_INPUT_Lane.Location = new System.Drawing.Point(119, 248);
-            this.T6_INPUT_Lane.Name = "T6_INPUT_Lane";
-            this.T6_INPUT_Lane.Size = new System.Drawing.Size(100, 23);
-            this.T6_INPUT_Lane.TabIndex = 62;
-            // 
-            // T6_INPUT_Amphur
-            // 
-            this.T6_INPUT_Amphur.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.T6_INPUT_Amphur.Location = new System.Drawing.Point(119, 368);
-            this.T6_INPUT_Amphur.Name = "T6_INPUT_Amphur";
-            this.T6_INPUT_Amphur.Size = new System.Drawing.Size(100, 23);
-            this.T6_INPUT_Amphur.TabIndex = 63;
-            // 
-            // T6_INPUT_Province
-            // 
-            this.T6_INPUT_Province.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.T6_INPUT_Province.Location = new System.Drawing.Point(119, 408);
-            this.T6_INPUT_Province.Name = "T6_INPUT_Province";
-            this.T6_INPUT_Province.Size = new System.Drawing.Size(100, 23);
-            this.T6_INPUT_Province.TabIndex = 64;
-            // 
-            // T6_INPUT_PostCode
-            // 
-            this.T6_INPUT_PostCode.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.T6_INPUT_PostCode.Location = new System.Drawing.Point(119, 448);
-            this.T6_INPUT_PostCode.Name = "T6_INPUT_PostCode";
-            this.T6_INPUT_PostCode.Size = new System.Drawing.Size(100, 23);
-            this.T6_INPUT_PostCode.TabIndex = 65;
-            // 
-            // T6_INPUT_Phone
-            // 
-            this.T6_INPUT_Phone.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.T6_INPUT_Phone.Location = new System.Drawing.Point(119, 488);
-            this.T6_INPUT_Phone.Name = "T6_INPUT_Phone";
-            this.T6_INPUT_Phone.Size = new System.Drawing.Size(100, 23);
-            this.T6_INPUT_Phone.TabIndex = 66;
+            this.label137.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.label137.AutoSize = true;
+            this.label137.Location = new System.Drawing.Point(45, 92);
+            this.label137.Name = "label137";
+            this.label137.Size = new System.Drawing.Size(68, 16);
+            this.label137.TabIndex = 46;
+            this.label137.Text = "ชื่อโรงเรียน";
             // 
             // T6_INPUT_Choose
             // 
@@ -3913,29 +3950,49 @@
             "มารีวิทย์",
             "มารีวิทย์สัตหีบ",
             "มารีวิทย์บ่อวิน"});
-            this.T6_INPUT_Choose.Location = new System.Drawing.Point(119, 48);
+            this.T6_INPUT_Choose.Location = new System.Drawing.Point(119, 49);
             this.T6_INPUT_Choose.Name = "T6_INPUT_Choose";
             this.T6_INPUT_Choose.Size = new System.Drawing.Size(150, 24);
             this.T6_INPUT_Choose.TabIndex = 67;
             this.T6_INPUT_Choose.SelectedIndexChanged += new System.EventHandler(this.T6_INPUT_Choose_SelectedIndexChanged);
             // 
-            // T6_SUMBIT_Update
+            // MAIN_BTN_Find
             // 
-            this.T6_SUMBIT_Update.Location = new System.Drawing.Point(420, 57);
-            this.T6_SUMBIT_Update.Name = "T6_SUMBIT_Update";
-            this.T6_SUMBIT_Update.Size = new System.Drawing.Size(100, 25);
-            this.T6_SUMBIT_Update.TabIndex = 6;
-            this.T6_SUMBIT_Update.Text = "จัดเก็บ";
-            this.T6_SUMBIT_Update.UseVisualStyleBackColor = true;
-            this.T6_SUMBIT_Update.Click += new System.EventHandler(this.T6_SUMBIT_Update_Click);
+            this.MAIN_BTN_Find.Location = new System.Drawing.Point(9, 40);
+            this.MAIN_BTN_Find.Name = "MAIN_BTN_Find";
+            this.MAIN_BTN_Find.Size = new System.Drawing.Size(51, 41);
+            this.MAIN_BTN_Find.TabIndex = 5;
+            this.MAIN_BTN_Find.Text = "ค้นหา";
+            this.MAIN_BTN_Find.UseVisualStyleBackColor = true;
+            this.MAIN_BTN_Find.Click += new System.EventHandler(this.MAIN_BTN_Find_Click);
+            // 
+            // MAIN_BTN_New
+            // 
+            this.MAIN_BTN_New.Location = new System.Drawing.Point(9, 87);
+            this.MAIN_BTN_New.Name = "MAIN_BTN_New";
+            this.MAIN_BTN_New.Size = new System.Drawing.Size(51, 41);
+            this.MAIN_BTN_New.TabIndex = 6;
+            this.MAIN_BTN_New.Text = "ใหม่";
+            this.MAIN_BTN_New.UseVisualStyleBackColor = true;
+            this.MAIN_BTN_New.Click += new System.EventHandler(this.MAIN_BTN_New_Click);
+            // 
+            // MAIN_BTN_Save
+            // 
+            this.MAIN_BTN_Save.Location = new System.Drawing.Point(9, 134);
+            this.MAIN_BTN_Save.Name = "MAIN_BTN_Save";
+            this.MAIN_BTN_Save.Size = new System.Drawing.Size(51, 41);
+            this.MAIN_BTN_Save.TabIndex = 7;
+            this.MAIN_BTN_Save.Text = "บันทึก";
+            this.MAIN_BTN_Save.UseVisualStyleBackColor = true;
+            this.MAIN_BTN_Save.Click += new System.EventHandler(this.MAIN_BTN_Save_Click);
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(9, 40);
+            this.button2.Location = new System.Drawing.Point(9, 502);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(51, 41);
-            this.button2.TabIndex = 4;
-            this.button2.Text = "button2";
+            this.button2.TabIndex = 8;
+            this.button2.Text = "บันทึก";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
@@ -3945,6 +4002,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1586, 799);
             this.Controls.Add(this.button2);
+            this.Controls.Add(this.MAIN_BTN_Save);
+            this.Controls.Add(this.MAIN_BTN_New);
+            this.Controls.Add(this.MAIN_BTN_Find);
             this.Controls.Add(this.MainTab);
             this.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
@@ -3953,7 +4013,7 @@
             this.Text = "Form_Main";
             this.MainTab.ResumeLayout(false);
             this.THisrotyTab.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.T1_INPUT_Pic)).EndInit();
             this.tableLayoutPanel3.ResumeLayout(false);
             this.tableLayoutPanel3.PerformLayout();
             this.tableLayoutPanel2.ResumeLayout(false);
@@ -4029,7 +4089,7 @@
         private System.Windows.Forms.Label label34;
         private System.Windows.Forms.Label label28;
         private System.Windows.Forms.Label label31;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox T1_INPUT_Pic;
         private System.Windows.Forms.Label label29;
         private System.Windows.Forms.TextBox T1_INPUT_Date_Birth;
         private System.Windows.Forms.TextBox T1_INPUT_Age;
@@ -4038,7 +4098,6 @@
         private System.Windows.Forms.TextBox T1_INPUT_Year_Recievied;
         private System.Windows.Forms.TextBox T1_INPUT_Country_Edu;
         private System.Windows.Forms.TextBox T1_INPUT_HisID;
-        private System.Windows.Forms.TextBox T1_INPUT_Passport;
         private System.Windows.Forms.TextBox T1_INPUT_Th_Name;
         private System.Windows.Forms.TextBox T1_INPUT_Th_Lastname;
         private System.Windows.Forms.TextBox T1_INPUT_En_Name;
@@ -4052,7 +4111,7 @@
         private System.Windows.Forms.TextBox T1_INPUT_StuffedYear_En;
         private System.Windows.Forms.TextBox T1_INPUT_DateStarted;
         private System.Windows.Forms.TextBox T1_INPUT_YearStarted;
-        private System.Windows.Forms.TextBox YearStarted_En;
+        private System.Windows.Forms.TextBox T1_INPUT_YearStarted_En;
         private System.Windows.Forms.TextBox T1_INPUT_Year_Birth;
         private System.Windows.Forms.TextBox T1_INPUT_Year_Birth_En;
         private System.Windows.Forms.ComboBox T1_INPUT_Th_Title;
@@ -4288,6 +4347,10 @@
         private System.Windows.Forms.TextBox T6_INPUT_Phone;
         private System.Windows.Forms.ComboBox T6_INPUT_Choose;
         private System.Windows.Forms.Button T6_SUMBIT_Update;
+        private System.Windows.Forms.Button MAIN_BTN_Find;
+        internal System.Windows.Forms.TextBox T1_INPUT_Passport;
+        private System.Windows.Forms.Button MAIN_BTN_New;
+        private System.Windows.Forms.Button MAIN_BTN_Save;
         private System.Windows.Forms.Button button2;
     }
 }
