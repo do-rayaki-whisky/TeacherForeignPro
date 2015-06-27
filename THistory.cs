@@ -389,7 +389,11 @@ namespace TeacherForeignPro
                 var_HasKeyPassportAndHisID = Reader.HasRows;
                 Reader.Close();
 
-                if ((var_HasKeyPassport == false) && (var_HasKeyHisID == false) && (var_HasKeyPassportAndHisID == false))
+                if ((var_HasKeyPassport == true) && (var_HasKeyHisID == true) && (var_HasKeyPassportAndHisID == true))
+                {
+                    _ResultMessage = UpdateTeacher();
+                }
+                else if ((var_HasKeyPassport == false) && (var_HasKeyHisID == false) && (var_HasKeyPassportAndHisID == false))
                 {                    
                     Com.CommandText = var_QueryInsertTHistory;
                     Com.ExecuteNonQuery();
@@ -402,6 +406,8 @@ namespace TeacherForeignPro
 
                     Com.CommandText = var_QueryInsterTWorkplace;
                     Com.ExecuteNonQuery();
+
+                    _ResultMessage = UpdateTeacher();
                 }
                 else if ((var_HasKeyPassport == true) && (var_HasKeyHisID == false) && (var_HasKeyPassportAndHisID == false))
                 {
@@ -411,6 +417,8 @@ namespace TeacherForeignPro
                 {
                     _ResultMessage = "หมายเลขประจำตัวครู " + _HisID + " มีอยู่ในฐานข้อมูลแล้ว";
                 }
+
+
             }
             catch (Exception ex)
             {
@@ -419,14 +427,59 @@ namespace TeacherForeignPro
             Con.Close();
         }
 
-        public void UpdateTeacher()
+        public string UpdateTeacher()
         {
-
-        }
-
-        private void UdateTeacher(string _PassportName, string _HisIDName)
-        {
-
+            string var_UpdateQuery = "update [THistory] " +
+                                     "set [Th_Title]='" + _Th_Title + "', " +
+                                     "[Th_Name]='" + _Th_Name + "', " +
+                                     "[Th_Lastname]='" + _Th_Lastname + "', " +
+                                     "[En_Title]='" + _En_Title + "', " +
+                                     "[En_Name]='" + _En_Name + "', " +
+                                     "[En_Lastname]='" + _En_Lastname + "', " +
+                                     "[Sex]='" + _Sex + "', " +
+                                     "[Nationality]='" + _Nationality + "', " +
+                                     "[Nationality_En]='" + _Nationality_En + "', " +
+                                     "[Date_Birth]='" + _Date_Birth + "', " +
+                                     "[Month_Birth]='" + _Month_Birth + "', " +
+                                     "[Month_Birth_En]='" + _Month_Birth_En + "', " +
+                                     "[Year_Birth]='" + _Year_Birth + "', " +
+                                     "[Year_Birth_En]='" + _Year_Birth_En + "', " +
+                                     "[Age]='" + _Age + "', " +
+                                     "[Degree]='" + _Degree + "', " +
+                                     "[Year_Received]='" + _Year_Received + "', " +
+                                     "[Name_Institute]='" + _Name_Institute + "', " +
+                                     "[Country_Edu]='" + _Country_Edu + "', " +
+                                     "[Stuffed_ID]='" + _Stuffed_ID + "', " +
+                                     "[StuffedDate]='" + _StuffedDate + "', " +
+                                     "[StuffedMonth]='" + _StuffedMonth + "', " +
+                                     "[StuffedMonth_En]='" + _StuffedMonth_En + "', " +
+                                     "[StuffedYear]='" + _StuffedYear + "', " +
+                                     "[StuffedYear_En]='" + _StuffedYear_En + "', " +
+                                     "[DateStarted]='" + _DateStarted + "', " +
+                                     "[MonthStarted]='" + _MonthStarted + "', " +
+                                     "[MonthStarted_En]='" + _MonthStarted_En + "', " +
+                                     "[YearStarted]='" + _YearStarted + "', " +
+                                     "[YearStarted_En]='" + _YearStarted_En + "', " +
+                                     "[Phone]='" + _Phone + "', " +
+                                     "[Pic]='" + _Pic + "', " +
+                                     "[blood_Grp]='" + _blood_Grp + "' " +
+                                     "where " +
+                                     "[HisID]=" + _HisID + " and " +
+                                     "[Passport]='" + _Passport + "'";
+            OleDbConnection Con = new OleDbConnection(ConnectionString);
+            OleDbCommand Com = new OleDbCommand(var_UpdateQuery, Con);
+            string r = "None";
+            try
+            {
+                Con.Open();
+                r = Com.ExecuteNonQuery().ToString();
+            }
+            catch (Exception ex)
+            {
+                r = ex.ToString();
+            }
+            Con.Close();
+            return r;
         }
     }
 }

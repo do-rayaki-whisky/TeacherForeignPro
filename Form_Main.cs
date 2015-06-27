@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using COMiCZ;
 
 namespace TeacherForeignPro
 {
@@ -15,11 +16,12 @@ namespace TeacherForeignPro
         ComboBoxConvert ComboConv = new ComboBoxConvert();
         TSchool Tschool = new TSchool(); /* Class ตาราง TSchool */
         THistory THistory = new THistory();
+        TDocument TDocument = new TDocument();
         public Form_Main()
         {
             InitializeComponent();
             /* Tab 1 */
-            T1_INPUT_Th_Title.SelectedIndex = 0;
+            _NewTeacher(0);
 
             /* Tab 6 */
             T6_INPUT_Choose.SelectedIndex = 0;
@@ -64,6 +66,40 @@ namespace TeacherForeignPro
             this.T1_INPUT_Pic.ImageLocation = THistory.ImageLocation(THistory.Pic);
             this.T1_INPUT_blood_Grp.SelectedIndex = ComboConv.ConvBloodToIndex(THistory.blood_Grp);
             //MessageBox.Show((THistory.blood_Grp).ToString());
+
+            TDocument.Passport = T1_INPUT_Passport.Text.Trim();
+            if (TDocument.SelectTeacher() == true)
+            {   
+                T2_INPUT_Passport.Text = TDocument.Passport;
+                T2_INPUT_PassportDate.Text = TDocument.PassportDate;
+                T2_INPUT_PassportMonth.SelectedIndex = ComboConv.ConvMonthToIndex(TDocument.PassportMonth);
+                T2_INPUT_PassportYear.Text = TDocument.PassportYear;
+                T2_INPUT_PassportIssuedAt.Text = TDocument.PassportIssuedAt;
+                T2_INPUT_KindVISA.Text = TDocument.KindVISA;
+                T2_INPUT_VisaNo.Text = TDocument.VisaNo;
+                T2_INPUT_VisaDate.Text = TDocument.VisaDate;
+                T2_INPUT_VisaMonth.SelectedIndex = ComboConv.ConvMonthToIndex(TDocument.VisaMonth);
+                T2_INPUT_VisaYear.Text = TDocument.VisaYear;
+                T2_INPUT_VisaIssuedAt.Text = TDocument.VisaIssuedAt;
+                T2_INPUT_ReachedDate.Text = TDocument.ReachedDate;
+                T2_INPUT_ReachedMonth.Text = TDocument.ReachedMonth;
+                T2_INPUT_ReachedYear.Text = TDocument.ReachedYear;
+                T2_INPUT_AllowedAt.Text = TDocument.AllowedAt;
+                T2_INPUT_DefineYear.Text = TDocument.DefineYear;
+                T2_INPUT_DefineMonth.Text = TDocument.DefineMonth;
+                T2_INPUT_DefineDay.Text = TDocument.DefineDay;
+                T2_INPUT_DueDate.Text = TDocument.DueDate;
+                T2_INPUT_DueMonth.SelectedIndex = ComboConv.ConvMonthToIndex(TDocument.DueMonth);
+                T2_INPUT_DueYear.Text = TDocument.DueYear;
+                T2_INPUT_Renew_Date.Text = TDocument.Renew_Date;
+                T2_INPUT_Renew_Month.SelectedIndex = ComboConv.ConvMonthToIndex(TDocument.Renew_Month);
+                T2_INPUT_Renew_Year.Text = TDocument.Renew_Year;
+            }
+            else
+            {
+                T2_INPUT_Passport.Text = "False";
+            }
+         
         }
 
         public void _NewTeacher()
@@ -71,44 +107,96 @@ namespace TeacherForeignPro
             THistory.NewTeacher();
         }
 
-        public void _AssignData()
+        public void _NewTeacher(int _Mode)
         {
+            // _Mode ใส่อะไรก้ได้ เพื่อล้างค่าในฟอร์ม
+            THistory.NewTeacher();
+            this.T1_INPUT_HisID.Text = THistory.HisID;
+            this.T1_INPUT_Passport.Text = THistory.Passport;
+            this.T1_INPUT_Th_Title.SelectedIndex = ComboConv.ConvTitleToIndex(THistory.Th_Title);
+            this.T1_INPUT_Th_Name.Text = THistory.Th_Name;
+            this.T1_INPUT_Th_Lastname.Text = THistory.Th_Lastname;
+            this.T1_INPUT_En_Title.SelectedIndex = ComboConv.ConvTitleToIndex(THistory.En_Title);
+            this.T1_INPUT_En_Name.Text = THistory.En_Name;
+            this.T1_INPUT_EN_Lastname.Text = THistory.En_Lastname;
+            this.T1_INPUT_Sex.SelectedIndex = ComboConv.ConvSexToIndex(THistory.Sex);
+            this.T1_INPUT_Nationality.Text = THistory.Nationality;
+            this.T1_INPUT_Nationality_EN.Text = THistory.Nationality_En;
+            this.T1_INPUT_Date_Birth.Text = THistory.Date_Birth;
+            this.T1_INPUT_Month_Birth.SelectedIndex = ComboConv.ConvMonthToIndex(THistory.Month_Birth);
+            this.T1_INPUT_Month_Birth_En.Text = THistory.Month_Birth_En;
+            this.T1_INPUT_Year_Birth.Text = THistory.Year_Birth;
+            this.T1_INPUT_Year_Birth_En.Text = THistory.Year_Birth_En;
+            this.T1_INPUT_Age.Text = THistory.Age;
+            this.T1_INPUT_Degree.Text = THistory.Degree;
+            this.T1_INPUT_Year_Recievied.Text = THistory.Year_Received;
+            this.T1_INPUT_Name_institute.Text = THistory.Name_Institute;
+            this.T1_INPUT_Country_Edu.Text = THistory.Country_Edu;
+            this.T1_INPUT_Stuffed_ID.Text = THistory.Stuffed_ID;
+            this.T1_INPUT_StuffedDate.Text = THistory.StuffedDate;
+            this.T1_INPUT_StuffedMonth.SelectedIndex = ComboConv.ConvMonthToIndex(THistory.StuffedMonth);
+            this.T1_INPUT_StuffedMonth_En.Text = THistory.StuffedMonth_En;
+            this.T1_INPUT_StuffedYear.Text = THistory.StuffedYear;
+            this.T1_INPUT_StuffedYear_En.Text = THistory.StuffedYear_En;
+            this.T1_INPUT_DateStarted.Text = THistory.DateStarted;
+            this.T1_INPUT_MonthStarted.SelectedIndex = ComboConv.ConvMonthToIndex(THistory.MonthStarted);
+            this.T1_INPUT_MonthStarted_En.Text = THistory.MonthStarted_En;
+            this.T1_INPUT_YearStarted.Text = THistory.YearStarted;
+            this.T1_INPUT_YearStarted_En.Text = THistory.YearStarted_En;
+            this.T1_INPUT_Phone.Text = THistory.Phone;
+            this.T1_INPUT_Pic.ImageLocation = THistory.ImageLocation(THistory.Pic);
+            this.T1_INPUT_blood_Grp.SelectedIndex = ComboConv.ConvBloodToIndex(THistory.blood_Grp);
+        }
+
+        public bool _AssignData()
+        {
+            bool r = false;
             /* Tab 1 */
-            THistory.HisID = this.T1_INPUT_HisID.Text;
-            THistory.Passport = this.T1_INPUT_Passport.Text;
-            THistory.Th_Title = this.T1_INPUT_Th_Title.SelectedItem.ToString();
-            THistory.Th_Name = this.T1_INPUT_Th_Name.Text;
-            THistory.Th_Lastname = this.T1_INPUT_Th_Lastname.Text;
-            THistory.En_Title = this.T1_INPUT_En_Title.SelectedItem.ToString();
-            THistory.En_Name = this.T1_INPUT_En_Name.Text;
-            THistory.En_Lastname = this.T1_INPUT_EN_Lastname.Text;
-            THistory.Sex = this.T1_INPUT_Sex.SelectedItem.ToString();
-            THistory.Nationality = this.T1_INPUT_Nationality.Text;
-            THistory.Nationality_En = this.T1_INPUT_Nationality_EN.Text;
-            THistory.Date_Birth = this.T1_INPUT_Date_Birth.Text;
-            THistory.Month_Birth = this.T1_INPUT_Month_Birth.SelectedItem.ToString();
-            THistory.Month_Birth_En = this.T1_INPUT_Month_Birth_En.Text;
-            THistory.Year_Birth = this.T1_INPUT_Year_Birth.Text;
-            THistory.Year_Birth_En = this.T1_INPUT_Year_Birth_En.Text;
-            THistory.Age = this.T1_INPUT_Age.Text;
-            THistory.Degree = this.T1_INPUT_Degree.Text;
-            THistory.Year_Received = this.T1_INPUT_Year_Recievied.Text;
-            THistory.Name_Institute = this.T1_INPUT_Name_institute.Text;
-            THistory.Country_Edu = this.T1_INPUT_Country_Edu.Text;
-            THistory.Stuffed_ID = this.T1_INPUT_Stuffed_ID.Text;
-            THistory.StuffedDate = this.T1_INPUT_StuffedDate.Text;
-            THistory.StuffedMonth = this.T1_INPUT_StuffedMonth.SelectedItem.ToString();
-            THistory.StuffedMonth_En = this.T1_INPUT_StuffedMonth_En.Text;
-            THistory.StuffedYear = this.T1_INPUT_StuffedYear.Text;
-            THistory.StuffedYear_En = this.T1_INPUT_StuffedYear_En.Text;
-            THistory.DateStarted = this.T1_INPUT_DateStarted.Text;
-            THistory.MonthStarted = this.T1_INPUT_MonthStarted.SelectedItem.ToString();
-            THistory.MonthStarted_En = this.T1_INPUT_MonthStarted_En.Text;
-            THistory.YearStarted = this.T1_INPUT_YearStarted.Text;
-            THistory.YearStarted_En = this.T1_INPUT_YearStarted_En.Text;
-            THistory.Phone = this.T1_INPUT_Phone.Text;
-            THistory.Pic = "p" + this.T1_INPUT_HisID.Text;
-            THistory.blood_Grp = this.T1_INPUT_blood_Grp.SelectedItem.ToString();
+            if ((T1_INPUT_HisID.Text.Trim() != string.Empty) && (T1_INPUT_Passport.Text.Trim() != string.Empty))
+            {
+                
+                THistory.HisID = this.T1_INPUT_HisID.Text;
+                THistory.Passport = this.T1_INPUT_Passport.Text;
+                THistory.Th_Title = this.T1_INPUT_Th_Title.SelectedItem.ToString();
+                THistory.Th_Name = this.T1_INPUT_Th_Name.Text;
+                THistory.Th_Lastname = this.T1_INPUT_Th_Lastname.Text;
+                THistory.En_Title = this.T1_INPUT_En_Title.SelectedItem.ToString();
+                THistory.En_Name = this.T1_INPUT_En_Name.Text;
+                THistory.En_Lastname = this.T1_INPUT_EN_Lastname.Text;
+                THistory.Sex = this.T1_INPUT_Sex.SelectedItem.ToString();
+                THistory.Nationality = this.T1_INPUT_Nationality.Text;
+                THistory.Nationality_En = this.T1_INPUT_Nationality_EN.Text;
+                THistory.Date_Birth = this.T1_INPUT_Date_Birth.Text;
+                THistory.Month_Birth = this.T1_INPUT_Month_Birth.SelectedItem.ToString();
+                THistory.Month_Birth_En = this.T1_INPUT_Month_Birth_En.Text;
+                THistory.Year_Birth = this.T1_INPUT_Year_Birth.Text;
+                THistory.Year_Birth_En = this.T1_INPUT_Year_Birth_En.Text;
+                THistory.Age = this.T1_INPUT_Age.Text;
+                THistory.Degree = this.T1_INPUT_Degree.Text;
+                THistory.Year_Received = this.T1_INPUT_Year_Recievied.Text;
+                THistory.Name_Institute = this.T1_INPUT_Name_institute.Text;
+                THistory.Country_Edu = this.T1_INPUT_Country_Edu.Text;
+                THistory.Stuffed_ID = this.T1_INPUT_Stuffed_ID.Text;
+                THistory.StuffedDate = this.T1_INPUT_StuffedDate.Text;
+                THistory.StuffedMonth = this.T1_INPUT_StuffedMonth.SelectedItem.ToString();
+                THistory.StuffedMonth_En = this.T1_INPUT_StuffedMonth_En.Text;
+                THistory.StuffedYear = this.T1_INPUT_StuffedYear.Text;
+                THistory.StuffedYear_En = this.T1_INPUT_StuffedYear_En.Text;
+                THistory.DateStarted = this.T1_INPUT_DateStarted.Text;
+                THistory.MonthStarted = this.T1_INPUT_MonthStarted.SelectedItem.ToString();
+                THistory.MonthStarted_En = this.T1_INPUT_MonthStarted_En.Text;
+                THistory.YearStarted = this.T1_INPUT_YearStarted.Text;
+                THistory.YearStarted_En = this.T1_INPUT_YearStarted_En.Text;
+                THistory.Phone = this.T1_INPUT_Phone.Text;
+                THistory.Pic = "p" + this.T1_INPUT_HisID.Text;
+                THistory.blood_Grp = this.T1_INPUT_blood_Grp.SelectedItem.ToString();
+
+                r = true;
+            }
+            else
+            {
+            }
+            return r;
         }
 
         private void T6_INPUT_Choose_SelectedIndexChanged(object sender, EventArgs e)
@@ -181,54 +269,30 @@ namespace TeacherForeignPro
 
         private void MAIN_BTN_New_Click(object sender, EventArgs e)
         {
-            THistory.NewTeacher();
-            this.T1_INPUT_HisID.Text = THistory.HisID;
-            this.T1_INPUT_Passport.Text = THistory.Passport;
-            this.T1_INPUT_Th_Title.SelectedIndex = ComboConv.ConvTitleToIndex(THistory.Th_Title);
-            this.T1_INPUT_Th_Name.Text = THistory.Th_Name;
-            this.T1_INPUT_Th_Lastname.Text = THistory.Th_Lastname;
-            this.T1_INPUT_En_Title.SelectedIndex = ComboConv.ConvTitleToIndex(THistory.En_Title);
-            this.T1_INPUT_En_Name.Text = THistory.En_Name;
-            this.T1_INPUT_EN_Lastname.Text = THistory.En_Lastname;
-            this.T1_INPUT_Sex.SelectedIndex = ComboConv.ConvSexToIndex(THistory.Sex);
-            this.T1_INPUT_Nationality.Text = THistory.Nationality;
-            this.T1_INPUT_Nationality_EN.Text = THistory.Nationality_En;
-            this.T1_INPUT_Date_Birth.Text = THistory.Date_Birth;
-            this.T1_INPUT_Month_Birth.SelectedIndex = ComboConv.ConvMonthToIndex(THistory.Month_Birth);
-            this.T1_INPUT_Month_Birth_En.Text = THistory.Month_Birth_En;
-            this.T1_INPUT_Year_Birth.Text = THistory.Year_Birth;
-            this.T1_INPUT_Year_Birth_En.Text = THistory.Year_Birth_En;
-            this.T1_INPUT_Age.Text = THistory.Age;
-            this.T1_INPUT_Degree.Text = THistory.Degree;
-            this.T1_INPUT_Year_Recievied.Text = THistory.Year_Received;
-            this.T1_INPUT_Name_institute.Text = THistory.Name_Institute;
-            this.T1_INPUT_Country_Edu.Text = THistory.Country_Edu;
-            this.T1_INPUT_Stuffed_ID.Text = THistory.Stuffed_ID;
-            this.T1_INPUT_StuffedDate.Text = THistory.StuffedDate;
-            this.T1_INPUT_StuffedMonth.SelectedIndex = ComboConv.ConvMonthToIndex(THistory.StuffedMonth);
-            this.T1_INPUT_StuffedMonth_En.Text = THistory.StuffedMonth_En;
-            this.T1_INPUT_StuffedYear.Text = THistory.StuffedYear;
-            this.T1_INPUT_StuffedYear_En.Text = THistory.StuffedYear_En;
-            this.T1_INPUT_DateStarted.Text = THistory.DateStarted;
-            this.T1_INPUT_MonthStarted.SelectedIndex = ComboConv.ConvMonthToIndex(THistory.MonthStarted);
-            this.T1_INPUT_MonthStarted_En.Text = THistory.MonthStarted_En;
-            this.T1_INPUT_YearStarted.Text = THistory.YearStarted;
-            this.T1_INPUT_YearStarted_En.Text = THistory.YearStarted_En;
-            this.T1_INPUT_Phone.Text = THistory.Phone;
-            this.T1_INPUT_Pic.ImageLocation = THistory.ImageLocation(THistory.Pic);
-            this.T1_INPUT_blood_Grp.SelectedIndex = ComboConv.ConvBloodToIndex(THistory.blood_Grp);
+            _NewTeacher(0);
         }
 
         private void MAIN_BTN_Save_Click(object sender, EventArgs e)
         {
-            _AssignData();
-            THistory.InsertTeacher();
-            MessageBox.Show(THistory.ResultMessage);
+            if(_AssignData() == true){
+                THistory.InsertTeacher();
+                MessageBox.Show(THistory.ResultMessage);
+            }                    
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            _AssignData();
+            TDocument.Passport = "E00357943";
+            TDocument.SelectTeacher();
+            T2_INPUT_Passport.Text = TDocument.Passport;
+            T2_INPUT_PassportDate.Text = TDocument.PassportDate;
+            T2_INPUT_PassportMonth.SelectedIndex = ComboConv.ConvMonthToIndex(TDocument.PassportMonth);
+            MessageBox.Show(TDocument.ErrorMessage);
+        }
+
+        private void T2_INPUT_PassportMonth_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            //T2_INPUT_PassportMonth_En.Text = 
         }
     }
 }

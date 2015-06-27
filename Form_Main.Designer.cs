@@ -102,7 +102,7 @@
             this.T1_INPUT_Th_Title = new System.Windows.Forms.ComboBox();
             this.T1_INPUT_Nationality_EN = new System.Windows.Forms.TextBox();
             this.T1_INPUT_Phone = new System.Windows.Forms.TextBox();
-            this.TDocument = new System.Windows.Forms.TabPage();
+            this.TDocumentTab = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
             this.T2_INPUT_Renew_Month = new System.Windows.Forms.ComboBox();
             this.T2_INPUT_DueYear = new System.Windows.Forms.TextBox();
@@ -338,7 +338,7 @@
             this.tableLayoutPanel3.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
-            this.TDocument.SuspendLayout();
+            this.TDocumentTab.SuspendLayout();
             this.tableLayoutPanel6.SuspendLayout();
             this.tableLayoutPanel5.SuspendLayout();
             this.tableLayoutPanel4.SuspendLayout();
@@ -356,7 +356,7 @@
             // MainTab
             // 
             this.MainTab.Controls.Add(this.THisrotyTab);
-            this.MainTab.Controls.Add(this.TDocument);
+            this.MainTab.Controls.Add(this.TDocumentTab);
             this.MainTab.Controls.Add(this.tabPage1);
             this.MainTab.Controls.Add(this.tabPage2);
             this.MainTab.Controls.Add(this.tabPage4);
@@ -1245,19 +1245,19 @@
             this.T1_INPUT_Phone.Size = new System.Drawing.Size(260, 23);
             this.T1_INPUT_Phone.TabIndex = 11;
             // 
-            // TDocument
+            // TDocumentTab
             // 
-            this.TDocument.Controls.Add(this.tableLayoutPanel6);
-            this.TDocument.Controls.Add(this.tableLayoutPanel5);
-            this.TDocument.Controls.Add(this.tableLayoutPanel4);
-            this.TDocument.Location = new System.Drawing.Point(4, 25);
-            this.TDocument.Margin = new System.Windows.Forms.Padding(4);
-            this.TDocument.Name = "TDocument";
-            this.TDocument.Padding = new System.Windows.Forms.Padding(4);
-            this.TDocument.Size = new System.Drawing.Size(1492, 731);
-            this.TDocument.TabIndex = 1;
-            this.TDocument.Text = "Passport & VISA";
-            this.TDocument.UseVisualStyleBackColor = true;
+            this.TDocumentTab.Controls.Add(this.tableLayoutPanel6);
+            this.TDocumentTab.Controls.Add(this.tableLayoutPanel5);
+            this.TDocumentTab.Controls.Add(this.tableLayoutPanel4);
+            this.TDocumentTab.Location = new System.Drawing.Point(4, 25);
+            this.TDocumentTab.Margin = new System.Windows.Forms.Padding(4);
+            this.TDocumentTab.Name = "TDocumentTab";
+            this.TDocumentTab.Padding = new System.Windows.Forms.Padding(4);
+            this.TDocumentTab.Size = new System.Drawing.Size(1492, 731);
+            this.TDocumentTab.TabIndex = 1;
+            this.TDocumentTab.Text = "Passport & VISA";
+            this.TDocumentTab.UseVisualStyleBackColor = true;
             // 
             // tableLayoutPanel6
             // 
@@ -1903,6 +1903,7 @@
             // 
             this.T2_INPUT_PassportDate.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.T2_INPUT_PassportDate.Location = new System.Drawing.Point(119, 88);
+            this.T2_INPUT_PassportDate.MaxLength = 2;
             this.T2_INPUT_PassportDate.Name = "T2_INPUT_PassportDate";
             this.T2_INPUT_PassportDate.Size = new System.Drawing.Size(100, 23);
             this.T2_INPUT_PassportDate.TabIndex = 43;
@@ -2138,6 +2139,7 @@
             this.T2_INPUT_PassportMonth.Name = "T2_INPUT_PassportMonth";
             this.T2_INPUT_PassportMonth.Size = new System.Drawing.Size(150, 24);
             this.T2_INPUT_PassportMonth.TabIndex = 44;
+            this.T2_INPUT_PassportMonth.SelectedIndexChanged += new System.EventHandler(this.T2_INPUT_PassportMonth_SelectedIndexChanged);
             // 
             // T2_INPUT_PassportMonth_En
             // 
@@ -4020,7 +4022,7 @@
             this.tableLayoutPanel2.PerformLayout();
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
-            this.TDocument.ResumeLayout(false);
+            this.TDocumentTab.ResumeLayout(false);
             this.tableLayoutPanel6.ResumeLayout(false);
             this.tableLayoutPanel6.PerformLayout();
             this.tableLayoutPanel5.ResumeLayout(false);
@@ -4083,7 +4085,7 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TabPage TDocument;
+        private System.Windows.Forms.TabPage TDocumentTab;
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.TabPage tabPage2;
         private System.Windows.Forms.Label label34;
