@@ -145,7 +145,6 @@ namespace TeacherForeignPro
         }
         public bool UpdateTeacher()
         {
-            ;
             bool r = false;
             string var_UpdateQuery = "update " + FormatColumn(Columns[0], "[]") +
                                      "set " +

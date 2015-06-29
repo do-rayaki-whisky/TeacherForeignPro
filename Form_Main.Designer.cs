@@ -158,7 +158,7 @@
             this.label54 = new System.Windows.Forms.Label();
             this.label52 = new System.Windows.Forms.Label();
             this.T2_INPUT_PassportIssuedAt = new System.Windows.Forms.TextBox();
-            this.T2_INPUT_Passport_En = new System.Windows.Forms.TextBox();
+            this.T2_INPUT_PassportYear_En = new System.Windows.Forms.TextBox();
             this.T2_INPUT_PassportYear = new System.Windows.Forms.TextBox();
             this.T2_INPUT_Passport = new System.Windows.Forms.TextBox();
             this.label35 = new System.Windows.Forms.Label();
@@ -174,7 +174,6 @@
             this.label53 = new System.Windows.Forms.Label();
             this.label55 = new System.Windows.Forms.Label();
             this.label36 = new System.Windows.Forms.Label();
-            this.T2_INPUT_KindVISA = new System.Windows.Forms.ComboBox();
             this.label57 = new System.Windows.Forms.Label();
             this.label56 = new System.Windows.Forms.Label();
             this.T2_INPUT_PassportMonth = new System.Windows.Forms.ComboBox();
@@ -331,7 +330,7 @@
             this.MAIN_BTN_Find = new System.Windows.Forms.Button();
             this.MAIN_BTN_New = new System.Windows.Forms.Button();
             this.MAIN_BTN_Save = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.T2_INPUT_KindVISA = new System.Windows.Forms.TextBox();
             this.MainTab.SuspendLayout();
             this.THisrotyTab.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.T1_INPUT_Pic)).BeginInit();
@@ -457,7 +456,7 @@
             "ตุลาคม",
             "พฤศจิกายน",
             "ธันวาคม"});
-            this.T1_INPUT_MonthStarted.Location = new System.Drawing.Point(119, 289);
+            this.T1_INPUT_MonthStarted.Location = new System.Drawing.Point(119, 288);
             this.T1_INPUT_MonthStarted.Name = "T1_INPUT_MonthStarted";
             this.T1_INPUT_MonthStarted.Size = new System.Drawing.Size(150, 24);
             this.T1_INPUT_MonthStarted.TabIndex = 26;
@@ -492,7 +491,7 @@
             "ตุลาคม",
             "พฤศจิกายน",
             "ธันวาคม"});
-            this.T1_INPUT_StuffedMonth.Location = new System.Drawing.Point(119, 89);
+            this.T1_INPUT_StuffedMonth.Location = new System.Drawing.Point(119, 88);
             this.T1_INPUT_StuffedMonth.Name = "T1_INPUT_StuffedMonth";
             this.T1_INPUT_StuffedMonth.Size = new System.Drawing.Size(150, 24);
             this.T1_INPUT_StuffedMonth.TabIndex = 23;
@@ -741,7 +740,7 @@
             "AB",
             "RH+",
             "RH-"});
-            this.T1_INPUT_blood_Grp.Location = new System.Drawing.Point(119, 248);
+            this.T1_INPUT_blood_Grp.Location = new System.Drawing.Point(119, 249);
             this.T1_INPUT_blood_Grp.Name = "T1_INPUT_blood_Grp";
             this.T1_INPUT_blood_Grp.Size = new System.Drawing.Size(150, 24);
             this.T1_INPUT_blood_Grp.TabIndex = 16;
@@ -765,7 +764,7 @@
             "ตุลาคม",
             "พฤศจิกายน",
             "ธันวาคม"});
-            this.T1_INPUT_Month_Birth.Location = new System.Drawing.Point(119, 48);
+            this.T1_INPUT_Month_Birth.Location = new System.Drawing.Point(119, 49);
             this.T1_INPUT_Month_Birth.Name = "T1_INPUT_Month_Birth";
             this.T1_INPUT_Month_Birth.Size = new System.Drawing.Size(150, 24);
             this.T1_INPUT_Month_Birth.TabIndex = 13;
@@ -1018,7 +1017,7 @@
             "-",
             "ชาย",
             "หญิง"});
-            this.T1_INPUT_Sex.Location = new System.Drawing.Point(119, 328);
+            this.T1_INPUT_Sex.Location = new System.Drawing.Point(119, 329);
             this.T1_INPUT_Sex.Name = "T1_INPUT_Sex";
             this.T1_INPUT_Sex.Size = new System.Drawing.Size(150, 24);
             this.T1_INPUT_Sex.TabIndex = 8;
@@ -1033,7 +1032,7 @@
             "Mr.",
             "Mrs.",
             "Miss"});
-            this.T1_INPUT_En_Title.Location = new System.Drawing.Point(119, 209);
+            this.T1_INPUT_En_Title.Location = new System.Drawing.Point(119, 208);
             this.T1_INPUT_En_Title.Name = "T1_INPUT_En_Title";
             this.T1_INPUT_En_Title.Size = new System.Drawing.Size(150, 24);
             this.T1_INPUT_En_Title.TabIndex = 5;
@@ -1224,7 +1223,7 @@
             "นาย",
             "นาง",
             "นางสาว"});
-            this.T1_INPUT_Th_Title.Location = new System.Drawing.Point(119, 88);
+            this.T1_INPUT_Th_Title.Location = new System.Drawing.Point(119, 89);
             this.T1_INPUT_Th_Title.Name = "T1_INPUT_Th_Title";
             this.T1_INPUT_Th_Title.Size = new System.Drawing.Size(150, 24);
             this.T1_INPUT_Th_Title.TabIndex = 2;
@@ -1327,10 +1326,11 @@
             "ตุลาคม",
             "พฤศจิกายน",
             "ธันวาคม"});
-            this.T2_INPUT_Renew_Month.Location = new System.Drawing.Point(119, 329);
+            this.T2_INPUT_Renew_Month.Location = new System.Drawing.Point(119, 328);
             this.T2_INPUT_Renew_Month.Name = "T2_INPUT_Renew_Month";
             this.T2_INPUT_Renew_Month.Size = new System.Drawing.Size(150, 24);
             this.T2_INPUT_Renew_Month.TabIndex = 59;
+            this.T2_INPUT_Renew_Month.SelectedIndexChanged += new System.EventHandler(this.T2_INPUT_Renew_Month_SelectedIndexChanged);
             // 
             // T2_INPUT_DueYear
             // 
@@ -1339,6 +1339,7 @@
             this.T2_INPUT_DueYear.Name = "T2_INPUT_DueYear";
             this.T2_INPUT_DueYear.Size = new System.Drawing.Size(100, 23);
             this.T2_INPUT_DueYear.TabIndex = 56;
+            this.T2_INPUT_DueYear.TextChanged += new System.EventHandler(this.T2_INPUT_DueYear_TextChanged);
             // 
             // label67
             // 
@@ -1475,6 +1476,7 @@
             this.T2_INPUT_Renew_Year.Name = "T2_INPUT_Renew_Year";
             this.T2_INPUT_Renew_Year.Size = new System.Drawing.Size(100, 23);
             this.T2_INPUT_Renew_Year.TabIndex = 66;
+            this.T2_INPUT_Renew_Year.TextChanged += new System.EventHandler(this.T2_INPUT_Renew_Year_TextChanged);
             // 
             // T2_INPUT_Renew_Year_En
             // 
@@ -1519,10 +1521,11 @@
             "ตุลาคม",
             "พฤศจิกายน",
             "ธันวาคม"});
-            this.T2_INPUT_DueMonth.Location = new System.Drawing.Point(119, 89);
+            this.T2_INPUT_DueMonth.Location = new System.Drawing.Point(119, 88);
             this.T2_INPUT_DueMonth.Name = "T2_INPUT_DueMonth";
             this.T2_INPUT_DueMonth.Size = new System.Drawing.Size(150, 24);
             this.T2_INPUT_DueMonth.TabIndex = 70;
+            this.T2_INPUT_DueMonth.SelectedIndexChanged += new System.EventHandler(this.T2_INPUT_DueMonth_SelectedIndexChanged);
             // 
             // T2_INPUT_DueMonth_En
             // 
@@ -1611,10 +1614,11 @@
             "ตุลาคม",
             "พฤศจิกายน",
             "ธันวาคม"});
-            this.T2_INPUT_ReachedMonth.Location = new System.Drawing.Point(119, 169);
+            this.T2_INPUT_ReachedMonth.Location = new System.Drawing.Point(119, 168);
             this.T2_INPUT_ReachedMonth.Name = "T2_INPUT_ReachedMonth";
             this.T2_INPUT_ReachedMonth.Size = new System.Drawing.Size(150, 24);
             this.T2_INPUT_ReachedMonth.TabIndex = 48;
+            this.T2_INPUT_ReachedMonth.SelectedIndexChanged += new System.EventHandler(this.T2_INPUT_ReachedMonth_SelectedIndexChanged);
             // 
             // label59
             // 
@@ -1773,6 +1777,7 @@
             this.T2_INPUT_ReachedYear.Name = "T2_INPUT_ReachedYear";
             this.T2_INPUT_ReachedYear.Size = new System.Drawing.Size(100, 23);
             this.T2_INPUT_ReachedYear.TabIndex = 32;
+            this.T2_INPUT_ReachedYear.TextChanged += new System.EventHandler(this.T2_INPUT_ReachedYear_TextChanged);
             // 
             // T2_INPUT_ReachedYear_En
             // 
@@ -1849,11 +1854,12 @@
             this.tableLayoutPanel4.ColumnCount = 2;
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 30F));
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 70F));
+            this.tableLayoutPanel4.Controls.Add(this.T2_INPUT_KindVISA, 1, 9);
             this.tableLayoutPanel4.Controls.Add(this.T2_INPUT_PassportDate, 1, 2);
             this.tableLayoutPanel4.Controls.Add(this.label54, 1, 8);
             this.tableLayoutPanel4.Controls.Add(this.label52, 1, 0);
             this.tableLayoutPanel4.Controls.Add(this.T2_INPUT_PassportIssuedAt, 1, 7);
-            this.tableLayoutPanel4.Controls.Add(this.T2_INPUT_Passport_En, 1, 6);
+            this.tableLayoutPanel4.Controls.Add(this.T2_INPUT_PassportYear_En, 1, 6);
             this.tableLayoutPanel4.Controls.Add(this.T2_INPUT_PassportYear, 1, 5);
             this.tableLayoutPanel4.Controls.Add(this.T2_INPUT_Passport, 1, 1);
             this.tableLayoutPanel4.Controls.Add(this.label35, 0, 7);
@@ -1869,7 +1875,6 @@
             this.tableLayoutPanel4.Controls.Add(this.label53, 0, 10);
             this.tableLayoutPanel4.Controls.Add(this.label55, 0, 11);
             this.tableLayoutPanel4.Controls.Add(this.label36, 0, 12);
-            this.tableLayoutPanel4.Controls.Add(this.T2_INPUT_KindVISA, 1, 9);
             this.tableLayoutPanel4.Controls.Add(this.label57, 0, 14);
             this.tableLayoutPanel4.Controls.Add(this.label56, 0, 13);
             this.tableLayoutPanel4.Controls.Add(this.T2_INPUT_PassportMonth, 1, 3);
@@ -1936,13 +1941,13 @@
             this.T2_INPUT_PassportIssuedAt.Size = new System.Drawing.Size(260, 23);
             this.T2_INPUT_PassportIssuedAt.TabIndex = 28;
             // 
-            // T2_INPUT_Passport_En
+            // T2_INPUT_PassportYear_En
             // 
-            this.T2_INPUT_Passport_En.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.T2_INPUT_Passport_En.Location = new System.Drawing.Point(119, 248);
-            this.T2_INPUT_Passport_En.Name = "T2_INPUT_Passport_En";
-            this.T2_INPUT_Passport_En.Size = new System.Drawing.Size(100, 23);
-            this.T2_INPUT_Passport_En.TabIndex = 30;
+            this.T2_INPUT_PassportYear_En.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.T2_INPUT_PassportYear_En.Location = new System.Drawing.Point(119, 248);
+            this.T2_INPUT_PassportYear_En.Name = "T2_INPUT_PassportYear_En";
+            this.T2_INPUT_PassportYear_En.Size = new System.Drawing.Size(100, 23);
+            this.T2_INPUT_PassportYear_En.TabIndex = 30;
             // 
             // T2_INPUT_PassportYear
             // 
@@ -1951,12 +1956,14 @@
             this.T2_INPUT_PassportYear.Name = "T2_INPUT_PassportYear";
             this.T2_INPUT_PassportYear.Size = new System.Drawing.Size(100, 23);
             this.T2_INPUT_PassportYear.TabIndex = 29;
+            this.T2_INPUT_PassportYear.TextChanged += new System.EventHandler(this.T2_INPUT_PassportYear_TextChanged);
             // 
             // T2_INPUT_Passport
             // 
             this.T2_INPUT_Passport.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.T2_INPUT_Passport.Location = new System.Drawing.Point(119, 48);
             this.T2_INPUT_Passport.Name = "T2_INPUT_Passport";
+            this.T2_INPUT_Passport.ReadOnly = true;
             this.T2_INPUT_Passport.Size = new System.Drawing.Size(260, 23);
             this.T2_INPUT_Passport.TabIndex = 10;
             // 
@@ -2007,6 +2014,7 @@
             this.T2_INPUT_VisaYear.Name = "T2_INPUT_VisaYear";
             this.T2_INPUT_VisaYear.Size = new System.Drawing.Size(100, 23);
             this.T2_INPUT_VisaYear.TabIndex = 32;
+            this.T2_INPUT_VisaYear.TextChanged += new System.EventHandler(this.T2_INPUT_VisaYear_TextChanged);
             // 
             // label43
             // 
@@ -2086,16 +2094,6 @@
             this.label36.TabIndex = 28;
             this.label36.Text = "เดือนที่ออก TH";
             // 
-            // T2_INPUT_KindVISA
-            // 
-            this.T2_INPUT_KindVISA.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.T2_INPUT_KindVISA.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.T2_INPUT_KindVISA.FormattingEnabled = true;
-            this.T2_INPUT_KindVISA.Location = new System.Drawing.Point(119, 369);
-            this.T2_INPUT_KindVISA.Name = "T2_INPUT_KindVISA";
-            this.T2_INPUT_KindVISA.Size = new System.Drawing.Size(150, 24);
-            this.T2_INPUT_KindVISA.TabIndex = 42;
-            // 
             // label57
             // 
             this.label57.Anchor = System.Windows.Forms.AnchorStyles.Right;
@@ -2135,7 +2133,7 @@
             "ตุลาคม",
             "พฤศจิกายน",
             "ธันวาคม"});
-            this.T2_INPUT_PassportMonth.Location = new System.Drawing.Point(119, 129);
+            this.T2_INPUT_PassportMonth.Location = new System.Drawing.Point(119, 128);
             this.T2_INPUT_PassportMonth.Name = "T2_INPUT_PassportMonth";
             this.T2_INPUT_PassportMonth.Size = new System.Drawing.Size(150, 24);
             this.T2_INPUT_PassportMonth.TabIndex = 44;
@@ -2176,10 +2174,11 @@
             "ตุลาคม",
             "พฤศจิกายน",
             "ธันวาคม"});
-            this.T2_INPUT_VisaMonth.Location = new System.Drawing.Point(119, 489);
+            this.T2_INPUT_VisaMonth.Location = new System.Drawing.Point(119, 488);
             this.T2_INPUT_VisaMonth.Name = "T2_INPUT_VisaMonth";
             this.T2_INPUT_VisaMonth.Size = new System.Drawing.Size(150, 24);
             this.T2_INPUT_VisaMonth.TabIndex = 47;
+            this.T2_INPUT_VisaMonth.SelectedIndexChanged += new System.EventHandler(this.T2_INPUT_VisaMonth_SelectedIndexChanged);
             // 
             // T2_INPUT_VisaMonth_En
             // 
@@ -2259,7 +2258,7 @@
             "ตุลาคม",
             "พฤศจิกายน",
             "ธันวาคม"});
-            this.T3_INPUT_ContractMonth.Location = new System.Drawing.Point(119, 89);
+            this.T3_INPUT_ContractMonth.Location = new System.Drawing.Point(119, 88);
             this.T3_INPUT_ContractMonth.Name = "T3_INPUT_ContractMonth";
             this.T3_INPUT_ContractMonth.Size = new System.Drawing.Size(150, 24);
             this.T3_INPUT_ContractMonth.TabIndex = 46;
@@ -2505,7 +2504,7 @@
             "ตุลาคม",
             "พฤศจิกายน",
             "ธันวาคม"});
-            this.T3_INPUT_PassportExpMonth.Location = new System.Drawing.Point(119, 89);
+            this.T3_INPUT_PassportExpMonth.Location = new System.Drawing.Point(119, 88);
             this.T3_INPUT_PassportExpMonth.Name = "T3_INPUT_PassportExpMonth";
             this.T3_INPUT_PassportExpMonth.Size = new System.Drawing.Size(150, 24);
             this.T3_INPUT_PassportExpMonth.TabIndex = 45;
@@ -2974,7 +2973,7 @@
             "ตุลาคม",
             "พฤศจิกายน",
             "ธันวาคม"});
-            this.T4_INPUT_PerLicenseMonth.Location = new System.Drawing.Point(119, 89);
+            this.T4_INPUT_PerLicenseMonth.Location = new System.Drawing.Point(119, 88);
             this.T4_INPUT_PerLicenseMonth.Name = "T4_INPUT_PerLicenseMonth";
             this.T4_INPUT_PerLicenseMonth.Size = new System.Drawing.Size(150, 24);
             this.T4_INPUT_PerLicenseMonth.TabIndex = 65;
@@ -3222,7 +3221,7 @@
             "ตุลาคม",
             "พฤศจิกายน",
             "ธันวาคม"});
-            this.T4_INPUT_ThroughMonth.Location = new System.Drawing.Point(119, 329);
+            this.T4_INPUT_ThroughMonth.Location = new System.Drawing.Point(119, 328);
             this.T4_INPUT_ThroughMonth.Name = "T4_INPUT_ThroughMonth";
             this.T4_INPUT_ThroughMonth.Size = new System.Drawing.Size(150, 24);
             this.T4_INPUT_ThroughMonth.TabIndex = 68;
@@ -3519,7 +3518,7 @@
             "ตุลาคม",
             "พฤศจิกายน",
             "ธันวาคม"});
-            this.T4_INPUT_ExpireMonth.Location = new System.Drawing.Point(119, 449);
+            this.T4_INPUT_ExpireMonth.Location = new System.Drawing.Point(119, 448);
             this.T4_INPUT_ExpireMonth.Name = "T4_INPUT_ExpireMonth";
             this.T4_INPUT_ExpireMonth.Size = new System.Drawing.Size(150, 24);
             this.T4_INPUT_ExpireMonth.TabIndex = 63;
@@ -3543,7 +3542,7 @@
             "ตุลาคม",
             "พฤศจิกายน",
             "ธันวาคม"});
-            this.T4_INPUT_MonthIssue.Location = new System.Drawing.Point(119, 169);
+            this.T4_INPUT_MonthIssue.Location = new System.Drawing.Point(119, 168);
             this.T4_INPUT_MonthIssue.Name = "T4_INPUT_MonthIssue";
             this.T4_INPUT_MonthIssue.Size = new System.Drawing.Size(150, 24);
             this.T4_INPUT_MonthIssue.TabIndex = 64;
@@ -3952,7 +3951,7 @@
             "มารีวิทย์",
             "มารีวิทย์สัตหีบ",
             "มารีวิทย์บ่อวิน"});
-            this.T6_INPUT_Choose.Location = new System.Drawing.Point(119, 49);
+            this.T6_INPUT_Choose.Location = new System.Drawing.Point(119, 48);
             this.T6_INPUT_Choose.Name = "T6_INPUT_Choose";
             this.T6_INPUT_Choose.Size = new System.Drawing.Size(150, 24);
             this.T6_INPUT_Choose.TabIndex = 67;
@@ -3988,22 +3987,19 @@
             this.MAIN_BTN_Save.UseVisualStyleBackColor = true;
             this.MAIN_BTN_Save.Click += new System.EventHandler(this.MAIN_BTN_Save_Click);
             // 
-            // button2
+            // T2_INPUT_KindVISA
             // 
-            this.button2.Location = new System.Drawing.Point(9, 502);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(51, 41);
-            this.button2.TabIndex = 8;
-            this.button2.Text = "บันทึก";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.T2_INPUT_KindVISA.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.T2_INPUT_KindVISA.Location = new System.Drawing.Point(119, 368);
+            this.T2_INPUT_KindVISA.Name = "T2_INPUT_KindVISA";
+            this.T2_INPUT_KindVISA.Size = new System.Drawing.Size(100, 23);
+            this.T2_INPUT_KindVISA.TabIndex = 59;
             // 
             // Form_Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1586, 799);
-            this.Controls.Add(this.button2);
             this.Controls.Add(this.MAIN_BTN_Save);
             this.Controls.Add(this.MAIN_BTN_New);
             this.Controls.Add(this.MAIN_BTN_Find);
@@ -4142,7 +4138,7 @@
         private System.Windows.Forms.Label label35;
         private System.Windows.Forms.TextBox T2_INPUT_PassportIssuedAt;
         private System.Windows.Forms.TextBox T2_INPUT_PassportYear;
-        private System.Windows.Forms.TextBox T2_INPUT_Passport_En;
+        private System.Windows.Forms.TextBox T2_INPUT_PassportYear_En;
         private System.Windows.Forms.TextBox T2_INPUT_VisaYear;
         private System.Windows.Forms.Label label42;
         private System.Windows.Forms.Label label40;
@@ -4173,7 +4169,6 @@
         private System.Windows.Forms.Label label71;
         private System.Windows.Forms.Label label72;
         private System.Windows.Forms.TextBox T2_INPUT_Departure;
-        private System.Windows.Forms.ComboBox T2_INPUT_KindVISA;
         private System.Windows.Forms.TextBox T2_INPUT_DueYear;
         private System.Windows.Forms.TextBox T2_INPUT_DueYear_En;
         private System.Windows.Forms.Label label76;
@@ -4353,6 +4348,6 @@
         internal System.Windows.Forms.TextBox T1_INPUT_Passport;
         private System.Windows.Forms.Button MAIN_BTN_New;
         private System.Windows.Forms.Button MAIN_BTN_Save;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.TextBox T2_INPUT_KindVISA;
     }
 }

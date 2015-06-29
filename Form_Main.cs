@@ -17,6 +17,7 @@ namespace TeacherForeignPro
         TSchool Tschool = new TSchool(); /* Class ตาราง TSchool */
         THistory THistory = new THistory();
         TDocument TDocument = new TDocument();
+        TPassportExp TPassportExp = new TPassportExp();
         public Form_Main()
         {
             InitializeComponent();
@@ -70,34 +71,45 @@ namespace TeacherForeignPro
             TDocument.Passport = T1_INPUT_Passport.Text.Trim();
             if (TDocument.SelectTeacher() == true)
             {   
-                T2_INPUT_Passport.Text = TDocument.Passport;
-                T2_INPUT_PassportDate.Text = TDocument.PassportDate;
-                T2_INPUT_PassportMonth.SelectedIndex = ComboConv.ConvMonthToIndex(TDocument.PassportMonth);
-                T2_INPUT_PassportYear.Text = TDocument.PassportYear;
-                T2_INPUT_PassportIssuedAt.Text = TDocument.PassportIssuedAt;
-                T2_INPUT_KindVISA.Text = TDocument.KindVISA;
-                T2_INPUT_VisaNo.Text = TDocument.VisaNo;
-                T2_INPUT_VisaDate.Text = TDocument.VisaDate;
-                T2_INPUT_VisaMonth.SelectedIndex = ComboConv.ConvMonthToIndex(TDocument.VisaMonth);
-                T2_INPUT_VisaYear.Text = TDocument.VisaYear;
-                T2_INPUT_VisaIssuedAt.Text = TDocument.VisaIssuedAt;
-                T2_INPUT_ReachedDate.Text = TDocument.ReachedDate;
-                T2_INPUT_ReachedMonth.Text = TDocument.ReachedMonth;
-                T2_INPUT_ReachedYear.Text = TDocument.ReachedYear;
-                T2_INPUT_AllowedAt.Text = TDocument.AllowedAt;
-                T2_INPUT_DefineYear.Text = TDocument.DefineYear;
-                T2_INPUT_DefineMonth.Text = TDocument.DefineMonth;
-                T2_INPUT_DefineDay.Text = TDocument.DefineDay;
-                T2_INPUT_DueDate.Text = TDocument.DueDate;
-                T2_INPUT_DueMonth.SelectedIndex = ComboConv.ConvMonthToIndex(TDocument.DueMonth);
-                T2_INPUT_DueYear.Text = TDocument.DueYear;
-                T2_INPUT_Renew_Date.Text = TDocument.Renew_Date;
-                T2_INPUT_Renew_Month.SelectedIndex = ComboConv.ConvMonthToIndex(TDocument.Renew_Month);
-                T2_INPUT_Renew_Year.Text = TDocument.Renew_Year;
+                this.T2_INPUT_Passport.Text = TDocument.Passport;
+                this.T2_INPUT_PassportDate.Text = TDocument.PassportDate;
+                this.T2_INPUT_PassportMonth.SelectedIndex = ComboConv.ConvMonthToIndex(TDocument.PassportMonth);
+                this.T2_INPUT_PassportYear.Text = TDocument.PassportYear;
+                this.T2_INPUT_PassportIssuedAt.Text = TDocument.PassportIssuedAt;
+                this.T2_INPUT_KindVISA.Text = TDocument.KindVISA;
+                this.T2_INPUT_VisaNo.Text = TDocument.VisaNo;
+                this.T2_INPUT_VisaDate.Text = TDocument.VisaDate;
+                this.T2_INPUT_VisaMonth.SelectedIndex = ComboConv.ConvMonthToIndex(TDocument.VisaMonth);
+                this.T2_INPUT_VisaYear.Text = TDocument.VisaYear;
+                this.T2_INPUT_VisaIssuedAt.Text = TDocument.VisaIssuedAt;
+                this.T2_INPUT_ReachedDate.Text = TDocument.ReachedDate;
+                this.T2_INPUT_ReachedMonth.SelectedIndex = ComboConv.ConvMonthToIndex(TDocument.ReachedMonth);
+                this.T2_INPUT_ReachedYear.Text = TDocument.ReachedYear;
+                this.T2_INPUT_AllowedAt.Text = TDocument.AllowedAt;
+                this.T2_INPUT_DefineYear.Text = TDocument.DefineYear;
+                this.T2_INPUT_DefineMonth.Text = TDocument.DefineMonth;
+                this.T2_INPUT_DefineDay.Text = TDocument.DefineDay;
+                this.T2_INPUT_DueDate.Text = TDocument.DueDate;
+                this.T2_INPUT_DueMonth.SelectedIndex = ComboConv.ConvMonthToIndex(TDocument.DueMonth);
+                this.T2_INPUT_DueYear.Text = TDocument.DueYear;
+                this.T2_INPUT_Renew_Date.Text = TDocument.Renew_Date;
+                this.T2_INPUT_Renew_Month.SelectedIndex = ComboConv.ConvMonthToIndex(TDocument.Renew_Month);
+                this.T2_INPUT_Renew_Year.Text = TDocument.Renew_Year;
             }
             else
             {
                 T2_INPUT_Passport.Text = "False";
+            }
+
+            TPassportExp.Passport = T1_INPUT_Passport.Text.Trim();
+            if (TPassportExp.SelectTeacher() == true)
+            {
+                this.T3_INPUT_PassportExpDate.Text = TPassportExp.PassportExpDate;
+                this.T3_INPUT_PassportExpMonth.SelectedIndex = ComboConv.ConvMonthToIndex(TPassportExp.PassportExpMonth);
+                this.T3_INPUT_PassportExpYear.Text = TPassportExp.PassportExpYear;
+                this.T3_INPUT_ContractDate.Text = TPassportExp.ContractDate;
+                this.T3_INPUT_ContractMonth.SelectedIndex = ComboConv.ConvMonthToIndex(TPassportExp.ContractMonth);
+                this.T3_INPUT_ContractYear.Text = TPassportExp.ContractYear;
             }
          
         }
@@ -105,12 +117,17 @@ namespace TeacherForeignPro
         public void _NewTeacher()
         {
             THistory.NewTeacher();
+            TDocument.NewTeacher();
+            TPassportExp.NewTeacher();
         }
 
         public void _NewTeacher(int _Mode)
         {
             // _Mode ใส่อะไรก้ได้ เพื่อล้างค่าในฟอร์ม
             THistory.NewTeacher();
+            TDocument.NewTeacher();
+            TPassportExp.NewTeacher();
+
             this.T1_INPUT_HisID.Text = THistory.HisID;
             this.T1_INPUT_Passport.Text = THistory.Passport;
             this.T1_INPUT_Th_Title.SelectedIndex = ComboConv.ConvTitleToIndex(THistory.Th_Title);
@@ -146,15 +163,47 @@ namespace TeacherForeignPro
             this.T1_INPUT_Phone.Text = THistory.Phone;
             this.T1_INPUT_Pic.ImageLocation = THistory.ImageLocation(THistory.Pic);
             this.T1_INPUT_blood_Grp.SelectedIndex = ComboConv.ConvBloodToIndex(THistory.blood_Grp);
+
+            this.T2_INPUT_Passport.Text = TDocument.Passport;
+            this.T2_INPUT_PassportDate.Text = TDocument.PassportDate;
+            this.T2_INPUT_PassportMonth.SelectedIndex = ComboConv.ConvMonthToIndex(TDocument.PassportMonth);
+            this.T2_INPUT_PassportYear.Text = TDocument.PassportYear;
+            this.T2_INPUT_PassportIssuedAt.Text = TDocument.PassportIssuedAt;
+            this.T2_INPUT_KindVISA.Text = TDocument.KindVISA;
+            this.T2_INPUT_VisaNo.Text = TDocument.VisaNo;
+            this.T2_INPUT_VisaDate.Text = TDocument.VisaDate;
+            this.T2_INPUT_VisaMonth.SelectedIndex = ComboConv.ConvMonthToIndex(TDocument.VisaMonth);
+            this.T2_INPUT_VisaYear.Text = TDocument.VisaYear;
+            this.T2_INPUT_VisaIssuedAt.Text = TDocument.VisaIssuedAt;
+            this.T2_INPUT_ReachedDate.Text = TDocument.ReachedDate;
+            this.T2_INPUT_ReachedMonth.SelectedIndex = ComboConv.ConvMonthToIndex(TDocument.ReachedMonth);
+            this.T2_INPUT_ReachedYear.Text = TDocument.ReachedYear;
+            this.T2_INPUT_AllowedAt.Text = TDocument.AllowedAt;
+            this.T2_INPUT_DefineYear.Text = TDocument.DefineYear;
+            this.T2_INPUT_DefineMonth.Text = TDocument.DefineMonth;
+            this.T2_INPUT_DefineDay.Text = TDocument.DefineDay;
+            this.T2_INPUT_DueDate.Text = TDocument.DueDate;
+            this.T2_INPUT_DueMonth.SelectedIndex = ComboConv.ConvMonthToIndex(TDocument.DueMonth);
+            this.T2_INPUT_DueYear.Text = TDocument.DueYear;
+            this.T2_INPUT_Renew_Date.Text = TDocument.Renew_Date;
+            this.T2_INPUT_Renew_Month.SelectedIndex = ComboConv.ConvMonthToIndex(TDocument.Renew_Month);
+            this.T2_INPUT_Renew_Year.Text = TDocument.Renew_Year;
+
+            this.T3_INPUT_PassportExpDate.Text = TPassportExp.PassportExpDate;
+            this.T3_INPUT_PassportExpMonth.SelectedIndex = ComboConv.ConvMonthToIndex(TPassportExp.PassportExpMonth);
+            this.T3_INPUT_PassportExpYear.Text = TPassportExp.PassportExpYear;
+            this.T3_INPUT_ContractDate.Text = TPassportExp.ContractDate;
+            this.T3_INPUT_ContractMonth.SelectedIndex = ComboConv.ConvMonthToIndex(TPassportExp.ContractMonth);
+            this.T3_INPUT_ContractYear.Text = TPassportExp.ContractYear;
         }
 
         public bool _AssignData()
         {
-            bool r = false;
-            /* Tab 1 */
+            bool IsSuccess = false;
+            
             if ((T1_INPUT_HisID.Text.Trim() != string.Empty) && (T1_INPUT_Passport.Text.Trim() != string.Empty))
             {
-                
+                /* Tab 1 */
                 THistory.HisID = this.T1_INPUT_HisID.Text;
                 THistory.Passport = this.T1_INPUT_Passport.Text;
                 THistory.Th_Title = this.T1_INPUT_Th_Title.SelectedItem.ToString();
@@ -191,12 +240,62 @@ namespace TeacherForeignPro
                 THistory.Pic = "p" + this.T1_INPUT_HisID.Text;
                 THistory.blood_Grp = this.T1_INPUT_blood_Grp.SelectedItem.ToString();
 
-                r = true;
+                /* Tab 2 */
+                //TDocument.Passport = string.Empty;
+                TDocument.PassportDate = this.T2_INPUT_PassportDate.Text.Trim();
+                TDocument.PassportMonth = this.T2_INPUT_PassportMonth.SelectedItem.ToString();
+                TDocument.PassportMonth_En = this.T2_INPUT_PassportMonth_En.Text.Trim();
+                TDocument.PassportYear = this.T2_INPUT_PassportYear.Text.Trim();
+                TDocument.PassportYear_En = this.T2_INPUT_PassportYear_En.Text.Trim();
+                TDocument.PassportIssuedAt = this.T2_INPUT_PassportIssuedAt.Text.Trim();
+                TDocument.KindVISA = this.T2_INPUT_KindVISA.Text.Trim();
+                TDocument.VisaNo = this.T2_INPUT_VisaNo.Text.Trim();
+                TDocument.VisaDate = this.T2_INPUT_VisaDate.Text.Trim();
+                TDocument.VisaMonth = this.T2_INPUT_VisaMonth.SelectedItem.ToString();
+                TDocument.VisaMonth_En = this.T2_INPUT_VisaMonth_En.Text.Trim();
+                TDocument.VisaYear = this.T2_INPUT_VisaYear.Text.Trim();
+                TDocument.VisaYear_En = this.T2_INPUT_VisaYear_En.Text.Trim();
+                TDocument.VisaIssuedAt = this.T2_INPUT_VisaIssuedAt.Text.Trim();
+                TDocument.ReachedDate = this.T2_INPUT_ReachedDate.Text.Trim();
+                TDocument.ReachedMonth = this.T2_INPUT_ReachedMonth.SelectedItem.ToString();
+                TDocument.ReachedMonth_En = this.T2_INPUT_ReachedMonth_En.Text.Trim();
+                TDocument.ReachedYear = this.T2_INPUT_ReachedYear.Text.Trim();
+                TDocument.ReachedYear_En = this.T2_INPUT_ReachedYear_En.Text.Trim();
+                TDocument.AllowedAt = this.T2_INPUT_AllowedAt.Text.Trim();
+                TDocument.DefineYear = this.T2_INPUT_DefineYear.Text.Trim();
+                TDocument.DefineMonth = this.T2_INPUT_DefineMonth.Text.Trim();
+                TDocument.DefineDay = this.T2_INPUT_DefineDay.Text.Trim();
+                TDocument.DueDate = this.T2_INPUT_DueDate.Text.Trim();
+                TDocument.DueMonth = this.T2_INPUT_DueMonth.SelectedItem.ToString();
+                TDocument.DueMonth_En = this.T2_INPUT_DueMonth_En.Text.Trim();
+                TDocument.DueYear = this.T2_INPUT_DueYear.Text.Trim();
+                TDocument.DueYear_En = this.T2_INPUT_DueYear_En.Text.Trim();
+                TDocument.Renew_Date = this.T2_INPUT_Renew_Date.Text.Trim();
+                TDocument.Renew_Month = this.T2_INPUT_Renew_Month.SelectedItem.ToString();
+                TDocument.Renew_Month_En = this.T2_INPUT_Renew_Month_En.Text.Trim();
+                TDocument.Renew_Year = this.T2_INPUT_Renew_Year.Text.Trim();
+                TDocument.Renew_Year_En = this.T2_INPUT_Renew_Year_En.Text.Trim();
+
+                /* Tab 3 */
+                TPassportExp.PassportExpDate = this.T3_INPUT_PassportExpDate.Text.Trim();
+                TPassportExp.PassportExpMonth = this.T3_INPUT_PassportExpMonth.SelectedItem.ToString();
+                TPassportExp.PassportExpMonth_En = this.T3_INPUT_PassportExpMonth_En.Text;
+                TPassportExp.PassportExpMonth_Text = string.Empty;
+                TPassportExp.PassportExpYear = this.T3_INPUT_PassportExpYear.Text.Trim();
+                TPassportExp.PassportExpYear_En = this.T3_INPUT_PassportExpYear_En.Text;
+                TPassportExp.ContractDate = this.T3_INPUT_ContractDate.Text.Trim();
+                TPassportExp.ContractMonth = this.T3_INPUT_ContractMonth.SelectedItem.ToString();
+                TPassportExp.ContractMonth_En = this.T3_INPUT_ContractMonth_En.Text;
+                TPassportExp.ContractMonth_Text = string.Empty;
+                TPassportExp.ContractYear = this.T3_INPUT_ContractYear.Text.Trim();
+                TPassportExp.ContractYear_En = this.T3_INPUT_ContractYear_En.Text;
+                TPassportExp.CheckStetar = string.Empty;
+                IsSuccess = true;
             }
             else
             {
             }
-            return r;
+            return IsSuccess;
         }
 
         private void T6_INPUT_Choose_SelectedIndexChanged(object sender, EventArgs e)
@@ -217,6 +316,7 @@ namespace TeacherForeignPro
 
         private void T6_SUMBIT_Update_Click(object sender, EventArgs e)
         {
+            /* Save ข้อมูล โรงเรียน. */
             Tschool.HomeNo = T6_INPUT_HomeNo.Text.Trim();
             Tschool.Village = T6_INPUT_Village.Text;
             Tschool.Lane = T6_INPUT_Lane.Text.Trim();
@@ -228,6 +328,7 @@ namespace TeacherForeignPro
             Tschool.Phone = T6_INPUT_Phone.Text.Trim();
             Tschool.Bossname = T6_INPUT_Bossname.Text.Trim();
             Tschool.UpdateQuery(T6_INPUT_Choose.SelectedItem.ToString());
+
             MessageBox.Show(Tschool.Message);
         }
 
@@ -280,19 +381,54 @@ namespace TeacherForeignPro
             }                    
         }
 
-        private void button2_Click(object sender, EventArgs e)
-        {
-            TDocument.Passport = "E00357943";
-            TDocument.SelectTeacher();
-            T2_INPUT_Passport.Text = TDocument.Passport;
-            T2_INPUT_PassportDate.Text = TDocument.PassportDate;
-            T2_INPUT_PassportMonth.SelectedIndex = ComboConv.ConvMonthToIndex(TDocument.PassportMonth);
-            MessageBox.Show(TDocument.ErrorMessage);
-        }
-
         private void T2_INPUT_PassportMonth_SelectedIndexChanged(object sender, EventArgs e)
         {
-            //T2_INPUT_PassportMonth_En.Text = 
+            this.T2_INPUT_PassportMonth_En.Text = ComboConv.ConvThMonthToEnMonth(this.T2_INPUT_PassportMonth.SelectedItem.ToString());
+        }
+
+        private void T2_INPUT_VisaMonth_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            this.T2_INPUT_VisaMonth_En.Text = ComboConv.ConvThMonthToEnMonth(this.T2_INPUT_VisaMonth.SelectedItem.ToString());
+        }
+
+        private void T2_INPUT_PassportYear_TextChanged(object sender, EventArgs e)
+        {
+            this.T2_INPUT_PassportYear_En.Text = ComboConv.ConvThYearToEnYear(this.T2_INPUT_PassportYear.Text);
+        }
+
+        private void T2_INPUT_VisaYear_TextChanged(object sender, EventArgs e)
+        {
+            this.T2_INPUT_VisaYear_En.Text = ComboConv.ConvThYearToEnYear(this.T2_INPUT_VisaYear.Text);
+        }
+
+        private void T2_INPUT_ReachedMonth_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            this.T2_INPUT_ReachedMonth_En.Text = ComboConv.ConvThMonthToEnMonth(this.T2_INPUT_ReachedMonth.SelectedItem.ToString());
+        }
+
+        private void T2_INPUT_ReachedYear_TextChanged(object sender, EventArgs e)
+        {
+            this.T2_INPUT_ReachedYear_En.Text = ComboConv.ConvThYearToEnYear(this.T2_INPUT_ReachedYear.Text);
+        }
+
+        private void T2_INPUT_DueMonth_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            this.T2_INPUT_DueMonth_En.Text = ComboConv.ConvThMonthToEnMonth(this.T2_INPUT_DueMonth.SelectedItem.ToString());
+        }
+
+        private void T2_INPUT_DueYear_TextChanged(object sender, EventArgs e)
+        {
+            this.T2_INPUT_DueYear_En.Text = ComboConv.ConvThYearToEnYear(this.T2_INPUT_DueYear.Text);
+        }
+
+        private void T2_INPUT_Renew_Month_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            this.T2_INPUT_Renew_Month_En.Text = ComboConv.ConvThMonthToEnMonth(this.T2_INPUT_Renew_Month.SelectedItem.ToString());
+        }
+
+        private void T2_INPUT_Renew_Year_TextChanged(object sender, EventArgs e)
+        {
+            this.T2_INPUT_Renew_Year_En.Text = ComboConv.ConvThYearToEnYear(this.T2_INPUT_Renew_Year.Text);
         }
     }
 }
