@@ -26,15 +26,16 @@ namespace TeacherForeignPro
             _Form_Main = fm;
         }
 
+        private int var_Row_Count = 0;
         private string ConnectionString = "Provider=Microsoft.Jet.OLEDB.4.0;Data Source=.\\Database\\Data.mdb;User Id=admin;Password=;";
 
         private void FindTeacher(string _Keyword)
         {
             FIND_OUTPUT_ListView.Items.Clear();
-
+            
             string Query = "SELECT [THistory.Passport], [THistory.HisID], [THistory.Th_Title], [THistory.Th_Name], [THistory.Th_Lastname], [TWorkplace.School] " +
                     "FROM [THistory] INNER JOIN [TWorkplace] ON THistory.Passport = TWorkplace.Passport " +
-                    "WHERE [THistory.Passport] like '" + _Keyword + "%' OR [THistory.HisID] like '" + _Keyword + "%' OR [THistory.Th_Name] like '" + _Keyword + "%' OR [THistory.Th_Lastname] like '" + _Keyword + "%' " +
+                    "WHERE [THistory.Passport] like '" + _Keyword + "%' OR [THistory.HisID] like '" + _Keyword + "%' OR [THistory.Th_Name] like '" + _Keyword + "%' OR [THistory.Th_Lastname] like '" + _Keyword + "%' AND [Active] = 1 " +
                     "ORDER BY [THistory.HisID] ASC";
 
             OleDbConnection Con = new OleDbConnection(ConnectionString);
@@ -43,13 +44,15 @@ namespace TeacherForeignPro
 
             try
             {
+                var_Row_Count = 0;
                 Con.Open();
                 Read = Com.ExecuteReader();
-
+                
                 if (Read.HasRows)
                 {
                     while (Read.Read())
                     {
+                        var_Row_Count++;
                         string[] _Items = new string[]{
                             Read.GetValue(0).ToString(),
                             Read.GetValue(1).ToString(),
@@ -61,7 +64,13 @@ namespace TeacherForeignPro
 
                         ListViewItem _ListView = new ListViewItem(_Items);                      
                         FIND_OUTPUT_ListView.Items.Add(_ListView);
-                    }                   
+                    }
+                    FIND_OUTPUT_Count.Text = var_Row_Count.ToString();
+                }
+                else 
+                { 
+                    var_Row_Count = 0;
+                    FIND_OUTPUT_Count.Text = var_Row_Count.ToString();
                 }
             }
             catch (Exception ex)
@@ -79,13 +88,14 @@ namespace TeacherForeignPro
             {
                 Query = "SELECT THistory.Passport, THistory.HisID, THistory.Th_Title, THistory.Th_Name, THistory.Th_Lastname, TWorkplace.School " +
                     "FROM THistory INNER JOIN TWorkplace ON THistory.Passport = TWorkplace.Passport " +
+                    "WHERE [THistory].[Active] = 1 " +
                     "ORDER BY THistory.HisID ASC";
             }
             else
             {
                 Query = "SELECT THistory.Passport, THistory.HisID, THistory.Th_Title, THistory.Th_Name, THistory.Th_Lastname, TWorkplace.School " +
                     "FROM THistory INNER JOIN TWorkplace ON THistory.Passport = TWorkplace.Passport " +
-                    "WHERE [TWorkplace.School]='" + _School + "' " +
+                    "WHERE [TWorkplace.School]='" + _School + "' AND [THistory].[Active] = 1 " +
                     "ORDER BY THistory.HisID ASC";
             }
 
@@ -95,6 +105,7 @@ namespace TeacherForeignPro
 
             try
             {
+                var_Row_Count = 0;
                 Con.Open();
                 Read = Com.ExecuteReader();
 
@@ -102,6 +113,7 @@ namespace TeacherForeignPro
                 {
                     while (Read.Read())
                     {
+                        var_Row_Count++;
                         string[] _Items = new string[]{
                             Read.GetValue(0).ToString(),
                             Read.GetValue(1).ToString(),
@@ -114,6 +126,12 @@ namespace TeacherForeignPro
                         ListViewItem _ListView = new ListViewItem(_Items);
                         FIND_OUTPUT_ListView.Items.Add(_ListView);
                     }
+                    FIND_OUTPUT_Count.Text = var_Row_Count.ToString();
+                }
+                else 
+                { 
+                    var_Row_Count = 0;
+                    FIND_OUTPUT_Count.Text = var_Row_Count.ToString();
                 }
             }
             catch (Exception ex)

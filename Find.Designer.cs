@@ -43,6 +43,8 @@
             this._Th_Lastname = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this._School = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.FIND_BTN_Send = new System.Windows.Forms.Button();
+            this.FIND_OUTPUT_Count = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -195,11 +197,31 @@
             this.FIND_BTN_Send.UseVisualStyleBackColor = true;
             this.FIND_BTN_Send.Click += new System.EventHandler(this.FIND_BTN_Send_Click);
             // 
+            // FIND_OUTPUT_Count
+            // 
+            this.FIND_OUTPUT_Count.AutoSize = true;
+            this.FIND_OUTPUT_Count.Location = new System.Drawing.Point(870, 459);
+            this.FIND_OUTPUT_Count.Name = "FIND_OUTPUT_Count";
+            this.FIND_OUTPUT_Count.Size = new System.Drawing.Size(15, 16);
+            this.FIND_OUTPUT_Count.TabIndex = 3;
+            this.FIND_OUTPUT_Count.Text = "0";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(764, 459);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(83, 16);
+            this.label2.TabIndex = 4;
+            this.label2.Text = "จำนวนผลลัพธ์";
+            // 
             // FORM_FIND
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(924, 489);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.FIND_OUTPUT_Count);
             this.Controls.Add(this.FIND_BTN_Send);
             this.Controls.Add(this.FIND_OUTPUT_ListView);
             this.Controls.Add(this.tableLayoutPanel1);
@@ -214,6 +236,7 @@
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -234,5 +257,7 @@
         private System.Windows.Forms.ColumnHeader _Th_Lastname;
         private System.Windows.Forms.ColumnHeader _School;
         private System.Windows.Forms.Button FIND_BTN_Send;
+        private System.Windows.Forms.Label FIND_OUTPUT_Count;
+        private System.Windows.Forms.Label label2;
     }
 }

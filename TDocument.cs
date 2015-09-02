@@ -45,6 +45,7 @@ namespace TeacherForeignPro
         public String Renew_Year { get { return _Renew_Year; } set { _Renew_Year = value; } }
         public String Renew_Year_En { get { return _Renew_Year_En; } set { _Renew_Year_En = value; } }
         public String ErrorMessage { get { return _ErrorMessage; } }
+        public String ResultMessage { get { return _ResultMessage; } }
 
         private string _Passport;
         private string _PassportDate;
@@ -81,58 +82,59 @@ namespace TeacherForeignPro
         private string _Renew_Year;
         private string _Renew_Year_En;
 
+        private string _ResultMessage;
         private string _ErrorMessage;
         private string var_ConnectionString = "Provider=Microsoft.Jet.OLEDB.4.0;Data Source=.\\Database\\Data.mdb;User Id=admin;Password=;";
 
         private string[] Columns = new string[]{
-            "TDocument",
-            "Passport",
-            "PassportDate",
-            "PassportMonth",
-            "PassportMonth_En",
-            "PassportYear",
-            "PassportYear_En",
-            "PassportIssuedAt",
-            "Tm_Residence",
-            "Tm_No",
-            "Date_Issue",
-            "Month_Issue",
-            "Year_Issue",
-            "Year_Issue_En",
-            "IssuedAt",
-            "Province_Issued",
-            "RenewedUntil",
-            "RenewedMonth",
-            "RenewedMonth_En",
-            "RenewedYear", 
-            "RenewedYear_En", 
-            "KindVISA",
-            "VisaNo",
-            "VisaDate", 
-            "VisaMonth",
-            "VisaMonth_En",
-            "VisaYear",
-            "VisaYear_En",
-            "VisaIssuedAt",
-            "ReachedDate",
-            "ReachedMonth",
-            "ReachedMonth_En",
-            "ReachedYear",
-            "ReachedYear_En",
-            "AllowedAt",
-            "DefineYear",
-            "DefineMonth",
-            "DefineDay",
-            "DueDate",
-            "DueMonth",
-            "DueMonth_En",
-            "DueYear",    
-            "DueYear_En",
-            "Renew_Date",
-            "Renew_Month",
-            "Renew_Month_En",
-            "Renew_Year",
-            "Renew_Year_En",
+            "TDocument",            // 0
+            "Passport",             // 1
+            "PassportDate",         // 2
+            "PassportMonth",        // 3
+            "PassportMonth_En",     // 4
+            "PassportYear",         // 5
+            "PassportYear_En",      // 6
+            "PassportIssuedAt",     // 7
+            "Tm_Residence",         // 8
+            "Tm_No",                // 9
+            "Date_Issue",           // 10
+            "Month_Issue",          // 11
+            "Year_Issue",           // 12
+            "Year_Issue_En",        // 13
+            "IssuedAt",             // 14
+            "Province_Issued",      // 15
+            "RenewedUntil",         // 16
+            "RenewedMonth",         // 17
+            "RenewedMonth_En",      // 18
+            "RenewedYear",          // 19
+            "RenewedYear_En",       // 20
+            "KindVISA",             // 21
+            "VisaNo",               // 22
+            "VisaDate",             // 23
+            "VisaMonth",            // 24
+            "VisaMonth_En",         // 25
+            "VisaYear",             // 26
+            "VisaYear_En",          // 27
+            "VisaIssuedAt",         // 28
+            "ReachedDate",          // 29
+            "ReachedMonth",         // 30
+            "ReachedMonth_En",      // 31
+            "ReachedYear",          // 32
+            "ReachedYear_En",       // 33
+            "AllowedAt",            // 34
+            "DefineYear",           // 35
+            "DefineMonth",          // 36
+            "DefineDay",            // 37
+            "DueDate",              // 38
+            "DueMonth",             // 39
+            "DueMonth_En",          // 40
+            "DueYear",              // 41
+            "DueYear_En",           // 42
+            "Renew_Date",           // 43
+            "Renew_Month",          // 44
+            "Renew_Month_En",       // 45
+            "Renew_Year",           // 46
+            "Renew_Year_En",        // 47
         };
 
         public string FormatColumn(string _Column, string _Format)
@@ -143,9 +145,14 @@ namespace TeacherForeignPro
             r = _Open + _Column + _Close;
             return r;
         }
-        public bool UpdateTeacher()
+        ///<summary>
+        ///Update Data in TDocument table.
+        ///Return ResultMessage Property.
+        ///If success ResultMessage will return 1.
+        ///If not success ResultMessage will return Error Message.
+        ///</summary>
+        public string UpdateTeacher()
         {
-            bool r = false;
             string var_UpdateQuery = "update " + FormatColumn(Columns[0], "[]") +
                                      "set " +
                                      FormatColumn(Columns[2], "[]") + "='" + _PassportDate + "', " +
@@ -154,51 +161,49 @@ namespace TeacherForeignPro
                                      FormatColumn(Columns[5], "[]") + "='" + _PassportYear + "', " +
                                      FormatColumn(Columns[6], "[]") + "='" + _PassportYear_En + "', " +
                                      FormatColumn(Columns[7], "[]") + "='" + _PassportIssuedAt + "', " +
-                                     FormatColumn(Columns[22], "[]") + "='" + _KindVISA + "', " +
-                                     FormatColumn(Columns[23], "[]") + "='" + _VisaNo + "', " +
-                                     FormatColumn(Columns[24], "[]") + "='" + _VisaDate + "', " +
-                                     FormatColumn(Columns[25], "[]") + "='" + _VisaMonth + "', " +
-                                     FormatColumn(Columns[26], "[]") + "='" + _VisaMonth_En + "', " +
-                                     FormatColumn(Columns[27], "[]") + "='" + _VisaYear + "', " +
-                                     FormatColumn(Columns[28], "[]") + "='" + _VisaYear_En + "', " +
-                                     FormatColumn(Columns[29], "[]") + "='" + _VisaIssuedAt + "', " +
-                                     FormatColumn(Columns[30], "[]") + "='" + _ReachedDate + "', " +
-                                     FormatColumn(Columns[31], "[]") + "='" + _ReachedMonth + "', " +
-                                     FormatColumn(Columns[32], "[]") + "='" + _ReachedMonth_En + "', " +
-                                     FormatColumn(Columns[33], "[]") + "='" + _ReachedYear + "', " +
-                                     FormatColumn(Columns[34], "[]") + "='" + _ReachedYear_En + "', " +
-                                     FormatColumn(Columns[35], "[]") + "='" + _AllowedAt + "', " +
-                                     FormatColumn(Columns[36], "[]") + "='" + _DefineYear + "', " +
-                                     FormatColumn(Columns[37], "[]") + "='" + _DefineMonth + "', " +
-                                     FormatColumn(Columns[38], "[]") + "='" + _DefineDay + "', " +
-                                     FormatColumn(Columns[39], "[]") + "='" + _DueDate + "', " +
-                                     FormatColumn(Columns[40], "[]") + "='" + _DueMonth + "', " +
-                                     FormatColumn(Columns[41], "[]") + "='" + _DueMonth_En + "', " +
-                                     FormatColumn(Columns[42], "[]") + "='" + _DueYear + "', " +
-                                     FormatColumn(Columns[43], "[]") + "='" + _DueYear_En + "', " +
-                                     FormatColumn(Columns[44], "[]") + "='" + _Renew_Date + "', " +
-                                     FormatColumn(Columns[45], "[]") + "='" + _Renew_Month + "', " +
-                                     FormatColumn(Columns[46], "[]") + "='" + _Renew_Month_En + "', " +
-                                     FormatColumn(Columns[47], "[]") + "='" + _Renew_Year + "', " +
-                                     FormatColumn(Columns[48], "[]") + "='" + _Renew_Year_En + "', " +
+                                     FormatColumn(Columns[21], "[]") + "='" + _KindVISA + "', " +
+                                     FormatColumn(Columns[22], "[]") + "='" + _VisaNo + "', " +
+                                     FormatColumn(Columns[23], "[]") + "='" + _VisaDate + "', " +
+                                     FormatColumn(Columns[24], "[]") + "='" + _VisaMonth + "', " +
+                                     FormatColumn(Columns[25], "[]") + "='" + _VisaMonth_En + "', " +
+                                     FormatColumn(Columns[26], "[]") + "='" + _VisaYear + "', " +
+                                     FormatColumn(Columns[27], "[]") + "='" + _VisaYear_En + "', " +
+                                     FormatColumn(Columns[28], "[]") + "='" + _VisaIssuedAt + "', " +
+                                     FormatColumn(Columns[29], "[]") + "='" + _ReachedDate + "', " +
+                                     FormatColumn(Columns[30], "[]") + "='" + _ReachedMonth + "', " +
+                                     FormatColumn(Columns[31], "[]") + "='" + _ReachedMonth_En + "', " +
+                                     FormatColumn(Columns[32], "[]") + "='" + _ReachedYear + "', " +
+                                     FormatColumn(Columns[33], "[]") + "='" + _ReachedYear_En + "', " +
+                                     FormatColumn(Columns[34], "[]") + "='" + _AllowedAt + "', " +
+                                     FormatColumn(Columns[35], "[]") + "='" + _DefineYear + "', " +
+                                     FormatColumn(Columns[36], "[]") + "='" + _DefineMonth + "', " +
+                                     FormatColumn(Columns[37], "[]") + "='" + _DefineDay + "', " +
+                                     FormatColumn(Columns[38], "[]") + "='" + _DueDate + "', " +
+                                     FormatColumn(Columns[39], "[]") + "='" + _DueMonth + "', " +
+                                     FormatColumn(Columns[40], "[]") + "='" + _DueMonth_En + "', " +
+                                     FormatColumn(Columns[41], "[]") + "='" + _DueYear + "', " +
+                                     FormatColumn(Columns[42], "[]") + "='" + _DueYear_En + "', " +
+                                     FormatColumn(Columns[43], "[]") + "='" + _Renew_Date + "', " +
+                                     FormatColumn(Columns[44], "[]") + "='" + _Renew_Month + "', " +
+                                     FormatColumn(Columns[45], "[]") + "='" + _Renew_Month_En + "', " +
+                                     FormatColumn(Columns[46], "[]") + "='" + _Renew_Year + "', " +
+                                     FormatColumn(Columns[47], "[]") + "='" + _Renew_Year_En + "' " +
                                      "where " +
                                      FormatColumn(Columns[1], "[]") + "='" + _Passport + "'";
             OleDbConnection Con = new OleDbConnection(var_ConnectionString);
             OleDbCommand Com = new OleDbCommand(var_UpdateQuery, Con);
-            int var_RowAffect;
+
             try
             {
                 Con.Open();
-                var_RowAffect = Com.ExecuteNonQuery();
-                r = true;
+                _ResultMessage = Com.ExecuteNonQuery().ToString();
             }
-            catch
+            catch (Exception ex)
             {
-                r = false;
-                throw;
+                _ResultMessage = ex.Message;
             }
             Con.Close();
-            return r;
+            return _ResultMessage;
         }
         public void NewTeacher()
         {

@@ -25,6 +25,7 @@ namespace TeacherForeignPro
         public String CheckStetar { get { return _CheckStetar; } set { _CheckStetar = value; } }
         public String ErrorMessage { get { return _ErrorMessage; } }
         public String SuccessMessage { get { return _SuccessMessage; } }
+        public String ResultMessage { get { return _ResultMessage; } }
 
         private string _Passport;
         private string _PassportExpDate;
@@ -41,12 +42,13 @@ namespace TeacherForeignPro
         private string _ContractYear_En;
         private string _CheckStetar;
 
+        private string _ResultMessage;
         private string _ErrorMessage;
         private string _SuccessMessage;
         private string var_ConnectionString = "Provider=Microsoft.Jet.OLEDB.4.0;Data Source=.\\Database\\Data.mdb;User Id=admin;Password=;";
 
         private string[] Columns = new string[]{
-            "TPassportExp",             // Table name
+            "TPassportExp",             // 0 Table name
             "Passport",                 // 1
             "PassportExpDate",          // 2
             "PassportExpMonth",         // 3
@@ -95,8 +97,8 @@ namespace TeacherForeignPro
 
         public bool SelectTeacher()
         {
-            bool IsResult = false;
-            if (_Passport == string.Empty) { _ErrorMessage = "A Property _Passport no assign."; return IsResult; }
+            bool IsSuccess = false;
+            if (_Passport == string.Empty) { _ErrorMessage = "A Property _Passport no assign."; return IsSuccess; }
 
             string var_SelectQuery = "select * from " + FormatColumn(Columns[0], "[]") + " where " + FormatColumn(Columns[1], "[]") + "='" + _Passport + "'";
             OleDbConnection Con = new OleDbConnection(var_ConnectionString);
@@ -127,7 +129,7 @@ namespace TeacherForeignPro
                     _CheckStetar = Reader.GetValue(13).ToString();
 
                     _SuccessMessage = "Correct";
-                    IsResult = true;
+                    IsSuccess = true;
                 }
             }
             catch (Exception ex)
@@ -135,12 +137,12 @@ namespace TeacherForeignPro
                 _ErrorMessage = ex.ToString();               
             }
             Con.Close();
-            return IsResult;
+            return IsSuccess;
         }
 
-        public bool UpdateTeacher()
+        public string UpdateTeacher()
         {
-            bool IsSuccess = false;
+            if (_Passport == string.Empty) { _ResultMessage = "A Property _Passport no assign."; return _ResultMessage; }
             string var_UpdateQuery = "update " + FormatColumn(Columns[0], "[]") +
                                      "set " +
                                      FormatColumn(Columns[2], "[]") + "='" + _PassportExpDate + "', " +
@@ -155,7 +157,7 @@ namespace TeacherForeignPro
                                      FormatColumn(Columns[11], "[]") + "='" + _ContractMonth_Text + "', " +
                                      FormatColumn(Columns[12], "[]") + "='" + _ContractYear + "', " +
                                      FormatColumn(Columns[13], "[]") + "='" + _ContractYear_En + "', " +
-                                     FormatColumn(Columns[14], "[]") + "='" + _CheckStetar + "', " +
+                                     FormatColumn(Columns[14], "[]") + "= 0 " +
                                      "where " +
                                      FormatColumn(Columns[1], "[]") + "='" + _Passport + "'";
 
@@ -164,16 +166,14 @@ namespace TeacherForeignPro
             try
             {
                 Con.Open();
-                Com.ExecuteNonQuery();
-                _SuccessMessage = "Correct";
-                IsSuccess = true;
+                _ResultMessage = Com.ExecuteNonQuery().ToString();
             }
             catch (Exception ex)
             {
-                _ErrorMessage = ex.ToString();
+                _ResultMessage = ex.Message;
             }
             Con.Close();
-            return IsSuccess;
+            return _ResultMessage;
         }
     }
 }

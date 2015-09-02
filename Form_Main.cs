@@ -18,6 +18,7 @@ namespace TeacherForeignPro
         THistory THistory = new THistory();
         TDocument TDocument = new TDocument();
         TPassportExp TPassportExp = new TPassportExp();
+        TWorkplace TWorkplace = new TWorkplace();
         public Form_Main()
         {
             InitializeComponent();
@@ -96,10 +97,6 @@ namespace TeacherForeignPro
                 this.T2_INPUT_Renew_Month.SelectedIndex = ComboConv.ConvMonthToIndex(TDocument.Renew_Month);
                 this.T2_INPUT_Renew_Year.Text = TDocument.Renew_Year;
             }
-            else
-            {
-                T2_INPUT_Passport.Text = "False";
-            }
 
             TPassportExp.Passport = T1_INPUT_Passport.Text.Trim();
             if (TPassportExp.SelectTeacher() == true)
@@ -111,7 +108,43 @@ namespace TeacherForeignPro
                 this.T3_INPUT_ContractMonth.SelectedIndex = ComboConv.ConvMonthToIndex(TPassportExp.ContractMonth);
                 this.T3_INPUT_ContractYear.Text = TPassportExp.ContractYear;
             }
-         
+
+            TWorkplace.Passport = T1_INPUT_Passport.Text.Trim();
+            if(TWorkplace.SelectTeacher() == true){
+                this.T4_INPUT_WorkpermitNo.Text = TWorkplace.WorkpermitNo;
+                this.T4_INPUT_DateIssue.Text = TWorkplace.DateIssue;
+                this.T4_INPUT_MonthIssue.SelectedIndex = ComboConv.ConvMonthToIndex(TWorkplace.MonthIssue);
+                this.T4_INPUT_YearIssue.Text = TWorkplace.YearIssue;
+                this.T4_INPUT_PlaceIssue.Text = TWorkplace.PlaceIssue;
+                this.T4_INPUT_PeriodPermission.Text = TWorkplace.PeriodPermission;
+                this.T4_INPUT_ExpireOn.Text = TWorkplace.ExpireOn;
+                this.T4_INPUT_ExpireMonth.SelectedIndex = ComboConv.ConvMonthToIndex(TWorkplace.ExpireMonth);
+                this.T4_INPUT_ExpireYear.Text = TWorkplace.ExpireYear;
+                this.T4_INPUT_PerLicenseDate.Text = TWorkplace.PerLicenseDate;
+                this.T4_INPUT_PerLicenseMonth.SelectedIndex = ComboConv.ConvMonthToIndex(TWorkplace.PerLicenseMonth);
+                this.T4_INPUT_PerLicenseYear.Text = TWorkplace.PerLicenseYear;
+                this.T4_INPUT_ThroughDate.Text = TWorkplace.ThroughDate;
+                this.T4_INPUT_ThroughMonth.SelectedIndex = ComboConv.ConvMonthToIndex(TWorkplace.ThroughMonth);
+                this.T4_INPUT_ThroughYear.Text = TWorkplace.ThroughYear;
+                this.T4_INPUT_Profession.Text = TWorkplace.Profession;
+                this.T4_INPUT_JobDescription.Text = TWorkplace.JobDescription;
+                this.T4_INPUT_Wage.Text = TWorkplace.Wage;
+                this.T4_INPUT_Bossname.Text = TWorkplace.Bossname;
+                this.T4_INPUT_School.Text = TWorkplace.School;
+                this.T4_INPUT_HomeNo.Text = TWorkplace.HomeNo;
+                this.T4_INPUT_Village.Text = TWorkplace.Village;
+                this.T4_INPUT_Lane.Text = TWorkplace.Lane;
+                this.T4_INPUT_Road.Text = TWorkplace.Road;
+                this.T4_INPUT_Tambol.Text = TWorkplace.Tambol;
+                this.T4_INPUT_Amphur.Text = TWorkplace.Amphur;
+                this.T4_INPUT_Province.Text = TWorkplace.Province;
+                this.T4_INPUT_PostCode.Text = TWorkplace.PostCode;
+                this.T4_INPUT_Phone.Text = TWorkplace.Phone;
+                this.T4_INPUT_Employment_Year.Text = TWorkplace.Employment_Year;
+                this.T4_INPUT_Employment_Month.Text = TWorkplace.Employment_Month;
+                this.T4_INPUT_Employment_Day.Text = TWorkplace.Employment_Day;
+                this.T4_INPUT_Contract.Text = TWorkplace.Contract;
+            }
         }
 
         public void _NewTeacher()
@@ -119,6 +152,7 @@ namespace TeacherForeignPro
             THistory.NewTeacher();
             TDocument.NewTeacher();
             TPassportExp.NewTeacher();
+            TWorkplace.NewTeacher();
         }
 
         public void _NewTeacher(int _Mode)
@@ -127,6 +161,7 @@ namespace TeacherForeignPro
             THistory.NewTeacher();
             TDocument.NewTeacher();
             TPassportExp.NewTeacher();
+            TWorkplace.NewTeacher();
 
             this.T1_INPUT_HisID.Text = THistory.HisID;
             this.T1_INPUT_Passport.Text = THistory.Passport;
@@ -195,6 +230,42 @@ namespace TeacherForeignPro
             this.T3_INPUT_ContractDate.Text = TPassportExp.ContractDate;
             this.T3_INPUT_ContractMonth.SelectedIndex = ComboConv.ConvMonthToIndex(TPassportExp.ContractMonth);
             this.T3_INPUT_ContractYear.Text = TPassportExp.ContractYear;
+
+            this.T4_INPUT_WorkpermitNo.Text = TWorkplace.WorkpermitNo;
+            this.T4_INPUT_DateIssue.Text = TWorkplace.DateIssue;
+            this.T4_INPUT_MonthIssue.SelectedIndex = ComboConv.ConvMonthToIndex(TWorkplace.MonthIssue);
+            this.T4_INPUT_YearIssue.Text = TWorkplace.YearIssue;
+            this.T4_INPUT_PlaceIssue.Text = TWorkplace.PlaceIssue;
+            this.T4_INPUT_PeriodPermission.Text = TWorkplace.PeriodPermission;
+            this.T4_INPUT_ExpireOn.Text = TWorkplace.ExpireOn;
+            this.T4_INPUT_ExpireMonth.SelectedIndex = ComboConv.ConvMonthToIndex(TWorkplace.ExpireMonth);
+            this.T4_INPUT_ExpireYear.Text = TWorkplace.ExpireYear;
+            this.T4_INPUT_PerLicenseDate.Text = TWorkplace.PerLicenseDate;
+            this.T4_INPUT_PerLicenseMonth.SelectedIndex = ComboConv.ConvMonthToIndex(TWorkplace.PerLicenseMonth);
+            this.T4_INPUT_PerLicenseYear.Text = TWorkplace.PerLicenseYear;
+            this.T4_INPUT_ThroughDate.Text = TWorkplace.ThroughDate;
+            this.T4_INPUT_ThroughMonth.SelectedIndex = ComboConv.ConvMonthToIndex(TWorkplace.ThroughMonth);
+            this.T4_INPUT_ThroughYear.Text = TWorkplace.ThroughYear;
+            this.T4_INPUT_Profession.Text = TWorkplace.Profession;
+            this.T4_INPUT_JobDescription.Text = TWorkplace.JobDescription;
+            this.T4_INPUT_Wage.Text = TWorkplace.Wage;
+            this.T4_INPUT_Bossname.Text = TWorkplace.Bossname;
+            this.T4_INPUT_School.Text = TWorkplace.School;
+            this.T4_INPUT_HomeNo.Text = TWorkplace.HomeNo;
+            this.T4_INPUT_Village.Text = TWorkplace.Village;
+            this.T4_INPUT_Lane.Text = TWorkplace.Lane;
+            this.T4_INPUT_Road.Text = TWorkplace.Road;
+            this.T4_INPUT_Tambol.Text = TWorkplace.Tambol;
+            this.T4_INPUT_Amphur.Text = TWorkplace.Amphur;
+            this.T4_INPUT_Province.Text = TWorkplace.Province;
+            this.T4_INPUT_PostCode.Text = TWorkplace.PostCode;
+            this.T4_INPUT_Phone.Text = TWorkplace.Phone;
+            this.T4_INPUT_Employment_Year.Text = TWorkplace.Employment_Year;
+            this.T4_INPUT_Employment_Month.Text = TWorkplace.Employment_Month;
+            this.T4_INPUT_Employment_Day.Text = TWorkplace.Employment_Day;
+            this.T4_INPUT_Contract.Text = TWorkplace.Contract;
+
+            
         }
 
         public bool _AssignData()
@@ -205,7 +276,7 @@ namespace TeacherForeignPro
             {
                 /* Tab 1 */
                 THistory.HisID = this.T1_INPUT_HisID.Text;
-                THistory.Passport = this.T1_INPUT_Passport.Text;
+                THistory.Passport = this.T1_INPUT_Passport.Text.Trim().ToUpper();
                 THistory.Th_Title = this.T1_INPUT_Th_Title.SelectedItem.ToString();
                 THistory.Th_Name = this.T1_INPUT_Th_Name.Text;
                 THistory.Th_Lastname = this.T1_INPUT_Th_Lastname.Text;
@@ -241,7 +312,7 @@ namespace TeacherForeignPro
                 THistory.blood_Grp = this.T1_INPUT_blood_Grp.SelectedItem.ToString();
 
                 /* Tab 2 */
-                //TDocument.Passport = string.Empty;
+                TDocument.Passport = this.T1_INPUT_Passport.Text.Trim().ToUpper();
                 TDocument.PassportDate = this.T2_INPUT_PassportDate.Text.Trim();
                 TDocument.PassportMonth = this.T2_INPUT_PassportMonth.SelectedItem.ToString();
                 TDocument.PassportMonth_En = this.T2_INPUT_PassportMonth_En.Text.Trim();
@@ -277,6 +348,7 @@ namespace TeacherForeignPro
                 TDocument.Renew_Year_En = this.T2_INPUT_Renew_Year_En.Text.Trim();
 
                 /* Tab 3 */
+                TPassportExp.Passport = this.T1_INPUT_Passport.Text.Trim().ToUpper();
                 TPassportExp.PassportExpDate = this.T3_INPUT_PassportExpDate.Text.Trim();
                 TPassportExp.PassportExpMonth = this.T3_INPUT_PassportExpMonth.SelectedItem.ToString();
                 TPassportExp.PassportExpMonth_En = this.T3_INPUT_PassportExpMonth_En.Text;
@@ -290,11 +362,54 @@ namespace TeacherForeignPro
                 TPassportExp.ContractYear = this.T3_INPUT_ContractYear.Text.Trim();
                 TPassportExp.ContractYear_En = this.T3_INPUT_ContractYear_En.Text;
                 TPassportExp.CheckStetar = string.Empty;
+
+                /* Tab 4 */
+                TWorkplace.Passport = this.T1_INPUT_Passport.Text.Trim().ToUpper();
+                TWorkplace.WorkpermitNo = this.T4_INPUT_WorkpermitNo.Text.Trim();
+                TWorkplace.DateIssue = this.T4_INPUT_DateIssue.Text;
+                TWorkplace.MonthIssue = this.T4_INPUT_MonthIssue.SelectedItem.ToString();
+                TWorkplace.MonthIssue_En = this.T4_INPUT_MonthIssue_En.Text;
+                TWorkplace.YearIssue = this.T4_INPUT_YearIssue.Text.Trim();
+                TWorkplace.YearIssue_En = this.T4_INPUT_YearIssue_En.Text;
+                TWorkplace.PlaceIssue = this.T4_INPUT_PlaceIssue.Text.Trim();
+                TWorkplace.PeriodPermission = this.T4_INPUT_PeriodPermission.Text.Trim();
+                TWorkplace.ExpireOn = this.T4_INPUT_ExpireOn.Text.Trim();
+                TWorkplace.ExpireMonth = this.T4_INPUT_ExpireMonth.SelectedItem.ToString();
+                TWorkplace.ExpireMonth_En = this.T4_INPUT_ExpireMonth_En.Text.Trim();
+                TWorkplace.ExpireYear = this.T4_INPUT_ExpireYear.Text.Trim();
+                TWorkplace.ExpireYear_En = this.T4_INPUT_ExpireYear_en.Text;
+                TWorkplace.PerLicenseDate = this.T4_INPUT_PerLicenseDate.Text.Trim();
+                TWorkplace.PerLicenseMonth = this.T4_INPUT_PerLicenseMonth.SelectedItem.ToString();
+                TWorkplace.PerLicenseMonth_En = this.T4_INPUT_PerLicenseMonth_En.Text;
+                TWorkplace.PerLicenseYear = this.T4_INPUT_PerLicenseYear.Text.Trim();
+                TWorkplace.PerLicenseYear_En = this.T4_INPUT_PerLicenseYear_En.Text;
+                TWorkplace.ThroughDate = this.T4_INPUT_ThroughDate.Text.Trim();
+                TWorkplace.ThroughMonth = this.T4_INPUT_ThroughMonth.SelectedItem.ToString();
+                TWorkplace.ThroughMonth_En = this.T4_INPUT_ThroughMonth_En.Text;
+                TWorkplace.ThroughYear = this.T4_INPUT_ThroughYear.Text.Trim();
+                TWorkplace.ThroughYear_En = this.T4_INPUT_ThroughYear_En.Text;
+                TWorkplace.Profession = this.T4_INPUT_Profession.Text.Trim();
+                TWorkplace.JobDescription = this.T4_INPUT_JobDescription.Text.Trim();
+                TWorkplace.Wage = this.T4_INPUT_Wage.Text.Trim();
+                TWorkplace.Bossname = this.T4_INPUT_Bossname.Text.Trim();
+                TWorkplace.School = this.T4_INPUT_School.Text.Trim();
+                TWorkplace.HomeNo = this.T4_INPUT_HomeNo.Text.Trim();
+                TWorkplace.Village = this.T4_INPUT_Village.Text.Trim();
+                TWorkplace.Lane = this.T4_INPUT_Lane.Text.Trim();
+                TWorkplace.Road = this.T4_INPUT_Road.Text.Trim();
+                TWorkplace.Tambol = this.T4_INPUT_Tambol.Text.Trim();
+                TWorkplace.Amphur = this.T4_INPUT_Amphur.Text.Trim();
+                TWorkplace.Province = this.T4_INPUT_Province.Text.Trim();
+                TWorkplace.PostCode = this.T4_INPUT_PostCode.Text.Trim();
+                TWorkplace.Phone = this.T4_INPUT_Phone.Text.Trim();
+                TWorkplace.Employment_Year = this.T4_INPUT_Employment_Year.Text.Trim();
+                TWorkplace.Employment_Month = this.T4_INPUT_Employment_Month.Text.Trim();
+                TWorkplace.Employment_Day = this.T4_INPUT_Employment_Day.Text.Trim();
+                TWorkplace.Contract = this.T4_INPUT_Contract.Text.Trim();
+
                 IsSuccess = true;
             }
-            else
-            {
-            }
+
             return IsSuccess;
         }
 
@@ -371,13 +486,24 @@ namespace TeacherForeignPro
         private void MAIN_BTN_New_Click(object sender, EventArgs e)
         {
             _NewTeacher(0);
+            this.T1_INPUT_HisID.Text = THistory.AutoTeacherNumber();
         }
 
         private void MAIN_BTN_Save_Click(object sender, EventArgs e)
         {
             if(_AssignData() == true){
                 THistory.InsertTeacher();
-                MessageBox.Show(THistory.ResultMessage);
+                TDocument.UpdateTeacher();
+                TPassportExp.UpdateTeacher();
+                TWorkplace.UpdateTeacher();
+                if ((THistory.ResultMessage == "1") && (TDocument.ResultMessage == "1") && (TPassportExp.ResultMessage == "1") && (TWorkplace.ResultMessage == "1"))
+                {
+                    MessageBox.Show("บัณทึกข้อมูลแล้ว");
+                }
+                else if (THistory.ResultMessage != "1") { MessageBox.Show("THistory" + Environment.NewLine + THistory.ResultMessage); }
+                else if (TDocument.ResultMessage != "1") { MessageBox.Show("TDocument" + Environment.NewLine + TDocument.ResultMessage); }
+                else if (TPassportExp.ResultMessage != "1") { MessageBox.Show("TPassportExp" + Environment.NewLine + TPassportExp.ResultMessage); }
+                else if (TWorkplace.ResultMessage != "1") { MessageBox.Show("TWorkplace" + Environment.NewLine + TWorkplace.ResultMessage); }
             }                    
         }
 
@@ -429,6 +555,113 @@ namespace TeacherForeignPro
         private void T2_INPUT_Renew_Year_TextChanged(object sender, EventArgs e)
         {
             this.T2_INPUT_Renew_Year_En.Text = ComboConv.ConvThYearToEnYear(this.T2_INPUT_Renew_Year.Text);
+        }
+
+        private void T3_INPUT_PassportExpMonth_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            this.T3_INPUT_PassportExpMonth_En.Text = ComboConv.ConvThMonthToEnMonth(this.T3_INPUT_PassportExpMonth.SelectedItem.ToString());
+        }
+
+        private void T3_INPUT_PassportExpYear_TextChanged(object sender, EventArgs e)
+        {
+            this.T3_INPUT_PassportExpYear_En.Text = ComboConv.ConvThYearToEnYear(this.T3_INPUT_PassportExpYear.Text);
+        }
+
+        private void T3_INPUT_ContractMonth_TextChanged(object sender, EventArgs e)
+        {
+            this.T3_INPUT_ContractMonth_En.Text = ComboConv.ConvThMonthToEnMonth(this.T3_INPUT_ContractMonth.SelectedItem.ToString());
+        }
+
+        private void T3_INPUT_ContractYear_TextChanged(object sender, EventArgs e)
+        {
+            this.T3_INPUT_ContractYear_En.Text = ComboConv.ConvThYearToEnYear(this.T3_INPUT_ContractYear.Text);
+        }
+
+        private void T4_INPUT_MonthIssue_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            T4_INPUT_MonthIssue_En.Text = ComboConv.ConvThMonthToEnMonth(this.T4_INPUT_MonthIssue.SelectedItem.ToString());
+        }
+
+        private void T4_INPUT_YearIssue_TextChanged(object sender, EventArgs e)
+        {
+            T4_INPUT_YearIssue_En.Text = ComboConv.ConvThYearToEnYear(this.T4_INPUT_YearIssue.Text);
+        }
+
+        private void MAIN_BTN_Delete_Click(object sender, EventArgs e)
+        {
+            DialogResult Result;
+            Result = MessageBox.Show("จะลบแล้วน่ะ เปลี่ยนใจกด NO ถ้าหมั่นใจกด YES", "ยืนยันการลบ", MessageBoxButtons.YesNo);
+            if (Result == DialogResult.Yes)
+            {
+                THistory.Passport = T1_INPUT_Passport.Text.Trim();
+                THistory.HisID = T1_INPUT_HisID.Text.Trim();
+                THistory.ChangeStatusTeacher(2);
+                _NewTeacher(0);
+                MessageBox.Show(THistory.ResultMessage);
+            }
+            else if (Result == DialogResult.No) { return; }
+        }
+
+        private void T4_INPUT_SelectSchool_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            string var_SchoolName = T4_INPUT_SelectSchool.SelectedItem.ToString();
+            if (var_SchoolName == "-") { return; }
+            else 
+            {
+                Tschool.SelectQuery(var_SchoolName);
+                T4_INPUT_School.Text = Tschool.School;
+                T4_INPUT_Bossname.Text = Tschool.Bossname;
+                T4_INPUT_HomeNo.Text = Tschool.HomeNo;
+                T4_INPUT_Village.Text = Tschool.Village;
+                T4_INPUT_Lane.Text = Tschool.Lane;
+                T4_INPUT_Road.Text = Tschool.Road;
+                T4_INPUT_Tambol.Text = Tschool.Tambol;
+                T4_INPUT_Amphur.Text = Tschool.Amphur;
+                T4_INPUT_Province.Text = Tschool.Province;
+                T4_INPUT_PostCode.Text = Tschool.PostCode;
+                T4_INPUT_Phone.Text = Tschool.Phone;
+            }
+        }
+
+        private void T4_INPUT_PerLicenseMonth_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            T4_INPUT_PerLicenseMonth_En.Text = ComboConv.ConvThMonthToEnMonth(this.T4_INPUT_PerLicenseMonth.SelectedItem.ToString());
+        }
+
+        private void T4_INPUT_PerLicenseYear_TextChanged(object sender, EventArgs e)
+        {
+            T4_INPUT_PerLicenseYear_En.Text = ComboConv.ConvThYearToEnYear(this.T4_INPUT_PerLicenseYear.Text);
+        }
+
+        private void T4_INPUT_ThroughMonth_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            T4_INPUT_ThroughMonth_En.Text = ComboConv.ConvThMonthToEnMonth(this.T4_INPUT_ThroughMonth.SelectedItem.ToString());
+        }
+
+        private void T4_INPUT_ThroughYear_TextChanged(object sender, EventArgs e)
+        {
+            T4_INPUT_ThroughYear_En.Text = ComboConv.ConvThYearToEnYear(this.T4_INPUT_ThroughYear.Text);
+        }
+
+        private void T4_INPUT_ExpireMonth_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            T4_INPUT_ExpireMonth_En.Text = ComboConv.ConvThMonthToEnMonth(this.T4_INPUT_ExpireMonth.SelectedItem.ToString());
+        }
+
+        private void T4_INPUT_ExpireYear_TextChanged(object sender, EventArgs e)
+        {
+            T4_INPUT_ExpireYear_en.Text = ComboConv.ConvThYearToEnYear(this.T4_INPUT_ExpireYear.Text);
+        }
+
+        private void BTN_RMDuplicate_Click(object sender, EventArgs e)
+        {
+            RemoveDuplicate Form_RmDuplicate = new RemoveDuplicate();
+            Form_RmDuplicate.Show();
+        }
+
+        private void T1_SUMBIT_SelectPicture_Click(object sender, EventArgs e)
+        {
+            T1_INPUT_Pic.ImageLocation = THistory.Role_GetPicture(T1_INPUT_HisID.Text, T4_INPUT_School.Text);
         }
     }
 }

@@ -4,6 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Data.OleDb;
+using System.Windows.Forms;
+using System.IO;
 
 namespace TeacherForeignPro
 {
@@ -188,6 +190,12 @@ namespace TeacherForeignPro
         {
             get { return _ResultMessage; }
         }
+        public String Active
+        {
+            get { return _Active; }
+            set { _Active = value; }
+        }
+
         private string _HisID;
         private string _Passport;
         private string _Th_Title;
@@ -223,6 +231,7 @@ namespace TeacherForeignPro
         private string _Phone;
         private string _Pic;
         private string _blood_Grp;
+        private string _Active;
 
         private string ConnectionString = "Provider=Microsoft.Jet.OLEDB.4.0;Data Source=.\\Database\\Data.mdb;User Id=admin;Password=;";
         public readonly string TableName = "THistory";
@@ -277,6 +286,7 @@ namespace TeacherForeignPro
                     _Phone = Read.GetString(33).Trim();
                     _Pic = Read.GetString(34).Trim();
                     _blood_Grp = Read.GetString(35).Trim();
+                    _Active = Read.GetValue(36).ToString();
 
                     _ResultMessage = "Success";
                 }
@@ -332,6 +342,7 @@ namespace TeacherForeignPro
             _Phone = string.Empty;
             _Pic = string.Empty;
             _blood_Grp = string.Empty;
+            _Active = "1";
         }
 
         public void InsertTeacher()
@@ -357,7 +368,7 @@ namespace TeacherForeignPro
             string var_QuerySelectPassportB = "select [HisID] from [THistory] where [HisID]=" + _HisID;
             string var_QuerySelectPassportC = "select [Passport], [HisID] from [THistory] where [Passport]='" + _Passport + "' and [HisID]=" + _HisID;
 
-            string var_QueryInsertTHistory = "insert into [THistory] ([Passport], [HisID]) values ('" + _Passport + "', " + _HisID + ")";
+            string var_QueryInsertTHistory = "insert into [THistory] ([Passport], [HisID], [Active]) values ('" + _Passport + "', " + _HisID + ", " + _Active + ")";
             string var_QueryInsterTDocument = "insert into [TDocument] ([Passport]) values ('" + _Passport + "')";
             string var_QueryInsterTPassportExp = "insert into [TPassportExp] ([Passport]) values ('" + _Passport + "')";
             string var_QueryInsterTWorkplace = "insert into [TWorkplace] ([Passport]) values ('" + _Passport + "')";
@@ -417,12 +428,10 @@ namespace TeacherForeignPro
                 {
                     _ResultMessage = "หมายเลขประจำตัวครู " + _HisID + " มีอยู่ในฐานข้อมูลแล้ว";
                 }
-
-
             }
             catch (Exception ex)
             {
-                _ResultMessage = ex.ToString();
+                _ResultMessage = ex.Message;
             }
             Con.Close();
         }
@@ -462,7 +471,8 @@ namespace TeacherForeignPro
                                      "[YearStarted_En]='" + _YearStarted_En + "', " +
                                      "[Phone]='" + _Phone + "', " +
                                      "[Pic]='" + _Pic + "', " +
-                                     "[blood_Grp]='" + _blood_Grp + "' " +
+                                     "[blood_Grp]='" + _blood_Grp + "', " +
+                                     "[Active]=" + _Active + " " +
                                      "where " +
                                      "[HisID]=" + _HisID + " and " +
                                      "[Passport]='" + _Passport + "'";
@@ -480,6 +490,82 @@ namespace TeacherForeignPro
             }
             Con.Close();
             return r;
+        }
+        ///<summary>
+        ///ChangeStatusTeacher Function is Change 3 type of status.
+        ///0 = Delete
+        ///1 = Active (Default)
+        ///2 = Unactive
+        ///</summary>
+        public bool ChangeStatusTeacher(int _Status)
+        {
+            bool IsSuccess = false;
+            _Passport = _Passport.Trim();
+            if ((_Passport == "") || (_Passport == string.Empty) || (_Passport.Length < 1)) { _ResultMessage = "_Passport is NULL"; return IsSuccess = false; }
+            if ((_HisID == "") || (_HisID == string.Empty) || (_HisID.Length < 1)) { _ResultMessage = "_HisID is NULL"; return IsSuccess = false; }
+            string var_UpdateStatus = "update [THistory] set [Active] =" + _Status + " where [HisID]=" + _HisID + " and [Passport]='" + _Passport + "'";
+            OleDbConnection Con = new OleDbConnection(ConnectionString);
+            OleDbCommand Com = new OleDbCommand(var_UpdateStatus, Con);
+            try
+            {
+                Con.Open();
+                Com.ExecuteNonQuery();
+                _ResultMessage = "ลบเสร็จแหละ";
+                IsSuccess = true;
+            }
+            catch (Exception ex) { _ResultMessage = ex.ToString(); }
+            Con.Close();
+            return IsSuccess;
+        }
+        public string AutoTeacherNumber()
+        {
+            int _result = 0;
+            string varMaxCommand = "select max([HisID]) from [THistory]";
+            OleDbConnection Con = new OleDbConnection(ConnectionString);
+            OleDbCommand Com = new OleDbCommand(varMaxCommand, Con);
+            OleDbDataReader ObjectMaxTeacherID;
+            try
+            {
+                Con.Open();
+                ObjectMaxTeacherID = Com.ExecuteReader();
+                ObjectMaxTeacherID.Read();
+                _result = Convert.ToInt32(ObjectMaxTeacherID.GetValue(0).ToString()) + 1;
+            }
+            catch
+            {
+                _result = 1;
+            }
+            return _result.ToString();
+        }
+        ///<summary>
+        /// คัดลอกรูปภาพมาเก็บไว้ที่ Folder ของโปรแกรม
+        /// <para>Return Image Location (New Path)</para>
+        ///</summary>
+        public string Role_GetPicture(string _TeacherNumber, string _School)
+        {
+            if (_TeacherNumber.Trim() == string.Empty) { _ResultMessage = "No Teacher Number"; return string.Empty; }
+            if (_School.Trim() == string.Empty) { _ResultMessage = "No School Name"; return string.Empty; }
+            OpenFileDialog Jane_OpenPicture = new OpenFileDialog();
+            string Var_FileName = string.Empty;
+            string Var_FullPath = string.Empty;
+            string Var_NewFileName = string.Empty;
+            string Var_NewPath = string.Empty;
+            string Var_Prefix = string.Empty;
+            string Var_Extension = string.Empty;
+            if (_School == "มารีวิทย์") { Var_Prefix = "P"; }
+            else if (_School == "มารีวิทย์สัตหีบ") { Var_Prefix = "S"; }
+            else if (_School == "มารีวิทย์บ่อวิน") { Var_Prefix = "B"; }
+            Jane_OpenPicture.Filter = "Image File|*.jpg";           
+            if (Jane_OpenPicture.ShowDialog() == DialogResult.OK)
+            {
+                Var_FileName = Jane_OpenPicture.SafeFileName;
+                Var_FullPath = Jane_OpenPicture.FileName;
+                Var_Extension = Path.GetExtension(Var_FullPath);        
+                Var_NewFileName = Var_Prefix + _TeacherNumber;
+                Var_NewPath = @"./Pic/" + Var_NewFileName + Var_Extension;
+                File.Copy(Var_FullPath, Var_NewPath , true);
+            }
+            return Var_NewPath;
         }
     }
 }
